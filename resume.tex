@@ -1,0 +1,42 @@
+\documentclass[margin,line]{res}
+
+\usepackage{url} 
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+\name{\huge{Shaohan Hu} \vspace*{.1in}}
+\begin{resume}
+
+\input{contact}
+\input{interests}
+\input{education}
+\input{research}
+\input{publications}
+\input{services}
+%\input{talks}
+\input{teaching}
+%\input{courses}
+\input{press}
+\input{awards}
+\input{skills}
+
+\end{resume}
+\end{document}
