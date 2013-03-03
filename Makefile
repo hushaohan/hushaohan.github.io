@@ -1,10 +1,10 @@
-all: resume.pdf
+all: cv.pdf
 
-resume.pdf: *.tex
-	pdflatex --shell-escape --synctex=1 resume
-#	bibtex resume
-#	pdflatex --shell-escape --synctex=1 resume
-#	pdflatex --shell-escape --synctex=1 resume
+cv.pdf: *.tex
+	pdflatex --shell-escape --synctex=1 cv
+#	bibtex cv
+#	pdflatex --shell-escape --synctex=1 cv
+#	pdflatex --shell-escape --synctex=1 cv
 
 clean:
 	rm -f *.bak
