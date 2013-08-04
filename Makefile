@@ -1,10 +1,7 @@
 all: cv.pdf
 
 cv.pdf: *.tex
-	pdflatex --shell-escape --synctex=1 cv
-#	bibtex cv
-#	pdflatex --shell-escape --synctex=1 cv
-#	pdflatex --shell-escape --synctex=1 cv
+	pdflatex --shell-escape --synctex=1 cv && cp -f cv.pdf ../../site/
 
 clean:
 	rm -f *.bak
