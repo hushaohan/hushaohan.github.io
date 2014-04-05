@@ -2,16 +2,9 @@ target = cv
 
 all: $(target).pdf
 
-$(target).pdf: *.tex Makefile
-	pdflatex --shell-escape --synctex=1 $(target)
-ifeq ($(shell uname), Darwin)
-	open /Applications/Skim.app $(target).pdf
-endif
-ifeq ($(shell uname), Linux)
-	evince $(target).pdf > /dev/null 2>&1 &
-endif
+$(target).pdf:
+	latexmk -pdf -pdflatex="pdflatex -shell-escape -interaction=nonstopmode -file-line-error --synctex=1" -use-make $(target)
 
 clean:
-	rm -f *.bak
-	rm -f *~
-	rm -f $(target).pdf *.log *.aux *.bbl *.blg \#* *.dvi *.gz *.out
+	latexmk -C -bibtex
+	rm -f $(target).synctex.gz .DS_Store
