@@ -2,9 +2,14 @@ target = cv
 
 all: $(target).pdf
 
-$(target).pdf:
+$(target).pdf: *.tex Makefile
 	latexmk -pdf -pdflatex="pdflatex -shell-escape -interaction=nonstopmode -file-line-error --synctex=1" -use-make $(target)
 
-clean:
-	latexmk -C -bibtex
-	rm -f $(target).synctex.gz .DS_Store
+clean: nojunks
+	latexmk -C
+
+tidy: nojunks
+	latexmk -c
+
+nojunks:
+	rm -f $(target).synctex.gz .DS_Store *~ \#*
