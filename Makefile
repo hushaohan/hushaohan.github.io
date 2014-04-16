@@ -3,7 +3,7 @@ target = cv
 all: $(target).pdf
 
 $(target).pdf: *.tex Makefile
-	latexmk -pdf -pdflatex="pdflatex -shell-escape -interaction=nonstopmode -file-line-error --synctex=1" -use-make $(target)
+	latexmk -pdf -pdflatex="pdflatex -shell-escape -file-line-error --synctex=1" -use-make $(target)
 
 clean: nojunks
 	latexmk -C
