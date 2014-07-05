@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html lang="en">
   <head>
@@ -7,22 +8,57 @@
     <title>Shaohan Hu</title>
     <link rel="stylesheet" href="css/smoothzoom.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <style type="text/css">
       body {
-	      padding-top: 50px;
-	      padding-bottom: 30px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+      a:hover {
+        background-color: #ccc;
+        text-decoration: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+      }
+      h1, h2, h3, h4 {
+        text-shadow: #ccc 0.1em 0.1em 0.2em;
       }
       .transition {
-	      -webkit-transition: all .6s ease;
-	      -moz-transition: all .6s ease;
-	      -o-transition: all .6s ease;
-	      transition: all .6s ease;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+      }
+      .boxshadow {
+        box-shadow: 0 6px 11px #ccc;
+      }
+      .effect6
+      {
+        position:relative;       
+        -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      }
+      .effect6:before, .effect6:after
+      {
+        content:"";
+        position:absolute; 
+        z-index:-1;
+        -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+        box-shadow:0 0 20px rgba(0,0,0,0.8);
+        top:50%;
+        bottom:0;
+        left:10px;
+        right:10px;
+        -moz-border-radius:100px / 10px;
+        border-radius:100px / 10px;
       }
     </style>
   </head>
   <body id="home">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top boxshadow" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -60,7 +96,7 @@
     <div id="about" class="jumbotron">
       <div class="container transition">
         <div id="picture" class="col col-md-4 well pull-right">
-          <img src="img/id.jpg" rel="zoom" class="zoomable img-responsive img-rounded" />
+          <img src="img/id.jpg" rel="zoom" class="zoomable img-responsive img effect6" />
           <br/>
           <div class="btn-group pull-right">
             <a type="button" class="btn btn-default fa fa-envelope" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Email" href="mailto:shu17@illinois.edu"></a>
