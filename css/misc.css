@@ -51,11 +51,3 @@ h1, h2, h3, h4, .cbtn {
     -moz-border-radius:100px / 10px;
     border-radius:100px / 10px;
 }
-
-img {
-	opacity:0;
-	-moz-transition: opacity 1s; /* Firefox 4 */
-	-webkit-transition: opacity 1s; /* Safari and Chrome */
-	-o-transition: opacity 1s;
-	transition: opacity 1s;
-}​

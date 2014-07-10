@@ -20,3 +20,9 @@ $("a[href^='#']").on('click', function(e) {
 		window.location.hash = target;
 	});
 });
+
+$("img").one("load", function(evt) {
+  	$(this).fadeIn(2611);
+}).each(function(evt) {
+  	if(this.complete) $(this).load();
+});
