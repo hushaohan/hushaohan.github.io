@@ -62,18 +62,6 @@ h1, h2, h3, h4, .cbtn {
     border-radius:100px / 10px;
 }
 
-lightem {
-   font-family:
-                /*"HelveticaNeue-Ultralight",*/
-                /*"HelveticaNeue-Light",*/
-                /*"Helvetica Neue",*/
-                Helvetica,
-                Arial,
-                "Lucida Grande",
-                sans-serif
-                ;
-}
-
 body {
    font-family:
                 /*"HelveticaNeue-Ultralight",*/
