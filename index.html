@@ -7,10 +7,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Shaohan Hu</title>
+
     <link rel="stylesheet" href="css/smoothzoom.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
+    <script src="https://use.fontawesome.com/f23fd37a7b.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/misc.css" />
+
     <link rel="shortcut bookmark icon" href="img/favicon.ico" />
 </head>
 <body id="home">
@@ -35,14 +42,15 @@
                     <li><a href="#press">Press</a></li>
                     <li><a href="cv.pdf">CV</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
-                            <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-caret-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="mailto:shu17@illinois.edu"><i class="fa fa-envelope"> &nbsp;Email </i></a></li>
-                                <li><a href="http://www.google.com/maps/place/201+N+Goodwin+Ave/@40.1138245,-88.2240759,17z"><i class="fa fa-location-arrow"> &nbsp;&nbsp;Work </i></a></li>
-                                <li><a href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i class="fa fa-linkedin"> &nbsp;&nbsp;LinkedIn </i></a></li>
-<!--                                 <li><a href="cv.pdf"><i class="fa fa-file-text"> &nbsp;&nbsp;CV </i></a>
- -->                                </li>
+                                <li><a href="mailto:shu17@illinois.edu"><i class="fa fa-envelope"> &nbsp;&nbsp; Email </i></a></li>
+<!--
+                                <li><a href="http://www.google.com/maps/place/201+N+Goodwin+Ave/@40.1138245,-88.2240759,17z"><i class="fa fa-location-arrow"> &nbsp; &nbsp; Work </i></a></li>
+                                 -->
+                                <li><a href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i class="fa fa-graduation-cap"> &nbsp; Google Scholar</i></a></li>
+                                <li><a href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i class="fa fa-linkedin-square"> &nbsp; &nbsp; LinkedIn </i></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -56,13 +64,16 @@
                     <img style="display:none;" src="img/id.jpg" rel="zoom" class="zoomable img-responsive effect6" />
                     <br/>
                     <div class="btn-group pull-right">
-                        <a type="button" class="btn btn-default cbtn fa fa-envelope" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Email" href="mailto:shu17@illinois.edu"></a>
-                        <a type="button" class="btn btn-default cbtn fa fa-file-text" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="CV" href="cv.pdf"></a>
+                        <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Email" href="mailto:shu17@illinois.edu"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="CV" href="cv.pdf"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+<!--
                         <a type="button" class="btn btn-default cbtn fa fa-location-arrow" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Work" href="http://www.google.com/maps/place/201+N+Goodwin+Ave/@40.1138245,-88.2240759,17z"></a>
-                        <a type="button" class="btn btn-default cbtn fa fa-linkedin" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"></a>
+ -->
+                        <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Google Scholar" href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+                        <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="col col-md-6 col-lg-8 pull-left">
+                <div id="mini-bio" class="col col-md-6 col-lg-8 pull-left">
                     <div class="container">
                         <h1>Shaohan Hu</h1>
                         <p>I am currently a Ph.D. candidate, working in the <a
@@ -74,50 +85,50 @@
         </div>
         <div class="container transition">
             <div class="col col-xs-12">
-                <div id="education" class="col col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div id="education" class="col col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <h2>Education</h2>
                     <p>Fall 2011 - Present<br/>
-                        <strong>Ph.D.</strong>, in <a href="http://www.cs.illinois.edu">Computer Science</a> at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana IL
+                        <lightem>Ph.D.</lightem>, in <a href="http://www.cs.illinois.edu">Computer Science</a> at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana IL
                     </p>
                     <p>Fall 2008 - Summer 2011<br/>
-                        <strong>M.S.</strong>, in <a href="http://www.cs.dartmouth.edu">Computer Science</a> at <a href="http://www.dartmouth.edu">Dartmouth College</a>, Hanover NH
+                        <lightem>M.S.</lightem>, in <a href="http://www.cs.dartmouth.edu">Computer Science</a> at <a href="http://www.dartmouth.edu">Dartmouth College</a>, Hanover NH
                     </p>
                     <p>Fall 2004 - Summer 2008<br/>
-                        <strong>B.S.</strong>, <i>magna cum laude</i>, in <a href="http://www.cs.umass.edu">Computer Science</a> and <a href="http://www.math.umass.edu">Mathematics and Statistics</a> at <a href="http://www.umass.edu">University of Massachusetts at Amherst</a>, Amherst MA
+                        <lightem>B.S.</lightem>, <i>magna cum laude</i>, in <a href="http://www.cs.umass.edu">Computer Science</a> and <a href="http://www.math.umass.edu">Mathematics and Statistics</a> at <a href="http://www.umass.edu">University of Massachusetts at Amherst</a>, Amherst MA
                     </p>
                 </div>
-                <div id="work" class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div id="work"      class="col col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <h2>Work</h2>
                     <p>January 2012 - Present<br/>
-                        <strong>Research Assistant</strong>, at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana, IL
+                        <lightem>Research Assistant</lightem>, at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana, IL
                     </p>
                     <p>May 2014 - September 2014<br/>
-                        <strong>Graduate Intern Technical</strong>, at New Devices Group, <a href="http://www.intel.com">Intel Corporation</a>, Santa Clara, CA
+                        <lightem>Graduate Intern Technical</lightem>, at New Devices Group, <a href="http://www.intel.com">Intel Corporation</a>, Santa Clara, CA
                     </p>
                     <p>August 2011 - December 2011<br/>
-                        <strong>Teaching Assistant</strong>, at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana, IL
+                        <lightem>Teaching Assistant</lightem>, at <a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a>, Urbana, IL
                     </p>
                     <p>September 2008 - September 2010<br/>
-                        <strong>Teaching Assistant</strong>, at <a href="http://www.dartmouth.edu">Dartmouth College</a>, Hanover, NH
+                        <lightem>Teaching Assistant</lightem>, at <a href="http://www.dartmouth.edu">Dartmouth College</a>, Hanover, NH
                     </p>
                     <p>January 2008 - May 2008<br/>
-                        <strong>Teaching Assistant</strong>, at <a href="http://www.umass.edu">University of Massachusetts at Amherst</a>, Amherst, MA
+                        <lightem>Teaching Assistant</lightem>, at <a href="http://www.umass.edu">University of Massachusetts at Amherst</a>, Amherst, MA
                     </p>
                 </div>
-                <div id="services" class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div id="services"  class="col col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <h2>Services</h2>
-                    <p><strong>Technicial Program Committee</strong>:<br/>
+                    <p><lightem>Technicial Program Committee</lightem>:<br/>
                         <a href="http://ipsn.acm.org/2016/posters.html">IPSN Posters</a> - 2016<br/>
                         <a href="http://www.iaria.org/conferences2016/UBICOMM16.html">UBICOMM</a> - 2012-2016
                     </p>
-                    <p><strong>Conference Reviewer</strong>:<br/>
+                    <p><lightem>Conference Reviewer</lightem>:<br/>
                         <a href="http://sensys.acm.org/2016/">SenSys</a>, <a href="http://cdc2016.ieeecss.org/">CDC</a>, <a href="http://www.sigmobile.org/mobihoc/2016/">MobiHoc</a>, <a href="http://infocom2016.ieee-infocom.org/">INFOCOM</a> - 2016<br/>
                         <a href="http://sensys.acm.org/2015/">SenSys</a>, <a href="http://icdcs-2015.cse.ohio-state.edu/">ICDCS</a>, <a href="http://icc2015.ieee-icc.org/">ICC</a>, <a href="http://infocom2015.ieee-infocom.org/">INFOCOM</a> - 2015<br/>
                         <a href="http://www.iccve.org/2014/">ICCVE</a>, <a href="http://www.milcom.org/2014/">MILCOM</a>, <a href="http://secon2014.ieee-secon.org/">SECON</a> - 2014<br/>
                         <a href="http://icdm2013.rutgers.edu">ICDM</a>, <a href="http://www.mnnit.ac.in/iccct2013">ICCCT</a> - 2013<br/>
                         <a href="http://www.ubicomp.org/ubicomp2012">UbiComp</a> - 2012
                     </p>
-                    <p><strong>Journal Reviewer</strong>:<br/>
+                    <p><lightem>Journal Reviewer</lightem>:<br/>
                         <a href="http://tosn.acm.org/">ACM Transactions on Sensor Networks (TOSN)</a> - 2016<br/>
                         <a href="http://tcps.acm.org/">ACM Transactions on Cyber-Physical Systems (TCPS)</a> - 2016<br/>
                         <a href="http://www.springer.com/computer/journal/11714">Frontiers of Information Technology &amp; Electronic Engineering</a> - 2016<br/>
@@ -144,32 +155,32 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="#">Efficient 3G Budget Utilization in Mobile Sensing Applications</a></em><br/>
-                            Chao Xu, <strong>Shaohan Hu</strong>, Zheng Wei, Tarek F. Abdelzaher, Pan Hui, Zhiheng Xie, Hengchang Liu, John Stankovic<br/>
+                            Chao Xu, <lightem>Shaohan Hu</lightem>, Zheng Wei, Tarek F. Abdelzaher, Pan Hui, Zhiheng Xie, Hengchang Liu, John Stankovic<br/>
                             <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>, Accepted in 2016.
                             </li>
                             <li class="list-group-item">
                             <em><a href=#>An Experimental Evaluation of Datacenter Workloads On Low-Power Embedded Micro Servers</a></em><br/>
-                            Yiran Zhao, Shen Li, <strong>Shaohan Hu</strong>, Hongwei Wang, Shuochao Yao, Huajie Shao, Tarek Abdelzaher<br/>
+                            Yiran Zhao, Shen Li, <lightem>Shaohan Hu</lightem>, Hongwei Wang, Shuochao Yao, Huajie Shao, Tarek Abdelzaher<br/>
                             <a href="http://vldb2016.persistent.com/">The 42nd International Conference on Very Large Data Bases (VLDB 2016)</a>, New Delhi, India, September 5-9, 2016.
                             </li>
                             <li class="list-group-item">
                             <em><a href=#>Cognitive Models of Prediction as Decision Aids</a></em><br/>
-                            Christian Lebiere, Don Morrison, Tarek Abdelzaher, <strong>Shaohan Hu</strong>, Cleotilde Gonzalez, Norbou Buchler, Vladislav D. Veksler<br/>
+                            Christian Lebiere, Don Morrison, Tarek Abdelzaher, <lightem>Shaohan Hu</lightem>, Cleotilde Gonzalez, Norbou Buchler, Vladislav D. Veksler<br/>
                             <a href="http://vldb2016.persistent.com/">The 14th International Conference on Cognitive Modeling (ICCM 2016)</a>, College Park, PA USA, August 4-6, 2016.
                             </li>
                             <li class="list-group-item">
                             <em><a href=#>On Source Dependency Models for Reliable Social Sensing: Algorithms and Fundamental Error Bound</a></em><br/>
-                            Shuochao Yao, <strong>Shaohan Hu</strong>, Shen Li, Yiran Zhao, Lu Su, Lance Kaplan, Aylin Yener, Tarek F. Abdelzaher<br/>
+                            Shuochao Yao, <lightem>Shaohan Hu</lightem>, Shen Li, Yiran Zhao, Lu Su, Lance Kaplan, Aylin Yener, Tarek F. Abdelzaher<br/>
                             <a href="http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/">The 36th IEEE International Conference on Distributed Computing Systems (ICDCS 2016)</a>, Nara, Japan, June 27-30, 2016.
                             </li>
                             <li class="list-group-item">
                             <em><a href=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7460719>Recursive Ground Truth Estimator for Social Data Streams</a></em><br/>
-                            Shuochao Yao, Md Tanvir Amin, Lu Su, <strong>Shaohan Hu</strong>, Shen Li, Shiguang Wang, Yiran Zhao, Tarek Abdelzaher, Lance Kaplan, Charu Aggarwal, Aylin Yener<br/>
+                            Shuochao Yao, Md Tanvir Amin, Lu Su, <lightem>Shaohan Hu</lightem>, Shen Li, Shiguang Wang, Yiran Zhao, Tarek Abdelzaher, Lance Kaplan, Charu Aggarwal, Aylin Yener<br/>
                             <a href="http://ipsn.acm.org/2016/">The 15th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2016)</a>, Vienna, Austria, April 11-14, 2016. [<a href="pdf/yao2016ipsn.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7084108">Experiences with GreenGPS -- Fuel-Efficient Navigation using Participatory Sensing</a></em><br/>
-                            Fatemeh Saremi, Omid Fatemieh, Hossein Ahmadi, Hongyan Wang, Tarek Abdelzaher, Raghu Ganti, Hengchang Liu, <strong>Shaohan Hu</strong>, Shen Li, and Lu Su<br/>
+                            Fatemeh Saremi, Omid Fatemieh, Hossein Ahmadi, Hongyan Wang, Tarek Abdelzaher, Raghu Ganti, Hengchang Liu, <lightem>Shaohan Hu</lightem>, Shen Li, and Lu Su<br/>
                             <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>, Vol. 15, No. 3, March 2016. [<a href="pdf/saremi2016tmc.pdf">pdf</a>]
                             </li>
                         </ul>
@@ -182,52 +193,52 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7337442">Participatory Sensing Meets Opportunistic Sharing: Automatic Phone-to-Phone Communication in Vehicles</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Xiaoshan Sun, Lu Su, Tarek F. Abdelzaher, Pan Hui, Wei Zheng, Hengchang Liu, John Stankovic<br/>
+                            <lightem>Shaohan Hu</lightem>, Xiaoshan Sun, Lu Su, Tarek F. Abdelzaher, Pan Hui, Wei Zheng, Hengchang Liu, John Stankovic<br/>
                             <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>, Accepted in 2015. [<a href="pdf/hu2015tmc.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7383576">Data Acquisition for Real-time Decision-making under Freshness Constraints</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Shuochao Yao, Haiming Jin, Yiran Zhao, Yitao Hu, Xiaochen Liu, Nooreddin Naghibolhosseini, Shen Li, Akash Kapoor, William Dron, Lu Su, Amotz Bar-Noy, Pedro Szekely, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Shuochao Yao, Haiming Jin, Yiran Zhao, Yitao Hu, Xiaochen Liu, Nooreddin Naghibolhosseini, Shen Li, Akash Kapoor, William Dron, Lu Su, Amotz Bar-Noy, Pedro Szekely, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
                             <a href="http://2015.rtss.org/">The 36th IEEE Real-Time Systems Symposium (RTSS 2015)</a>, San Antonio, TX USA, December 1-4, 2015. [<a href="pdf/hu2015rtss.pdf">pdf</a>][<a href="slides/rtss2015-freshness.pdf">slides</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://dl.acm.org/citation.cfm?id=2804287">Experiences with eNav: A Low-power Vehicular Navigation System</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
                             <a href="http://ubicomp.org/ubicomp2015/">The ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2015)</a>, Osaka, Japan, September 7-11, 2015. [<a href="pdf/hu2015ubicomp.pdf">pdf</a>][<a href="slides/ubicomp2015-enav.pdf">slides</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://link.springer.com/article/10.1007%2Fs11241-015-9238-8">Reliable Social Sensing with Physical Constraints: Analytic Bounds and Performance Evaluation</a></em><br/>
-                            Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
+                            Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <lightem>Shaohan Hu</lightem>, Hengchang Liu<br/>
                             <a href="http://link.springer.com/journal/11241">Journal of Real-Time Systems (JRTS)</a>, August 2015. [<a href="pdf/wang2015jrts.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.usenix.org/system/files/conference/atc15/atc15-paper-li-shen.pdf">Pyro: A Spatial-Temporal Big-Data Storage System for Dynamic Workload Hotspots</a></em><br/>
-                            Shen Li, <strong>Shaohan Hu</strong>, Raghu Ganti, Mudhakar Srivatsa, Tarek Abdelzaher<br/>
+                            Shen Li, <lightem>Shaohan Hu</lightem>, Raghu Ganti, Mudhakar Srivatsa, Tarek Abdelzaher<br/>
                             <a href="https://www.usenix.org/conference/atc15">USENIX Annual Technical Conference (USENIX ATC 2015)</a>, Santa Clara, CA USA, July 8-10, 2015. [<a href="pdf/li2015atc.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://dl.acm.org/citation.cfm?id=2770876">SmartRoad: Smartphone-based Crowd Sensing for Traffic Regulator Detection and Identification</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek F. Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek F. Abdelzaher<br/>
                             <a href="http://tosn.acm.org/">ACM Transactions on Sensor Networks (ACM TOSN)</a>, Vol. 11, Issue 4, No. 55, July 2015. [<a href="pdf/hu2015tosn.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7165037">On Exploiting Logical Dependencies for Minimizing Additive Cost Metrics in Resource-Limited Crowdsensing</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Shen Li, Shuochao Yao, Lu Su, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Shen Li, Shuochao Yao, Lu Su, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
                             <a href="http://www.dcoss.org/">The 11th IEEE International Conference on Distributed Computing in Sensor Systems (DCOSS 2015)</a>, Fortaleza, Brazil, June 10-12, 2015. [<a href="pdf/hu2015dcoss.pdf">pdf</a>][<a href="slides/dcoss2015-mincost.pdf">slides</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://dl.acm.org/citation.cfm?id=2737114">Scalable Social Sensing of Interdependent Phenomena</a></em><br/>
-                            Shiguang Wang, Lu Su, Shen Li, <strong>Shaohan Hu</strong>, Tanvir Amin, Hongwei Wang, Shuochao Yao, Lance Kaplan, Tarek Abdelzaher<br/>
+                            Shiguang Wang, Lu Su, Shen Li, <lightem>Shaohan Hu</lightem>, Tanvir Amin, Hongwei Wang, Shuochao Yao, Lance Kaplan, Tarek Abdelzaher<br/>
                             <a href="http://ipsn.acm.org/2015/">The 14th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2015)</a>, Seattle, WA USA, April 13-17, 2015. [<a href="pdf/wang2015ipsn.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7108416">The Packing Server for Real-time Scheduling of MapReduce Workflows</a></em><br/>
-                            Shen Li, <strong>Shaohan Hu</strong>, Tarek Abdelzaher<br/>
+                            Shen Li, <lightem>Shaohan Hu</lightem>, Tarek Abdelzaher<br/>
                             <a href="http://2015.rtas.org/">The 21st IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2015)</a>, Seattle, WA USA, April 13-16, 2015. [<a href="pdf/li2015rtas.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://dl.acm.org/citation.cfm?id=2735960.2735965">Exploiting Structured Human Interactions to Enhance Estimation Accuracy in Cyber-physical Systems</a></em><br/>
-                            Yunlong Gao, <strong>Shaohan Hu</strong>, Renato Mancuso, Hongwei Wang, Minje Kim, PoLiang Wu, Lu Su, Lui Sha, Tarek Abdelzaher<br/>
+                            Yunlong Gao, <lightem>Shaohan Hu</lightem>, Renato Mancuso, Hongwei Wang, Minje Kim, PoLiang Wu, Lu Su, Lui Sha, Tarek Abdelzaher<br/>
                             <a href="http://iccps.acm.org/2015/">The 6th International Conference on Cyber-Physical Systems (ICCPS 2015)</a>, Seattle, WA USA, April 14-16, 2015. [<a href="pdf/gao2015iccps.pdf">pdf</a>][<a href="slides/iccps2015-workflow.pdf">slides</a>]
                             </li>
                         </ul>
@@ -240,47 +251,47 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7010369">Generalized Decision Aggregation in Distributed Sensing Systems</a></em><br/>
-                            Lu Su, Qi Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Jing Gao, Hengchang Liu, Tarek Abdelzaher, Jiawei Han, Xue Liu, Yan Gao, Lance Kaplan<br/>
+                            Lu Su, Qi Li, <lightem>Shaohan Hu</lightem>, Shiguang Wang, Jing Gao, Hengchang Liu, Tarek Abdelzaher, Jiawei Han, Xue Liu, Yan Gao, Lance Kaplan<br/>
                             <a href="http://2014.rtss.org/">The 35th IEEE Real-Time Systems Symposium (RTSS 2014)</a>, Rome, Italy, December 2-5, 2014. [<a href="pdf/su2014rtss.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6888886">WOHA: Deadline-Aware Map-Reduce Workflow Scheduling Framework over Hadoop Cluster</a></em><br/>
-                            Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Lu Su, Tarek Abdelzaher, Indranil Gupta, Richard Pace<br/>
+                            Shen Li, <lightem>Shaohan Hu</lightem>, Shiguang Wang, Lu Su, Tarek Abdelzaher, Indranil Gupta, Richard Pace<br/>
                             <a href="http://lsd.ls.fi.upm.es/icdcs2014">The 34th International Conference on Distributed Computing Systems (ICDCS 2014)</a>, Madrid, Spain, June 30-July 3, 2014. [<a href="pdf/li2014icdcs.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.usenix.org/system/files/conference/icac14/icac14-paper-li_shen.pdf">WattValet: Heterogenous Energy Storage Management in Data Centers for Improved Power Capping</a></em><br/>
-                            Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Siyu Gu, Chenji Pan, Tarek F. Abdelzaher<br/>
+                            Shen Li, <lightem>Shaohan Hu</lightem>, Shiguang Wang, Siyu Gu, Chenji Pan, Tarek F. Abdelzaher<br/>
                             <a href="https://www.usenix.org/conference/icac14">The 11th International Conference on Autonomic Computing (ICAC 2014)</a>, Philadelphia, PA USA, June 18-20, 2014. [<a href="pdf/li2014icac.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6846153">Exploitation Data Extrapolation in Social Sensing for Disaster Response</a></em><br/>
-                            Siyu Gu, Chenji Pan, Hengchang Liu, Shen Li, <strong>Shaohan Hu</strong>, Lu Su, Shiguang Wang, Dong Wang, Md Tanvir A Amin, Ramesh Govindan, Charu Aggarwal, Raghu Ganti, Mudhakar Srivatsa, Amotz Bar-Noy, Peter Terlecky, Tarek Abdelzaher<br/>
+                            Siyu Gu, Chenji Pan, Hengchang Liu, Shen Li, <lightem>Shaohan Hu</lightem>, Lu Su, Shiguang Wang, Dong Wang, Md Tanvir A Amin, Ramesh Govindan, Charu Aggarwal, Raghu Ganti, Mudhakar Srivatsa, Amotz Bar-Noy, Peter Terlecky, Tarek Abdelzaher<br/>
                             <a href="http://www.dcoss.org/dcoss14/">The 10th IEEE International Conference on Distributed Computing in Sensor Systems (DCOSS 2014)</a>, Marina Del Rey, CA USA, May 26-28, 2014. [<a href="pdf/gu2014dcoss.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.ideals.illinois.edu/handle/2142/49113">Reliable Social Sensing with Physical Dependencies: Analytic Bounds and Performance Evaluation</a></em><br/>
-                            Dong Wang, Tarek F. Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
+                            Dong Wang, Tarek F. Abdelzaher, Lance Kaplan, Raghu Ganti, <lightem>Shaohan Hu</lightem>, Hengchang Liu<br/>
                             <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>, May 15, 2014.
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6848113">Towards Automatic Phone-to-Phone Communication for Vehicular Networking Applications</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher, Pan Hui, Wei Zheng, Zhiheng Xie, John Stankovic<br/>
+                            <lightem>Shaohan Hu</lightem>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher, Pan Hui, Wei Zheng, Zhiheng Xie, John Stankovic<br/>
                             <a href="http://infocom2014.ieee-infocom.org">The 33rd IEEE International Conference on Computer Communications (INFOCOM 2014)</a>, Toronto, Canada, April 27-May 2, 2014. [<a href="pdf/hu2014infocom.pdf">pdf</a>][<a href="slides/infocom2014-phone2phone.pdf">slides</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.ideals.illinois.edu/handle/2142/48917">eNav: Smartphone-based Energy Efficient Location Sensing for Low-Power Vehicular Navigation</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
                             <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>, April 25, 2014.
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://dl.acm.org/citation.cfm?id=2602374">Poster Abstract: eNav -- a Smartphone-based Energy Efficient Vehicular Navigation System</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Al Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
-                            <a href="http://ipsn.acm.org/2014/">The 13th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2014)</a>, Berlin, Germany, April 15-17, 2014. [<a href="pdf/hu2014ipsn.pdf">pdf</a>] (<strong>Best poster award</strong>)
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Al Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
+                            <a href="http://ipsn.acm.org/2014/">The 13th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2014)</a>, Berlin, Germany, April 15-17, 2014. [<a href="pdf/hu2014ipsn.pdf">pdf</a>] (<lightem>Best poster award</lightem>)
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://link.springer.com/article/10.1007/s00779-013-0655-1">Community Similarity Networks</a></em><br/>
-                            Nicholas D. Lane, Ye Xu, Hong Lu, <strong>Shaohan Hu</strong>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
+                            Nicholas D. Lane, Ye Xu, Hong Lu, <lightem>Shaohan Hu</lightem>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
                             <a href="http://www.springer.com/computer/hci/journal/779">ACM/Springer Journal of Personal and Ubiquitous Computing (PUC)</a>, Special Issue on Cross-Community Mining, February, 2014. [<a href="pdf/lane2014puc.pdf">pdf</a>]
                             </li>
                         </ul>
@@ -293,47 +304,47 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&amp;arnumber=6728876">Exploitation of Physical Constraints for Reliable Social Sensing</a></em><br/>
-                            Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
+                            Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <lightem>Shaohan Hu</lightem>, Hengchang Liu<br/>
                             <a href="http://2013.ieee-rtss.org/">The 34th IEEE Real-Time Systems Symposium (RTSS 2013)</a>, Vancouver, Canada, December 4-6, 2013. [<a href="pdf/wang2013rtss.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://portal.acm.org/citation.cfm?id=2517431">Demo Abstract: Extrapolation from Participatory Sensing Data</a></em><br/>
-                            Hengchang Liu, Siyu Gu, Chenji Pan, Wei Zheng, Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Dong Wang, Tanvir Amin, Lu Su, Zhiheng Xie, Ramesh Govindan, Charu Aggarwal, Amotz Barnoy, Tarek Abdelzaher<br/>
+                            Hengchang Liu, Siyu Gu, Chenji Pan, Wei Zheng, Shen Li, <lightem>Shaohan Hu</lightem>, Shiguang Wang, Dong Wang, Tanvir Amin, Lu Su, Zhiheng Xie, Ramesh Govindan, Charu Aggarwal, Amotz Barnoy, Tarek Abdelzaher<br/>
                             <a href="http://sensys.acm.org/2013/">The 11th ACM Conference on Embedded Networked Sensor Systems (SenSys 2013)</a>, Rome, Italy, November 11-15, 2013. [<a href="pdf/liu2013sensys.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.ideals.illinois.edu/handle/2142/45699">SmartRoad: A Mobile Phone Based Crowd-Sourced Road Sensing System</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher<br/>
                             <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>, August 30, 2013.
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6614152">MINERVA: Information-Centric Programming for Social Sensing</a></em><br/>
-                            Shiguang Wang, <strong>Shaohan Hu</strong>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
+                            Shiguang Wang, <lightem>Shaohan Hu</lightem>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
                             <a href="http://www.icccn.org/icccn13/">The 22nd International Conference on Computer Communications and Networks (ICCCN 2013)</a>, Nassau, Bahamas July 30-August 2, 2013. [<a href="pdf/wang2013icccn.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6681577">Proteus: Power Proportional Memory Cache Cluster in Data Centers</a></em><br/>
-                            Shen Li, Shiguang Wang, Fan Yang, <strong>Shaohan Hu</strong>, Fatemeh Saremi, Tarek Abdelzaher<br/>
+                            Shen Li, Shiguang Wang, Fan Yang, <lightem>Shaohan Hu</lightem>, Fatemeh Saremi, Tarek Abdelzaher<br/>
                             <a href="http://www.temple.edu/cis/icdcs2013/">The 33rd International Conference on Distributed Computing Systems (ICDCS 2013)</a>, Philadelphia, PA USA, July 8-11, 2013. [<a href="pdf/li2013icdcs.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.ideals.illinois.edu/handle/2142/43856">SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
                             <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>, April 18, 2013.
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6566935">Efficient 3G Budget Utilization in Mobile Participatory Sensing Applications</a></em><br/>
-                            Hengchang Liu, <strong>Shaohan Hu</strong>, Wei Zheng, Zhiheng Xie, Shiguang Wang, Pan Hui, and Tarek F. Abdelzaher<br/>
+                            Hengchang Liu, <lightem>Shaohan Hu</lightem>, Wei Zheng, Zhiheng Xie, Shiguang Wang, Pan Hui, and Tarek F. Abdelzaher<br/>
                             <a href="http://infocom2013.ieee-infocom.org/">The 32nd IEEE International Conference on Computer Communications (INFOCOM 2013)</a>, Turin, Italy, April 14-19, 2013. [<a href="pdf/liu2013infocom.pdf">pdf</a>][<a href="slides/infocom2013-3Gbudget.pdf">slides</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://portal.acm.org/citation.cfm?id=2461433">Poster Abstract: SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System</a></em><br/>
-                            <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
+                            <lightem>Shaohan Hu</lightem>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
                             <a href="http://ipsn.acm.org/2013/">The 12th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2013)</a>, Philadelphia, PA USA, April 8-11, 2013. [<a href="pdf/hu2013ipsn.pdf">pdf</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="https://www.ideals.illinois.edu/handle/2142/42511">MINERVA: Information-Centric Programming for Social Sensing</a></em><br/>
-                            Shiguang Wang, <strong>Shaohan Hu</strong>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
+                            Shiguang Wang, <lightem>Shaohan Hu</lightem>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
                             <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>, January 15, 2013
                             </li>
                         </ul>
@@ -346,7 +357,7 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6424815">Quality of Information based Data Selection and Transmission in Wireless Sensor Networks</a></em><br/>
-                            Lu Su, <strong>Shaohan Hu</strong>, Shen Li, Feng Liang, Jing Gao, Tarek F. Abdelzaher, and Jiawei Han<br/>
+                            Lu Su, <lightem>Shaohan Hu</lightem>, Shen Li, Feng Liang, Jing Gao, Tarek F. Abdelzaher, and Jiawei Han<br/>
                             <a href="http://sites.ieee.org/rtss2012/">The 33rd IEEE Real-Time Systems Symposium (RTSS 2012)</a>, San Juan, Puerto Rico, December 4-7, 2012. [<a href="pdf/su2012rtss.pdf">pdf</a>]
                             </li>
                         </ul>
@@ -359,8 +370,8 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://portal.acm.org/citation.cfm?id=2030160">Enabling Large-scale Human Activity Inference on Smartphones using Community Similarity Networks (CSN)</a></em><br/>
-                            Nicholas D. Lane, Ye Xu, Hong Lu, <strong>Shaohan Hu</strong>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
-                            <a href="http://www.ubicomp.org/ubicomp2011/">The 13th International Conference on Ubiquitous Computing (UbiComp 2011)</a>, Beijing, China, September 17-21, 2011. [<a href="pdf/lane2011ubicomp.pdf">pdf</a>] (<strong>Best paper nominee</strong>)
+                            Nicholas D. Lane, Ye Xu, Hong Lu, <lightem>Shaohan Hu</lightem>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
+                            <a href="http://www.ubicomp.org/ubicomp2011/">The 13th International Conference on Ubiquitous Computing (UbiComp 2011)</a>, Beijing, China, September 17-21, 2011. [<a href="pdf/lane2011ubicomp.pdf">pdf</a>] (<lightem>Best paper nominee</lightem>)
                             </li>
                         </ul>
                     </div>
@@ -372,13 +383,13 @@
                         <ul class="list-group">
                             <li class="list-group-item">
                             <em><a href="http://portal.acm.org/citation.cfm?id=1851326">NeuroPhone: Brain-Mobile Phone Interface using a Wireless EEG Headset</a></em><br/>
-                            Andrew T. Campbell, Tanzeem Choudhury, <strong>Shaohan Hu</strong>, Hong Lu, Matthew K. Mukerjee, Mashfiqui Rabbi, and Rajeev D. S. Raizada<br/>
+                            Andrew T. Campbell, Tanzeem Choudhury, <lightem>Shaohan Hu</lightem>, Hong Lu, Matthew K. Mukerjee, Mashfiqui Rabbi, and Rajeev D. S. Raizada<br/>
                             <a href="http://conferences.sigcomm.org/sigcomm/2010/mhcfp.php">The 2nd ACM SIGCOMM Workshop on Networking, Systems, and Applications on Mobile Handhelds (MobiHeld 2010)</a>, New Delhi, India, August 30, 2010. [<a href="pdf/campbell2010mobiheld.pdf">pdf</a>][<a href="http://www.youtube.com/watch?v=tc82Z_yfEwc">demo</a>]
                             </li>
                             <li class="list-group-item">
                             <em><a href="http://www.springerlink.com/content/j41w758434321108/">Resource-bounded Information Extraction: Acquiring Missing Feature Values On Demand</a></em><br/>
-                            Pallika Kanani, Andrew McCallum and <strong>Shaohan Hu</strong><br/>
-                            <a href="http://www.iiit.ac.in/conferences/pakdd2010">The 14th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2010)</a>, Hyderabad, India. June 21-24, 2010. [<a href="pdf/kanani2010pakdd.pdf">pdf</a>] (<strong>Best student paper runner-up award</strong>)
+                            Pallika Kanani, Andrew McCallum and <lightem>Shaohan Hu</lightem><br/>
+                            <a href="http://www.iiit.ac.in/conferences/pakdd2010">The 14th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2010)</a>, Hyderabad, India. June 21-24, 2010. [<a href="pdf/kanani2010pakdd.pdf">pdf</a>] (<lightem>Best student paper runner-up award</lightem>)
                             </li>
                         </ul>
                     </div>
@@ -418,7 +429,10 @@
             </div>
         </div>
         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
         <script type="text/javascript" src="js/html5shiv.min.js"></script>
         <script type="text/javascript" src="js/respond.min.js"></script>
         <script type="text/javascript" src="js/easing.js"></script>
