@@ -41,3 +41,14 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+$('#links-toggle').on('shown.bs.dropdown', function () {
+    $(this).find('a').find('span').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
+})
+$('#links-toggle').on('hidden.bs.dropdown', function () {
+    $(this).find('a').find('span').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
+})
+// $('#links-toggle').click(function(){
+// 		alert();
+//     $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
+// });
