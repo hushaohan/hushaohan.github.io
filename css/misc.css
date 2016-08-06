@@ -115,3 +115,11 @@ body {
     color: #fff;
     top: 5px;
 }
+
+ul.dropdown-menu {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dropdown-menu>li>a {
+    color: #9d9d9d;
+}
