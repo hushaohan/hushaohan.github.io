@@ -1,0 +1,71 @@
+\documentclass[margin,line]{res}
+
+% \usepackage{url}
+\usepackage{hyperref}
+
+\urlstyle{same}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+\name{\vspace{-.66cm} \huge{Shaohan Hu} \vspace*{.11in}}
+{
+\hfill
+\begin{minipage}[t]{12cm}
+\flushright
+Last Updated on \today
+\end{minipage}
+}
+
+\begin{resume}
+
+\input{contact}
+\vspace{0.16cm}
+\input{interests}
+\vspace{0.16cm}
+\input{education}
+\vspace{0.16cm}
+\input{work}
+\vspace{0.16cm}
+\input{services}
+\vspace{0.16cm}
+\input{publications}
+\vspace{0.16cm}
+% \input{research}
+% \vspace{0.16cm}
+\input{teaching}
+%\input{talks}
+%\input{courses}
+\vspace{0.16cm}
+\input{press}
+\vspace{0.16cm}
+\input{awards}
+\vspace{0.16cm}
+% \input{skills}
+% \vspace{0.2cm}
+\input{authorization}
+
+\newpage
+% \vspace{0.6cm}
+
+% \input{references}
+
+\end{resume}
+\end{document}
