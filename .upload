@@ -1,6 +1,4 @@
 #! /usr/bin/env bash
 
 webhost="webhost.engr.illinois.edu"
-
 rsync -truvz ./* shu17@$webhost:~/public_html/
-rsync -truvz ../../cv/my/cv.pdf shu17@$webhost:~/public_html/
