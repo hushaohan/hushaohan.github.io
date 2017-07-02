@@ -40,14 +40,14 @@ h1, h2, h3, h4, .cbtn {
     box-shadow: 0 0px 36px 1px #ccc inset;
 }
 
-.effect6 {
+.light-shadow {
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.effect6:before, .effect6:after {
+.light-shadow:before, .light-shadow:after {
     content:"";
     position:absolute;
     z-index:-1;
