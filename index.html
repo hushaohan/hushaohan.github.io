@@ -42,7 +42,7 @@
                         <li><a href="#publications">Publications</a></li>
                         <li><a href="#press">Press</a></li>
                         <li><a href="cv/cv.pdf">CV</a></li>
-                        <li id="links-toggle" class="dropdown">
+                        <li id="links-toggle" class="dropdown transition">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span class="fa fa-caret-right"></span>
                             </a>
@@ -57,12 +57,12 @@
                 <!--/.nav-collapse -->
             </div>
         </div>
-        <div id="about" class="jumbotron parallax-bg">
+        <div id="about" class="jumbotron about-parallax-bg">
             <div class="container transition" id="about-pane">
-                <div id="picture" class="col col-md-5 col-lg-4 pull-right well">
+                <div id="picture" class="col col-md-5 col-lg-4 pull-right boxshadow">
                     <img id="id-picture" style="display:none;" src="img/id.jpg" rel="zoom" class="zoomable img-responsive light-shadow" />
                     <br/>
-                    <div class="btn-group pull-right">
+                    <div id="misc-btns" class="btn-group pull-right boxshadow">
                         <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="CV" href="cv/cv.pdf"><i class="fa fa-file-text" aria-hidden="true"></i></a>
                         <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Work" href="http://researcher.ibm.com/researcher/view.php?person=ibm-Shaohan.Hu"><i class="fa fa-briefcase" aria-hidden="true"></i></a>
                         <a style="width:42px" type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Google Scholar" href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
@@ -78,7 +78,8 @@
                 </div>
             </div>
         </div>
-        <div class="container transition">
+        
+        <div id="experiences" class="container transition">
             <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div id="work"      class="col-xs-12 col-sm-12 col-md-12 col-lg-11">
                     <h2>Work</h2>
@@ -158,6 +159,10 @@
                     </p>
                 </div>
             </div>
+        </div>
+        
+        <div id="before-pub" class="jumbotron before-pub-parallax-bg">
+            <a href="#publications" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
         </div>
         <div class="container">
             <div class="col col-xs-12">
@@ -541,6 +546,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
             <div class="col col-xs-12">
                 <div id="press" class="col col-xs-12">
@@ -554,25 +560,26 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="col col-xs-12">
-                <footer class="col col-xs-12 text-center">
-                    <hr/>
-                    <p>
-                        <h4><small>&copy;
-                            <script language="javascript" type="text/javascript">
-                                var today = new Date()
-                                var year = today.getYear()
-                                if (year < 1900) {
-                                    year = year + 1900;
-                                }
-                                document.write(year)
-                            </script> Shaohan Hu
-                        </small></h4>
-                    </p>
-                </footer>
-            </div>
+        
+        <div id="copyright-pane" class="copyright-parallax-bg">
+            <footer id="copyright" class="col col-xs-12 text-center">
+                <hr/>
+                <p>
+                    <h4><small>&copy;
+                        <script language="javascript" type="text/javascript">
+                            var today = new Date()
+                            var year = today.getYear()
+                            if (year < 1900) {
+                                year = year + 1900;
+                            }
+                            document.write(year)
+                        </script> Shaohan Hu
+                    </small></h4>
+                </p>
+            </footer>
         </div>
+
+        
         <script type="text/javascript" src="js/jquery.min.js"></script>
 
         <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->

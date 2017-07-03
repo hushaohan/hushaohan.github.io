@@ -1,6 +1,6 @@
 body {
     padding-top: 50px;
-    padding-bottom: 30px;
+/*    padding-bottom: 30px;*/
 }
 
 a {
@@ -21,15 +21,15 @@ a:hover {
     border-radius: 2px;
 }
 
-h1, h2, h3, h4, .cbtn {
+h2, h3, #publications h4, #press h4, .cbtn {
     text-shadow: #ccc 0.1em 0.1em 0.2em;
 }
 
-.transition {
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -o-transition: all .6s ease;
-    transition: all .6s ease;
+a, .transition {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .boxshadow {
@@ -124,33 +124,99 @@ ul.dropdown-menu {
     color: #9d9d9d;
 }
 
-.parallax-bg {
+.about-parallax-bg {
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+/*    min-height: 500px;*/
 }
 
 #about-pane {
-    padding: 36px;
+    padding: 22px;
     border-radius: 8px;
-    background-color: rgba(255,255,255,0.66);
+    background-color: rgba(0,0,0,0.22);
 }
 
 #picture {
+    padding: 22px;
     border-radius: 6px;
-    background-color: rgba(255,255,255,0.66);
+    background-color: rgba(255,255,255,0.22);
 }
 
 #mini-bio {
-   font-family:
-/*                "HelveticaNeue-Ultralight",*/
-                "HelveticaNeue-Light",
-                "Helvetica Neue",
-                Helvetica,
-                Arial,
-                "Lucida Grande",
-                sans-serif
-                ;
+    color: rgba(255,255,255,0.77);
+}
+
+#mini-bio a {
+    color: lightblue;
+    opacity: 0.77;
+}
+
+#mini-bio a:visited {
+    color: aqua;
+    opacity: 0.77;
+}
+
+/* mouse over link */
+#mini-bio a:hover {
+    color: purple;
+    background-color: #ccc;
+    text-decoration: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#misc-btns {
+    opacity: 0.618;
+}
+
+#experiences, #publications, #press {
+    padding-bottom: 36px;
+}
+
+.before-pub-parallax-bg {
+    background-image: url("../img/milano.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 611px;
+}
+
+#before-pub {
+    color: white;
+    text-align: center;
+}
+
+#before-pub a {
+    color: lightgray;
+}
+
+/* mouse over link */
+#before-pub a:hover {
+    color: white;
+    background-color: #ccc;
+    text-decoration: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.copyright-parallax-bg {
+    background-image: url("../img/fortaleza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 611px;
+    position: relative;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+/*    left: 0;*/
 }
