@@ -79,7 +79,7 @@ body {
     bottom: 20px;
     right: 20px;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     width: 50px;
     height: 50px;
     display: block;
@@ -109,7 +109,7 @@ body {
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.88);
 }
 #return-to-top:hover i {
     color: #fff;
@@ -122,4 +122,35 @@ ul.dropdown-menu {
 
 .dropdown-menu>li>a {
     color: #9d9d9d;
+}
+
+.parallax-bg {
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-pane {
+    padding: 36px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.66);
+}
+
+#picture {
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.66);
+}
+
+#mini-bio {
+   font-family:
+/*                "HelveticaNeue-Ultralight",*/
+                "HelveticaNeue-Light",
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif
+                ;
 }
