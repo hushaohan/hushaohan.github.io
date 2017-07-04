@@ -20,9 +20,11 @@
 
         <link rel="shortcut bookmark icon" href="img/favicon.ico" />
     </head>
-    <body id="home">
+    <body id="home" data-spy="scroll" data-target="#main-nav" data-offset="66">
         <a href="javascript:" id="return-to-top" class="transition"><i class="fa fa-chevron-up transition"></i></a>
-        <nav class="navbar navbar-inverse navbar-fixed-top boxshadow transition" role="navigation">
+
+        <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top boxshadow transition" role="navigation">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,14 +35,14 @@
                 <a class="active navbar-brand" href="#home"><b>Shaohan Hu</b></a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#press">Press</a></li>
-                    <li><a href="cv/cv.pdf">CV</a></li>
+
                     <li id="links-toggle" class="dropdown transition">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <span class="fa fa-caret-right"></span>
@@ -52,9 +54,12 @@
                             <li><a href="mailto:shaohan.hu@ibm.com"><i style="width:24px" class="fa fa-envelope"></i>Email</a></li>
                         </ul>
                     </li>
+
                 </ul>
             </div>
+            </div>
         </nav>
+
         <div id="about" class="jumbotron about-parallax-bg col col-lg-12 col-md-12 col-sm-12">
             <div class="container transition" id="about-pane">
                 <div id="picture" class="col col-md-5 col-lg-4 pull-right">
@@ -71,7 +76,7 @@
                 <div id="mini-bio" class="col col-md-6 col-lg-7 pull-left">
                     <h1>About me</h1>
                     <p>
-                        I <a href="http://researcher.ibm.com/researcher/view.php?person=ibm-Shaohan.Hu">work</a> at <a href="http://research.ibm.com/labs/watson/index.shtml">IBM Thomas J. Watson Research Center</a> as a Research Staff Member. I received my Ph.D. in <a href="http://www.cs.illinois.edu">Computer Science</a> from <a href="http://www.illinois.edu">UIUC</a>. My research interests include cyber-physical systems, mobile ubiquitous computing, crowd and social sensing, big data analytics, cloud computing, and quantum computing.
+                        I <a href="http://researcher.ibm.com/researcher/view.php?person=ibm-Shaohan.Hu">work</a> at <a href="http://research.ibm.com/labs/watson/index.shtml">IBM Thomas J. Watson Research Center</a> as a Research Staff Member. I received my Ph.D. in <a href="http://www.cs.illinois.edu">Computer Science</a> from <a href="http://www.illinois.edu">UIUC</a>. My research interests include cyber-physical systems, mobile ubiquitous computing, crowd and social sensing, big data analytics, cloud computing, and quantum computing. You can grab my <a href="cv/cv.pdf">cv here</a>.
                     </p>
                 </div>
             </div>
@@ -559,6 +564,7 @@
             </div>
         </div>
 
+        
         <div id="copyright-pane" class="copyright-parallax-bg">
             <footer id="copyright" class="col col-xs-12 text-center">
                 <hr/>
