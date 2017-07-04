@@ -208,19 +208,18 @@ ul.dropdown-menu {
 }
 
 #before-pub {
-    color: white;
     text-align: center;
 }
 
 #before-pub a {
-    color: lightgray;
+    color:gainsboro;
 }
 
 /* mouse over link */
 #before-pub a:hover {
     color: white;
     background-color: #ccc;
-    text-decoration: none;
+    text-decoration:none;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
