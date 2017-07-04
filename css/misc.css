@@ -1,5 +1,6 @@
 body {
     padding-top: 50px;
+/*    background-color: rgba(255,255,255,0.9);*/
 /*    padding-bottom: 30px;*/
 }
 
@@ -25,11 +26,18 @@ h2, h3, #publications h4, #press h4, .cbtn {
     text-shadow: #ccc 0.1em 0.1em 0.2em;
 }
 
-a, .transition {
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+a {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.transition {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .boxshadow {
@@ -88,11 +96,6 @@ body {
     -moz-border-radius: 35px;
     border-radius: 35px;
     display: none;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
     z-index: 11;
 }
 #return-to-top i {
@@ -102,11 +105,6 @@ body {
     left: 16px;
     top: 13px;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.88);
@@ -125,28 +123,51 @@ ul.dropdown-menu {
 }
 
 .about-parallax-bg {
+    padding-top: 50px;
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-/*    min-height: 500px;*/
+/*    min-height: 800px;*/
 }
 
 #about-pane {
     padding: 22px;
     border-radius: 8px;
-    background-color: rgba(0,0,0,0.22);
+    background-color: rgba(0,0,0,0.42);
 }
 
 #picture {
-    padding: 22px;
+    padding: 0px;
     border-radius: 6px;
-    background-color: rgba(255,255,255,0.22);
+    background-color: rgba(255,255,255,0);
 }
 
-#mini-bio {
+#mini-bio > h1 {
     color: rgba(255,255,255,0.77);
+    font-family:
+                "HelveticaNeue-Ultralight",
+                "HelveticaNeue-Light",
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif
+                ;
+}
+
+#mini-bio > p {
+    color: rgba(255,255,255,0.77);
+    font-family:
+/*                "HelveticaNeue-Ultralight",*/
+/*                "HelveticaNeue-Light",*/
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif
+                ;
 }
 
 #mini-bio a {
@@ -170,7 +191,7 @@ ul.dropdown-menu {
 }
 
 #misc-btns {
-    opacity: 0.618;
+    opacity: 0.66;
 }
 
 #experiences, #publications, #press {
@@ -211,7 +232,7 @@ ul.dropdown-menu {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 611px;
+    min-height: 1200px;
     position: relative;
 }
 
@@ -219,4 +240,21 @@ ul.dropdown-menu {
     position: absolute;
     bottom: 0;
 /*    left: 0;*/
+}
+
+nav a {
+    font-family:
+                "HelveticaNeue-Ultralight",
+                "HelveticaNeue-Light",
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: rgba(0,0,0,0.9);
+    color: #9d9d9d;
+
 }
