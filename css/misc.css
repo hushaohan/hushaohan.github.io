@@ -49,7 +49,7 @@ a:hover {
     border-radius: 2px;
 }
 
-h2, h3, #publications h4, #press h4, .cbtn {
+h2, h3, #publications h4, .cbtn {
     text-shadow: #ccc 0.1em 0.1em 0.2em;
 }
 
@@ -270,6 +270,14 @@ ul.dropdown-menu {
 
 /* for press news */
 
+.outer-press-container {
+    padding-top: 22px;
+}
+
+#press {
+    text-align: center;
+}
+
 .news-container {
     padding-bottom: 20px;
 }
@@ -291,12 +299,13 @@ ul.dropdown-menu {
 .news .img-figure {
 	position: relative;
     max-height: 168px;
+    min-width: 100%;
 }
 
 .news .img-figure img {
 	position: relative;	
-	overflow: hidden;
-	-webkit-transition: all 1s ease;
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;
 	-o-transition: all 1s ease;
