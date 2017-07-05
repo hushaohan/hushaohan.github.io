@@ -26,6 +26,11 @@ nav a {
     color: white;
 }
 
+/* this width is fixed s.t. its toggle won't move other nav bar links */
+#links-toggle-caret {
+    width: 10px;
+}
+
 a {
     color: darkslategray;
 }
@@ -249,18 +254,26 @@ ul.dropdown-menu {
     text-align: center;
 }
 
-#before-services a, #before-pub a, #before-press a {
+#before-services a, #before-pub a, #before-press a, #copyright-pane a {
     color:gainsboro;
 }
 
 /* mouse over link */
-#before-services a:hover, #before-pub a:hover, #before-press a:hover {
+#before-services a:hover, #before-pub a:hover, #before-press a:hover, #copyright-pane a:hover {
     color: white;
     background-color: #ccc;
     text-decoration:none;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
+}
+
+hr.custom {
+    width: 88%;
+    border: 0;
+    height: 1px;
+    background: white;
+    opacity: 0.22;
 }
 
 #copyright {

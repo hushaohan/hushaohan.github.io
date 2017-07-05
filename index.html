@@ -22,7 +22,9 @@
     </head>
     
     <body data-spy="scroll" data-target="#main-nav" data-offset="42">
-        <a href="javascript:" id="return-to-top" class="transition"><i class="fa fa-chevron-up transition"></i></a>
+        <a href="javascript:" id="return-to-top" class="transition">
+            <i class="fa fa-chevron-up transition"></i>
+        </a>
 
         <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top boxshadow transition" role="navigation">
             <div class="container">
@@ -46,7 +48,7 @@
 
                         <li id="links-toggle" class="dropdown transition">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="fa fa-caret-right"></span>
+                                <span id="links-toggle-caret" class="fa fa-caret-right"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="cv/cv.pdf"><i style="width:24px" class="fa fa-file-text"></i>CV</a></li>
@@ -165,16 +167,16 @@
         </div>
 
         <div id="before-services" class="jumbotron before-services-parallax-bg">
-            <a href="#services" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
+            <a href="#services" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
         <div id="services" class="container">
             <h2>Services</h2>
 
             <div id="tpc" class="contrainer col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="panel-body">
-                  <p class="list-group-item active">
+                <div class="panel">
+                  <strong class="list-group-item list-group-item-info">
                     Technicial Program Committee
-                  </p>
+                  </strong>
                   <a class="list-group-item" href="http://www.iaria.org/conferences2017/EMERGING17.html">
                     <span class="badge">2017</span>
                     EMERGING
@@ -199,10 +201,10 @@
             </div>
 
             <div id="conference-reviewer" class="contrainer col col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="panel-body">
-                  <p class="list-group-item active">
+                <div class="panel">
+                  <strong class="list-group-item list-group-item-info">
                     Conference Reviewer
-                  </p>
+                  </strong>
                   <p class="list-group-item">
                     <span class="badge">2017</span>
                     <a href="http://sensys.acm.org/2017/">SenSys</a>, <a href="http://ipsn.acm.org/2017/">IPSN</a>
@@ -231,10 +233,10 @@
             </div>
 
             <div id="journal-reviewer" class="contrainer col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="panel-body">
-                  <p class="list-group-item active">
+                <div class="panel">
+                  <strong class="list-group-item list-group-item-info">
                     Journal Reviewer
-                  </p>
+                  </strong>
                   <a class="list-group-item" href="https://www.computer.org/portal/web/tmc">
                     <span class="badge">2014-2017</span>
                     IEEE Transactions on Mobile Computing (TMC)
@@ -304,7 +306,7 @@
         </div>
 
         <div id="before-pub" class="jumbotron before-pub-parallax-bg">
-            <a href="#publications" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
+            <a href="#publications" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
         <div id="publications" class="container">
             <h2>Publications</h2>
@@ -686,7 +688,7 @@
         </div>
         
         <div id="before-press" class="jumbotron before-press-parallax-bg">
-            <a href="#press" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
+            <a href="#press" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
 
         <div id="press" class="container">
@@ -699,9 +701,14 @@
             </p>
         </div>
 
+
+        
         <div id="copyright-pane" class="before-copyright-parallax-bg">
+            <div class="container">
+                <a href="#copyright" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
+            </div>
             <footer id="copyright" class="col col-xs-12 text-center">
-                <hr/>
+                <hr class="custom"></hr>
                 <p>
                     <h4><small>&copy;
                         <script language="javascript" type="text/javascript">
