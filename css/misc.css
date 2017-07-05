@@ -1,8 +1,29 @@
 body {
-    position: relative;
-    padding-top: 50px;
-/*    background-color: rgba(255,255,255,0.9);*/
-/*    padding-bottom: 30px;*/
+   padding-top: 50px;
+   font-family:
+                /*"HelveticaNeue-Ultralight",*/
+                "HelveticaNeue-Light",
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif;
+}
+
+nav a {
+    font-family:
+                "HelveticaNeue-Ultralight",
+                "HelveticaNeue-Light",
+                "Helvetica Neue",
+                Helvetica,
+                Arial,
+                "Lucida Grande",
+                sans-serif;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: rgba(0,0,0,0.9);
+    color: white;
 }
 
 a {
@@ -71,18 +92,6 @@ a {
     border-radius:100px / 10px;
 }
 
-body {
-   font-family:
-                /*"HelveticaNeue-Ultralight",*/
-                "HelveticaNeue-Light",
-                "Helvetica Neue",
-                Helvetica,
-                Arial,
-                "Lucida Grande",
-                sans-serif
-                ;
-}
-
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -125,7 +134,7 @@ ul.dropdown-menu {
 
 .about-parallax-bg {
     padding-top: 50px;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/blackrock.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,8 +204,17 @@ ul.dropdown-menu {
     opacity: 0.66;
 }
 
-#experiences, #publications, #press {
-    padding-bottom: 36px;
+#about, #work, #education, #services, #publications, #press {
+    padding-bottom: 50px;
+}
+
+.before-services-parallax-bg {
+    background-image: url("../img/dc.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 611px;
 }
 
 .before-pub-parallax-bg {
@@ -208,25 +226,16 @@ ul.dropdown-menu {
     min-height: 611px;
 }
 
-#before-pub {
-    text-align: center;
+.before-press-parallax-bg {
+    background-image: url("../img/turino.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 611px;
 }
 
-#before-pub a {
-    color:gainsboro;
-}
-
-/* mouse over link */
-#before-pub a:hover {
-    color: white;
-    background-color: #ccc;
-    text-decoration:none;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-
-.copyright-parallax-bg {
+.before-copyright-parallax-bg {
     background-image: url("../img/fortaleza.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -236,24 +245,26 @@ ul.dropdown-menu {
     position: relative;
 }
 
+#before-services, #before-pub, #before-press, #copyright-pane {
+    text-align: center;
+}
+
+#before-services a, #before-pub a, #before-press a {
+    color:gainsboro;
+}
+
+/* mouse over link */
+#before-services a:hover, #before-pub a:hover, #before-press a:hover {
+    color: white;
+    background-color: #ccc;
+    text-decoration:none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
 #copyright {
     position: absolute;
     bottom: 0;
 /*    left: 0;*/
-}
-
-nav a {
-    font-family:
-                "HelveticaNeue-Ultralight",
-                "HelveticaNeue-Light",
-                "Helvetica Neue",
-                Helvetica,
-                Arial,
-                "Lucida Grande",
-                sans-serif;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-    background-color: rgba(0,0,0,0.9);
-    color: white;
 }
