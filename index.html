@@ -21,8 +21,8 @@
         <link rel="shortcut bookmark icon" href="img/favicon.ico" />
     </head>
 
-    <body data-spy="scroll" data-target="#main-nav" data-offset="42">
-        <a href="javascript:" id="return-to-top" class="transition">
+    <body data-spy="scroll" data-target="#main-nav" data-offset="49">
+        <a href="javascript:" id="return-to-top">
             <i class="fa fa-chevron-up transition"></i>
         </a>
 
@@ -46,7 +46,7 @@
                         <li><a href="#publications">Publications</a></li>
                         <li><a href="#press">Press</a></li>
 
-                        <li id="links-toggle" class="dropdown transition">
+                        <li id="links-toggle" class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <span id="links-toggle-caret" class="fa fa-caret-right"></span>
                             </a>
@@ -64,8 +64,8 @@
             </div>
         </nav>
 
-        <div id="about" class="jumbotron about-parallax-bg col col-lg-12 col-md-12 col-sm-12">
-            <div class="container transition" id="about-pane">
+        <div id="about" class="jumbotron col about-transparent-bg col-lg-12 parallax-window" data-parallax="scroll" data-image-src="img/blackrock.jpg">
+            <div class="container transition boxshadow" id="about-pane">
                 <div id="picture" class="col col-md-5 col-lg-4 pull-right">
                     <img id="id-picture" style="display:none;" src="img/id.jpg" rel="zoom" class="zoomable img-responsive img-rounded boxshadow" />
                     <br/>
@@ -166,8 +166,9 @@
             </table>
         </div>
 
-        <div id="before-services" class="jumbotron before-services-parallax-bg">
-            <a href="#services" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
+        
+        <div id="before-services" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/dc.jpg">
+            <a href="#services"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
         <div id="services" class="container">
             <h2>Services</h2>
@@ -337,8 +338,8 @@
             </div>
         </div>
 
-        <div id="before-pub" class="jumbotron before-pub-parallax-bg">
-            <a href="#publications" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
+        <div id="before-pub" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/milano.jpg">
+            <a href="#publications"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
         <div id="publications" class="container">
             <h2>Publications</h2>
@@ -719,8 +720,8 @@
             </div>
         </div>
 
-        <div id="before-press" class="jumbotron before-press-parallax-bg">
-            <a href="#press" class="transition boxshadow"><h1><i class="fa fa-angle-down"></i></h1></a>
+        <div id="before-press" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/turino.jpg">
+            <a href="#press"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
 
         <div id="press" class="container">
@@ -807,9 +808,9 @@
 
 
 
-        <div id="copyright-pane" class="before-copyright-parallax-bg">
+        <div id="copyright-pane" class="transparent-bg" data-parallax="scroll" data-image-src="img/fortaleza.jpg">
             <div class="container">
-                <a href="#copyright" class="transition boxshadow"><h1><i class="fa fa-angle-double-down"></i></h1></a>
+                <a href="#copyright"><h1><i id="go-to-bottom" class="fa fa-angle-double-down"></i></h1></a>
             </div>
             <footer id="copyright" class="col col-xs-12 text-center">
                 <hr class="custom"></hr>
@@ -829,7 +830,8 @@
         </div>
 
 
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
 
         <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
