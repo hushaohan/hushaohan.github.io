@@ -4,9 +4,6 @@ $('[data-toggle="tooltip"]').tooltip({
 
 $(window).load(function () {
 	$('img').smoothZoom({
-		resizeDelay: 21,
-		zoominSpeed: 611,
-		zoomoutSpeed: 611
 	});
 });
 
@@ -22,14 +19,14 @@ $("a[href^='#']").on('click', function (e) {
 });
 
 $("img").one("load", function (evt) {
-    $(this).fadeIn(2611);
+    $(this).fadeIn(611);
 }).each(function (evt) {
     if (this.complete)
         $(this).load();
 });
 
 
-// ===== Scroll to Top ==== 
+// ===== Scroll to Top ====
 $(window).scroll(function () {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
