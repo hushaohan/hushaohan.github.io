@@ -12,7 +12,7 @@ body {
 
 nav a {
     font-family:
-                "HelveticaNeue-Ultralight",
+/*                "HelveticaNeue-Ultralight",*/
                 "HelveticaNeue-Light",
                 "Helvetica Neue",
                 Helvetica,
@@ -165,20 +165,19 @@ ul.dropdown-menu {
 
 .about-transparent-bg {
     background: transparent;
-    min-height: 100vh;
+    min-height: 800px;
     position: relative;
 }
 
 #about-pane {
-    padding: 66px;
+    padding: 22px;
     border-radius: 22px;
     background-color: rgba(0,0,0,0.66);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 90vw;
-    max-height: 90vh;
+    min-width: 600px;
 }
 
 .transparent-bg {
