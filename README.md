@@ -1,3 +1,3 @@
 # hushaohan.github.io
 
-My site with cv.
+My [site](https://hushaohan.github.io) with [cv](https://hushaohan.github.io/cv/cv.pdf).
