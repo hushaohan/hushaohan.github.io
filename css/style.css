@@ -185,7 +185,10 @@ ul.dropdown-menu {
 
 #id-picture {
     display: none;
-    padding-bottom: 11px;
+}
+
+#misc-btns {
+    margin-top: 11px;
 }
 
 #misc-btns a {
