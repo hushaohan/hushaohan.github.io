@@ -55,6 +55,10 @@ nav a {
     width: 10px;
 }
 
+#links-toggle i {
+    width: 24px;
+}
+
 a {
     color: darkslategray;
 }
@@ -177,6 +181,15 @@ ul.dropdown-menu {
 .transparent-bg {
     background: transparent;
     min-height: 100vh;
+}
+
+#id-picture {
+    display: none;
+    padding-bottom: 11px;
+}
+
+#misc-btns a {
+    width: 42px;
 }
 
 #picture {
