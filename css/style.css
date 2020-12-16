@@ -256,19 +256,19 @@ ul.dropdown-menu {
     padding-bottom: 50px;
 }
 
-#before-services, #before-pub, #before-press, #copyright-pane {
+#before-services, #before-pub, #before-patents, #before-press, #copyright-pane {
     text-align: center;
     position: relative;
 }
 
-#before-services a, #before-pub a, #before-press a, #copyright-pane a {
+#before-services a, #before-pub a, #before-patents a, #before-press a, #copyright-pane a {
     position: relative;
     color: rgba(256,256,256,0.5);
     text-shadow: #000 0.0em 0.8em 2em;
 }
 
 /* mouse over link */
-#before-services a:hover, #before-pub a:hover, #before-press a:hover, #copyright-pane a:hover {
+#before-services a:hover, #before-pub a:hover, #before-patents a:hover, #before-press a:hover, #copyright-pane a:hover {
     top: 1px;
     color: rgba(256,256,256,0.9);
     text-shadow: #000 0.0em 0.3em 1.5em;
