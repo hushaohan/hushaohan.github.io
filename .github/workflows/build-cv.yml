@@ -1,0 +1,48 @@
+name: Update Github Pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  update_github_pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: gh-pages
+      - name: Update gh-pages branch
+        run: |
+          git config --global user.email "hushaohan@gmail.com"
+          git config --global user.name "Shaohan Hu"
+          git pull origin master
+      - name: Check cv directory for changes
+        uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            cv:
+              - 'cv/**'
+      - name: Compile cv
+        if: steps.filter.outputs.cv == 'true'
+        uses: xu-cheng/latex-action@v2
+        with:
+          working_directory: cv/
+          root_file: cv.tex
+      - name: Check cv.pdf
+        if: steps.filter.outputs.cv == 'true'
+        run: |
+          file cv/cv.pdf | grep -q ' PDF '
+      - name: Add cv.pdf
+        if: steps.filter.outputs.cv == 'true'
+        run: |
+          git add cv/cv.pdf
+          git mv cv/cv.pdf ./
+          git commit -m "deploy cv.pdf"
+      - name: Push gh-pages branch
+        run: |
+          # # configure git
+          # git config --global user.email "hushaohan@gmail.com"
+          # git config --global user.name "Shaohan Hu"
+          git push
