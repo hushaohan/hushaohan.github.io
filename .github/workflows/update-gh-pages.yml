@@ -4,8 +4,10 @@ on:
     branches:
       - master
 jobs:
-  update_github_pages:
+  update_pages:
     runs-on: ubuntu-latest
+    outputs:
+      build_cv: ${{ steps.cv_pdf_exists.outputs.files_exists == 'false' }} || ${{ steps.cv_has_changes.outputs.cv == 'true'}}
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -16,7 +18,8 @@ jobs:
         run: |
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
-          git pull origin master
+          git pull origin master --rebase
+          git push -f
       - name: Check if gh-pages root has a cv.pdf
         id: cv_pdf_exists
         uses: andstor/file-existence-action@v1
@@ -29,25 +32,28 @@ jobs:
           filters: |
             cv:
               - 'cv/**'
+  build_cv:
+    needs: update_pages
+    if: needs.update_pages.outputs.build_cv == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
       - name: Compile cv
-        if: steps.cv_has_changes.outputs.cv == 'true' || steps.cv_pdf_exists.outputs.files_exists == 'false'
         uses: xu-cheng/latex-action@v2
         with:
           working_directory: cv/
           root_file: cv.tex
       - name: Check cv.pdf
-        if: steps.cv_has_changes.outputs.cv == 'true' || steps.cv_pdf_exists.outputs.files_exists == 'false'
         run: |
           file cv/cv.pdf | grep -q ' PDF '
-      - name: Add cv.pdf
-        if: steps.cv_has_changes.outputs.cv == 'true' || steps.cv_pdf_exists.outputs.files_exists == 'false'
+      - name: Update cv.pdf
         run: |
+          git config --global user.email "hushaohan@gmail.com"
+          git config --global user.name "Shaohan Hu"
           git add cv/cv.pdf
-          git mv cv/cv.pdf ./
+          git mv -f cv/cv.pdf ./
           git commit -m "deploy cv.pdf"
-      - name: Push gh-pages branch
-        run: |
-          # # configure git
-          # git config --global user.email "hushaohan@gmail.com"
-          # git config --global user.name "Shaohan Hu"
           git push
