@@ -7,7 +7,8 @@ jobs:
   update_pages:
     runs-on: ubuntu-latest
     outputs:
-      build_cv: ${{ steps.cv_pdf_exists.outputs.files_exists == 'false' }} || ${{ steps.cv_has_changes.outputs.cv == 'true'}}
+      cv_pdf_exists: ${{ steps.cv_pdf_exists.outputs.files_exists }}
+      cv_changed: ${{ steps.cv_has_changes.outputs.cv }}
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -32,9 +33,14 @@ jobs:
           filters: |
             cv:
               - 'cv/**'
+      - name: Print Outputs
+        run: |
+          echo "steps.cv_pdf_exists.outputs.files_exists: ${{ steps.cv_pdf_exists.outputs.files_exists }}"
+          echo "steps.cv_has_changes.outputs.cv: ${{ steps.cv_has_changes.outputs.cv }}"
+
   build_cv:
     needs: update_pages
-    if: needs.update_pages.outputs.build_cv == 'true'
+    if: needs.update_pages.outputs.cv_pdf_exists == 'false' || needs.update_pages.outputs.cv_changed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
