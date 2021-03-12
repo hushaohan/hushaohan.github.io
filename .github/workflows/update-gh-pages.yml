@@ -33,11 +33,6 @@ jobs:
           filters: |
             cv:
               - 'cv/**'
-      - name: Print Outputs
-        run: |
-          echo "steps.cv_pdf_exists.outputs.files_exists: ${{ steps.cv_pdf_exists.outputs.files_exists }}"
-          echo "steps.cv_has_changes.outputs.cv: ${{ steps.cv_has_changes.outputs.cv }}"
-
   build_cv:
     needs: update_pages
     if: needs.update_pages.outputs.cv_pdf_exists == 'false' || needs.update_pages.outputs.cv_changed == 'true'
