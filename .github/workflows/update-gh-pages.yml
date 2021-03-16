@@ -35,7 +35,9 @@ jobs:
               - 'cv/**'
   build_cv:
     needs: update_pages
-    if: needs.update_pages.outputs.cv_pdf_exists == 'false' || needs.update_pages.outputs.cv_changed == 'true'
+    if: |
+      needs.update_pages.outputs.cv_pdf_exists == 'false' ||
+      needs.update_pages.outputs.cv_changed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
@@ -52,9 +54,12 @@ jobs:
           file cv/cv.pdf | grep -q ' PDF '
       - name: Update cv.pdf
         run: |
+          commit_msg='deploy cv.pdf'
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
           git add cv/cv.pdf
           git mv -f cv/cv.pdf ./
-          git commit -m "deploy cv.pdf"
-          git push
+          if [[ "$(git log -1 --pretty=%B | grep $commit_msg | wc -l)" -eq 1 ]]; \
+            then git commit --amend --no-edit; git push -f; \
+            else git commit -m $commit_msg; git push \
+          fi
