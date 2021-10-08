@@ -8,12 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Shaohan Hu</title>
 
-        <link rel="stylesheet" href="css/smoothzoom.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.2/css/bootstrap.min.css"
+            integrity="sha512-SCpMC7NhtrwHpzwKlE1l6ks0rS+GbMJJpoQw/A742VaxdGcQKqVD8F/y/m9WLOfIPppy7mWIs/kS0bKgSI0Bfw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+            integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/smoothzoom.css" />
 
         <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
@@ -34,66 +41,93 @@
         <meta name="theme-color" content="#ffffff">
     </head>
 
-    <body data-spy="scroll" data-target="#main-nav" data-offset="120">
-        <a href="javascript:" id="return-to-top">
+    <body data-bs-spy="scroll" data-target="#main-nav">
+        <a href="#" id="return-to-top">
             <i class="fa fa-chevron-up transition"></i>
         </a>
 
-        <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top boxshadow transition" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="active navbar-brand"><b>Shaohan Hu</b></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#publications">Publications</a></li>
-                        <li><a href="#patents">Patents</a></li>
-                        <!-- <li><a href="#press">Press</a></li> -->
+        <nav id="main-nav" class="navbar navbar-dark navbar-expand-lg fixed-top shadow-lg" role="navigation">
+            <div class="container" id="navbar-body">
 
-                        <li id="links-toggle" class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span id="links-toggle-caret" class="fa fa-caret-right"></span>
+                <label class="navbar-brand active">Shaohan Hu</label>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-pills dark-pills ms-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#publications">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-lighter px-2" href="#patents">Patents</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-6 fw-lighter px-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
                             </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="cv.pdf"><i class="far fa-file-alt"></i>CV</a></li>
-                                <li><a href="https://www.jpmorgan.com/insights/technology/flare"><i class="far fa-building"></i>Work</a></li>
-                                <li><a href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
-                                <li><a href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-                                <li><a href="mailto:hushaohan[AT]gmail[DOT]com"><i class="fas fa-envelope-square"></i>Email</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="cv.pdf">
+                                    CV
+                                    <i class="bi bi-file-earmark-person"></i>
+                                </a></li>
+                                <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="https://www.jpmorgan.com/insights/technology/flare">
+                                    Work
+                                    <i class="far fa-building"></i>
+                                </a></li>
+                                <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ">
+                                    Scholar
+                                    <i class="ai ai-google-scholar-square"></i>
+                                </a></li>
+                                <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40">
+                                    LinkedIn
+                                    <i class="fab fa-linkedin"></i>
+                                </a></li>
+                                <li><a class="dropdown-item d-flex justify-content-between align-items-center" href="mailto:hushaohan[AT]gmail[DOT]com">
+                                    Email
+                                    <i class="fas fa-envelope-square"></i>
+                                </a></li>
                             </ul>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div id="about" class="jumbotron col about-transparent-bg col-lg-12" data-parallax="scroll" data-image-src="img/blackrock.jpg">
-            <div class="container transition boxshadow" id="about-pane" data-anim="true">
-                <div id="picture" class="col col-md-5 col-lg-4 pull-right">
-                    <img id="id-picture" src="img/id.jpg" rel="zoom" class="zoomable img-responsive img-rounded boxshadow" />
-                    <div id="misc-btns" class="btn-group pull-right boxshadow">
-                        <a type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="CV" href="cv.pdf"><i class="far fa-file-alt" aria-hidden="true"></i></a>
-                        <a type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Work" href="https://www.jpmorgan.com/insights/technology/flare"><i class="far fa-building" aria-hidden="true"></i></a>
-                        <a type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Google Scholar" href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-                        <a type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                        <a type="button" class="btn btn-default" rel="tooltip" data-container="body" data-toggle="tooltip" data-placement="top" title="Email" href="mailto:hushaohan[AT]gmail[DOT]com"><i class="fas fa-envelope-square" aria-hidden="true"></i></a>
+        <div id="about" class="jumbotron about-transparent-bg shadow-lg" data-parallax="scroll" data-image-src="img/blackrock.jpg">
+            <div class="container shadow-lg row justify-content-between" id="about-pane">
+
+                <div id="picture" class="col-lg-5 col-md-12 px-3 py-3 transparent-blur">
+                    <div class="card bg-dark">
+                        <img class="rounded float-end img-fluid " id="id-picture" src="img/id.jpg" rel="zoom"
+                            class="zoomable img-responsive img-rounded shadow-lg"/>
+
+                            <div id="misc-btns" class="card-footer bg-dark btn-group shadow-lg">
+                            <a type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="CV" href="cv.pdf"><i class="bi bi-file-earmark-person" aria-hidden="true"></i></a>
+                            <a type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Work" href="https://www.jpmorgan.com/insights/technology/flare"><i
+                                    class="far fa-building" aria-hidden="true"></i></a>
+                            <a type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Scholar" href="https://scholar.google.com/citations?user=m9dh1GoAAAAJ"><i
+                                    class="ai ai-google-scholar-square" aria-hidden="true"></i></a>
+                            <a type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn" href="https://www.linkedin.com/pub/shaohan-hu/19/249/a40"><i
+                                    class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Email" href="mailto:hushaohan[AT]gmail[DOT]com"><i
+                                    class="fas fa-envelope-square" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div id="mini-bio" class="col col-md-6 col-lg-7 pull-left">
-                    <h1>About me</h1>
-                    <p>
-                        I work at the <a href="https://www.jpmorgan.com/insights/technology/flare">Future Lab for Applied Research and Engineering (FLARE)</a> at <a href="https://www.jpmorgan.com">JPMorgan Chase & Co.</a> as a research director. Our current projects span the area of quantum computing / communication, IoT, AR/VR, mobile and cloud computing. Prior to that, I spent a few years at <a href="https://www.research.ibm.com/labs/watson">IBM Research</a> after getting my PhD in <a href="http://www.cs.illinois.edu">Computer Science</a> from <a href="http://www.illinois.edu">UIUC</a>.
+
+
+                <div id="mini-bio" class="col-lg-6 col-md-12 px-4 py-5">
+                    <p class="fs-2 fw-lighter">About me</p>
+                    <p class="fs-4 fw-lighter">
+                        I work at the <a href="https://www.jpmorgan.com/insights/technology/flare">Future Lab for Applied Research and
+                            Engineering (FLARE)</a> at <a href="https://www.jpmorgan.com">JPMorgan Chase & Co.</a>,
+                            where our projects span the area of Quantum Computing / Communication, IoT, Augmented and Virtual Reality, Mobile and Cloud
+                            Computing. Prior to that, I spent a few years at <a href="https://www.research.ibm.com/labs/watson">IBM
+                            T. J. Watson Research Center</a> after getting my PhD in <a href="http://www.cs.illinois.edu">Computer Science</a> from the <a
+                            href="http://www.illinois.edu">Univerity of Illinois at Urbana-Champaign</a>.
                     </p>
                 </div>
             </div>
@@ -103,323 +137,49 @@
         <div class="container row">
         </div>
 
-        <div id="work" class="container" data-anim="true">
-            <h2>Work</h2>
+        <div id="work" class="container py-3 my-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <p class="fs-3 fw-light">Work</p>
             <table class="table table-striped table-hover table-responsive">
-              <tbody>
-                <tr>
-                  <th scope="row">Executive Director</th>
-                  <td><a href="https://www.jpmorgan.com/insights/technology/flare">JPMorgan Chase - Future Lab for Applied Research and Engineering</a></td>
-                  <td>New York, NY</td>
-                  <td>January 2021 - Present</td>
-                </tr>
-                <tr>
-                  <th scope="row">Research Staff Member</th>
-                  <td><a href="http://research.ibm.com/labs/watson/index.shtml">IBM Research</a></td>
-                  <td>Yorktown Heights, NY</td>
-                  <td>September 2016 - December 2020</td>
-                </tr>
-                <tr>
-                  <th scope="row">Research Assistant</th>
-                  <td><a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a></td>
-                  <td>Urbana, IL</td>
-                  <td>January 2012 - December 2016</td>
-                </tr>
-                <tr>
-                  <th scope="row">Graduate Intern Technical</th>
-                  <td><a href="http://www.intel.com">Intel Corporation</a></td>
-                  <td>Santa Clara, CA</td>
-                  <td>May 2014 - September 2014</td>
-                </tr>
-                <tr>
-                  <th scope="row">Teaching Assistant</th>
-                  <td><a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a></td>
-                  <td>Urbana, IL</td>
-                  <td>August 2011 - December 2011</td>
-                </tr>
-                <tr>
-                  <th scope="row">Teaching Assistant</th>
-                  <td><a href="http://www.dartmouth.edu">Dartmouth College</a></td>
-                  <td>Hanover, NH</td>
-                  <td>September 2008 - September 2010</td>
-                </tr>
-                <tr>
-                  <th scope="row">Teaching Assistant</th>
-                  <td><a href="http://www.umass.edu">University of Massachusetts at Amherst</a></td>
-                  <td>Amherst, MA</td>
-                  <td>January 2008 - May 2008</td>
-                </tr>
-              </tbody>
+              <tbody id="work-content"></tbody>
             </table>
         </div>
 
-        <div id="education" class="container" data-anim="true">
-            <h2>Education</h2>
+        <div id="education" class="container py-3 my-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <p class="fs-3 fw-light">Education</p>
             <table class="table table-striped table-hover table-responsive">
-              <tbody>
-                <tr>
-                  <th scope="row">PhD</th>
-                  <td><a href="http://www.cs.illinois.edu">Computer Science</a></td>
-                  <td><a href="http://www.illinois.edu">University of Illinois at Urbana-Champaign</a></td>
-                  <td>May 2017</td>
-                </tr>
-                <tr>
-                  <th scope="row">MS</th>
-                  <td><a href="http://www.cs.dartmouth.edu">Computer Science</a></td>
-                  <td><a href="http://www.dartmouth.edu">Dartmouth College</a></td>
-                  <td>June 2011</td>
-                </tr>
-                <tr>
-                  <th scope="row">BS
-                  <!-- <em>magna cum laude</em> -->
-                  </th>
-                  <td><a href="http://www.cs.umass.edu">Computer Science</a>, <a href="http://www.math.umass.edu">Mathematics and Statistics</a></td>
-                  <td><a href="http://www.umass.edu">University of Massachusetts at Amherst</a></td>
-                  <td>May 2008</td>
-                </tr>
-              </tbody>
+              <tbody id="education-content"></tbody>
             </table>
         </div>
 
         <div id="before-services" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/yosemite.jpg">
             <a href="#services"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
-        <div id="services" class="container" data-anim="true">
-            <h2>Services</h2>
-
-            <div id="tpc" class="contrainer col" data-anim="true">
-                <div class="panel">
-                    <strong class="list-group-item list-group-item-info">
-                        Technical Program Committee
-                    </strong>
-                    <a class="list-group-item" href="https://aichallengeiot.github.io/">
-                        <span class="badge">2021</span>
-                        International Workshop on Challenges in Artificial Intelligence and Machine Learning for Internet of Things (AIChallengeIoT)
-                    </a>
-                    <a class="list-group-item" href="https://q-se.github.io/qse2021">
-                        <span class="badge">2021</span>
-                        International Workshop on Quantum Software Engineering (Q-SE)
-                    </a>
-                    <a class="list-group-item" href="https://www2019.thewebconf.org">
-                        <span class="badge">2018, 2019</span>
-                        The Web Conference (WWW)
-                    </a>
-                    <a class="list-group-item" href="http://www.icccn.org/">
-                        <span class="badge">2019</span>
-                        International Conference on Computer Communications and Networks (ICCCN)
-                    </a>
-                    <a class="list-group-item" href="http://conferences.computer.org/iotDI/2019/">
-                        <span class="badge">2019</span>
-                        International Conference on Internet of Things Design and Implementation (IoTDI) Posters & Demos
-                    </a>
-                    <a class="list-group-item" href="http://www.iaria.org/conferences2019/EMERGING19.html">
-                        <span class="badge">2017-2019</span>
-                        International Conference on Emerging Networks and Systems Intelligence (EMERGING)
-                    </a>
-                    <a class="list-group-item" href="http://www.iaria.org/conferences2019/CYBER19.html">
-                        <span class="badge">2017-2019</span>
-                        International Conference on Cyber-Technologies and Cyber-Systems (CYBER)
-                    </a>
-                    <a class="list-group-item" href="http://www.iaria.org/conferences2019/SENSORCOMM19.html">
-                        <span class="badge">2017-2019</span>
-                        International Conference on Sensor Technologies and Applications (SENSORCOMM)
-                    </a>
-                    <a class="list-group-item" href="http://www.iaria.org/conferences2019/UBICOMM19.html">
-                        <span class="badge">2012-2019</span>
-                        International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies (UBICOMM)
-                    </a>
-                    <a class="list-group-item" href="https://www.cse.buffalo.edu/~lusu/SocialSens2018/">
-                        <span class="badge">2018</span>
-                        International Workshop on Social Sensing (SocialSens)
-                    </a>
-                    <a class="list-group-item" href="http://infocom2018.ieee-infocom.org/content/workshop-misenet-mission-oriented-wireless-sensor-networking">
-                        <span class="badge">2018</span>
-                        IEEE Annual International Workshop on Mission-Oriented Wireless Sensor and Cyber-Physical System Networking (MiSeNet)
-                    </a>
-                    <a class="list-group-item" href="http://ipsn.acm.org/2016/posters.html">
-                        <span class="badge">2016</span>
-                        ACM/IEEE International Conference on Information Processing in Sensor Networks - Posters (IPSN Posters)
-                    </a>
+        <div id="services" class="container py-3 my-3">
+            <p class="fs-3 fw-light">Services</p>
+            <div class="row align-items-start">
+                <div id="tpc"  class="col-lg-4 pb-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-info">
+                            Technical Program Committee
+                        </div>
+                        <div id="tpcs-content"></div>
+                    </div>
                 </div>
-            </div>
-
-            <div id="conference-reviewer" class="contrainer col" data-anim="true">
-                <div class="panel">
-                    <strong class="list-group-item list-group-item-info">
-                        Conference Reviewer
-                    </strong>
-                    <a class="list-group-item" href="https://asplos-conference.org/2021">
-                        <span class="badge">2021</span>
-                        Architectural Support for Programming Languages and Operating Systems (ASPLOS)
-                    </a>
-                    <a class="list-group-item" href="https://sigmobile.org/mobicom/2019/">
-                        <span class="badge">2018, 2019</span>
-                        ACM International Conference on Mobile Computing and Networking (MobiCom)
-                    </a>
-                    <a class="list-group-item" href="http://www.wi-opt.org">
-                        <span class="badge">2018</span>
-                        International Symposium on Modeling and Optimization in Mobile, Ad Hoc and Wireless Networks (WiOpt)
-                    </a>
-                    <a class="list-group-item" href="http://sensys.acm.org">
-                        <span class="badge">2015-2017</span>
-                        ACM International Conference on Embedded Networked Sensor Systems (SenSys)
-                    </a>
-                    <a class="list-group-item" href="http://ipsn.acm.org/2017/">
-                        <span class="badge">2017</span>
-                        ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)
-                    </a>
-                    <a class="list-group-item" href="http://cdc2016.ieeecss.org/">
-                        <span class="badge">2016</span>
-                        International Conference on Decision and Control (CDC)
-                    </a>
-                    <a class="list-group-item" href="http://www.sigmobile.org/mobihoc/2016/">
-                        <span class="badge">2016</span>
-                        International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)
-                    </a>
-                    <a class="list-group-item" href="http://infocom2016.ieee-infocom.org/">
-                        <span class="badge">2015, 2016</span>
-                        IEEE International Conference on Computer Communications (INFOCOM)
-                    </a>
-                    <a class="list-group-item" href="http://icdcs-2015.cse.ohio-state.edu/">
-                        <span class="badge">2015</span>
-                        IEEE International Conference on Distributed Computing Systems (ICDCS)
-                    </a>
-                    <a class="list-group-item" href="http://icc2015.ieee-icc.org/">
-                        <span class="badge">2015</span>
-                        IEEE International Conference on Communications (ICC)
-                    </a>
-                    <a class="list-group-item" href="http://www.iccve.org/2014/">
-                        <span class="badge">2014</span>
-                        International Conference on Connected Vehicles & Expo (ICCVE)
-                    </a>
-                    <a class="list-group-item" href="http://www.milcom.org/2014/">
-                        <span class="badge">2014</span>
-                        Military Communications Conference (MILCOM)
-                    </a>
-                    <a class="list-group-item" href="http://secon2014.ieee-secon.org">
-                        <span class="badge">2014</span>
-                        IEEE International Conference on Sensing, Communication, and Networking (SECON)
-                    </a>
-                    <a class="list-group-item" href="http://icdm2013.rutgers.edu">
-                        <span class="badge">2013</span>
-                        IEEE International Conference on Data Mining (ICDM)
-                    </a>
-                    <a class="list-group-item" href="http://www.mnnit.ac.in/iccct2013">
-                        <span class="badge">2013</span>
-                        International Conference on Computing and Convergence Technology (ICCCT)
-                    </a>
-                    <a class="list-group-item" href="http://www.ubicomp.org/ubicomp2012">
-                        <span class="badge">2012</span>
-                        ACM International Conference on Ubiquitous Computing (UbiComp)
-                    </a>
+                <div class="conference-reviewer col-lg-4 pb-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-info">
+                            Conference Reviewer
+                        </div>
+                        <div id="conf-reviews-content"></div>
+                    </div>
                 </div>
-            </div>
-
-            <div id="journal-reviewer" class="contrainer col" data-anim="true">
-                <div class="panel">
-                  <strong class="list-group-item list-group-item-info">
-                    Journal Reviewer
-                  </strong>
-                  <a class="list-group-item" href="https://tqe.ieee.org/">
-                    <span class="badge">2021</span>
-                    IEEE Transactions on Quantum Engineering (TQE)
-                  </a>
-                  <a class="list-group-item" href="https://www.journals.elsevier.com/knowledge-based-systems">
-                    <span class="badge">2017, 2018, 2021</span>
-                    Knowledge-Based Systems
-                  </a>
-                  <a class="list-group-item" href="https://www.computer.org/portal/web/tmc">
-                    <span class="badge">2014-2018, 2020</span>
-                    IEEE Transactions on Mobile Computing (TMC)
-                  </a>
-                  <a class="list-group-item" href="https://www.computer.org/web/tc">
-                    <span class="badge">2017, 2019, 2020</span>
-                    IEEE Transactions on Computers (TC)
-                  </a>
-                  <a class="list-group-item" href="https://www.journals.elsevier.com/softwarex">
-                    <span class="badge">2020</span>
-                    SoftwareX
-                  </a>
-                  <a class="list-group-item" href="https://www.computer.org/csdl/journal/td">
-                    <span class="badge">2019</span>
-                    IEEE Transactions on Parallel and Distributed Systems (TPDS)
-                  </a>
-                  <a class="list-group-item" href="https://www.springer.com/computer/swe/journal/11227">
-                    <span class="badge">2019</span>
-                    The Journal of Supercomputing (SUPE)
-                  </a>
-                  <a class="list-group-item" href="https://imwut.acm.org">
-                    <span class="badge">2017, 2018</span>
-                    Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
-                  </a>
-                  <a class="list-group-item" href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90">
-                    <span class="badge">2014, 2018</span>
-                    IEEE/ACM Transactions on Networking (TON)
-                  </a>
-                  <a class="list-group-item" href="http://www.mdpi.com/journal/sensors">
-                    <span class="badge">2016-2018</span>
-                    Sensors
-                  </a>
-                  <a class="list-group-item" href="http://www.mdpi.com/journal/applsci">
-                    <span class="badge">2018</span>
-                    Applied Sciences
-                  </a>
-                  <a class="list-group-item" href="http://www.mdpi.com/journal/algorithms">
-                    <span class="badge">2018</span>
-                    Algorithms
-                  </a>
-                  <a class="list-group-item" href="https://www.computer.org/web/tsc">
-                    <span class="badge">2017</span>
-                    IEEE Transactions on Services Computing (TSC)
-                  </a>
-                  <a class="list-group-item" href="http://benthamscience.com/journals/current-signal-transduction-therapy/">
-                    <span class="badge">2017</span>
-                    Current Signal Transduction Therapy (CSTT)
-                  </a>
-                  <a class="list-group-item" href="http://ees.elsevier.com/comnet/">
-                    <span class="badge">2017</span>
-                    Computer Networks (COMNET)
-                  </a>
-                  <a class="list-group-item" href="https://www.journals.elsevier.com/ain-shams-engineering-journal/">
-                    <span class="badge">2017</span>
-                    Ain Shams Engineering Journal
-                  </a>
-                  <a class="list-group-item" href="http://www.mdpi.com/journal/computers">
-                    <span class="badge">2017</span>
-                    Computers
-                  </a>
-                  <a class="list-group-item" href="http://tosn.acm.org/">
-                    <span class="badge">2016</span>
-                    ACM Transactions on Sensor Networks (TOSN)
-                  </a>
-                  <a class="list-group-item" href="http://tcps.acm.org/">
-                    <span class="badge">2016</span>
-                    ACM Transactions on Cyber-Physical Systems (TCPS)
-                  </a>
-                  <a class="list-group-item" href="http://www.springer.com/computer/journal/11714">
-                    <span class="badge">2016</span>
-                    Frontiers of Information Technology &amp; Electronic Engineering
-                  </a>
-                  <a class="list-group-item" href="https://www.hindawi.com/journals/misy/">
-                    <span class="badge">2016</span>
-                    Mobile Information Systems
-                  </a>
-                  <a class="list-group-item" href="http://www.comsoc.org/twc">
-                    <span class="badge">2015</span>
-                    IEEE Transactions on Wireless Communications (TWC)
-                  </a>
-                  <a class="list-group-item" href="http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics">
-                    <span class="badge">2014</span>
-                    IEEE Transactions on Industrial Informatics (TII)
-                  </a>
-                  <a class="list-group-item" href="http://www.oldcitypublishing.com/AHSWN/AHSWN.html">
-                    <span class="badge">2013</span>
-                    Ad Hoc &amp; Sensor Wireless Networks
-                  </a>
-                  <a class="list-group-item" href="http://www.mdpi.com/journal/ijgi">
-                    <span class="badge">2012</span>
-                    International Journal of Geo-Information
-                  </a>
+                <div class="journal-reviewer col-lg-4 pb-3" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-info">
+                            Journal Reviewer
+                        </div>
+                        <div id="journal-reviews-content"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,848 +187,61 @@
         <div id="before-pub" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/milano.jpg">
             <a href="#publications"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
-        <div id="publications" class="container" data-anim="true">
-            <h2>Publications</h2>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2021</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="https://arxiv.org/abs/2109.04298">Quantum Machine Learning for Finance</a></em>
-                        <a href="https://arxiv.org/pdf/2109.04298"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Marco Pistoia, Syed Farhan Ahmad, Akshay Ajagekar, Alexander Buts, Shouvanik Chakrabarti, Dylan Herman, <strong>Shaohan Hu</strong>, Andrew Jena, Pierre Minssen, Pradeep Niroula, Arthur Rattew, Yue Sun, Romina Yalovetzky<br/>
-                        <a href="https://arxiv.org/list/quant-ph/recent">arXiv - Quantum Physics</a>,
-                        September, 2020.
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/doi/abs/10.1145/3460200">Driver Behavior-aware Parking Availability Crowdsensing System Using Truth Discovery</a></em>
-                        <a href="pdf/zhu2021tosn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yi Zhu, Abhishek Gupta, <strong>Shaohan Hu</strong>, Weida Zhong, Lu Su, Chunming Qiao<br/>
-                        <a href="https://dl.acm.org/journal/tosn">ACM Transactions on Sensor Networks (ACM TOSN)</a>,
-                        Volume 17, Issue 4, July, 2021.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://arxiv.org/abs/2105.02291">Clifford Circuit Optimization with Templates and Symbolic Pauli Gates</a></em>
-                        <a href="https://arxiv.org/pdf/2105.02291"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Sergey Bravyi, Ruslan Shaydulin, <strong>Shaohan Hu</strong>, Dmitri Maslov<br/>
-                        <a href="https://arxiv.org/list/quant-ph/recent">arXiv - Quantum Physics</a>,
-                        May, 2021.
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2020</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="https://ieeexplore.ieee.org/abstract/document/9159094">Parallelization of Classical Numerical Optimization in Quantum Variational Algorithms</a></em>
-                        <a href="pdf/pistoia2020icst.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Marco Pistoia, Peng Liu, Richard Chen, <strong>Shaohan Hu</strong>, Stephen Wood<br/>
-                        <a href="https://icst2020.info/">The 13th IEEE International Conference on Software Testing, Validation and Verification (ICST 2020)</a>,
-                        Porto, Portugal. August 24-28, 2020.
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://arxiv.org/abs/2006.00064">A Cloud Native Platform for Stateful Streaming</a></em>
-                        <a href="https://arxiv.org/pdf/2006.00064"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Scott Schneider, Xavier Guerin, <strong>Shaohan Hu</strong>, Kun-Lung Wu<br/>
-                        <a href="https://arxiv.org/list/cs.DC/recent">arXiv - Distributed, Parallel, and Cluster Computing</a>,
-                        May, 2020.
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://ieeexplore.ieee.org/document/9111051">Road Grade Estimation Using Crowd-sourced Smartphone Data</a></em>
-                        <a href="pdf/gupta2020ipsn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Abhishek Gupta, <strong>Shaohan Hu</strong>, Weida Zhong, Adel Sadek, Lu Su, Chunming Qiao
-                        <a href="http://ipsn.acm.org/2020/">The 19th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2020)</a>,
-                        Sydney, Australia, April 21-24, 2020.
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2019</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="https://arxiv.org/abs/1910.09694">A Domain-agnostic, Noise-resistant, Hardware-efficient Evolutionary Variational Quantum Eigensolver</a></em>
-                        <a href="https://arxiv.org/pdf/1910.09694"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Arthur G. Rattew, <strong>Shaohan Hu</strong>, Marco Pistoia, Richard Chen, Steve Wood<br/>
-                        <a href="https://arxiv.org/archive/quant-ph">arXiv - Quantum Physics</a>,
-                        October, 2019.
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://ieeexplore.ieee.org/document/8884843">Eugene: Towards Deep Intelligence as a Service</a></em>
-                        <a href="pdf/abdelzaher2019icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Tarek Abdelzaher, Shuochao Yao, Yifan Hao, Yiran Zhao, Ailing Piao, Huajie Shao, Dongxin Liu, Shengzhong Liu, <strong>Shaohan Hu</strong>, Dulanga Weerakoon, Kasthuri Jayarajah, Archan Misra<br/>
-                        <a href="https://theory.utdallas.edu/ICDCS2019/">The 39th IEEE International Conference on Distributed Computing Systems (ICDCS 2019)</a>,
-                        Dallas, Texas USA. July 7-10, 2019.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://doi.ieeecomputersociety.org/10.1109/MC.2019.2909709">Reduction-based Problem Mapping for Quantum Computing</a></em>
-                        <a href="pdf/hu2019computer.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Peng Liu, Chun-Fu Richard Chen, Marco Pistoia, Jay Gambetta<br/>
-                        <a href="https://www.computer.org/csdl/magazines/co">IEEE Computer</a>,
-                        Volume 52 Number 06, June, 2019.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://doi.ieeecomputersociety.org/10.1109/MC.2019.2909711">Stochastic Optimization of Quantum Programs</a></em>
-                        <a href="pdf/liu2019computer.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Peng Liu, <strong>Shaohan Hu</strong>, Marco Pistoia, Chun-Fu Richard Chen, Jay Gambetta<br/>
-                        <a href="https://www.computer.org/csdl/magazines/co">IEEE Computer</a>,
-                        Volume 52 Number 06, June, 2019.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3316781.3322464">Efficient Circuits for Quantum Search over 2D Square Lattice Architecture</a></em>
-                        <a href="pdf/hu2019dac.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Dmitri Maslov, Marco Pistoia, and Jay Gambetta<br/>
-                        <a href="https://dac.com/late-breaking-results">The 56th Design Automation Conference - Latest Breaking Results (DAC 2019 LBR)</a>,
-                        Las Vegas, Nevada USA, June 2-6, 2019.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3313426">STFNets: Learning Sensing Signals from the Time-Frequency Perspective with Short-Time Fourier Neural Networks</a></em>
-                        <a href="pdf/yao2019www.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Ailing Piao, Wenjun Jiang, Yiran Zhao, Huajie Shao, Shengzhong Liu, Dongxin Liu, Jinyang Li, Tianshi Wang, <strong>Shaohan Hu</strong>, Lu Su, Jiawei Han, Tarek Abdelzaher<br/>
-                        <a href="https://www2019.thewebconf.org">The Web Conference (WWW 2019)</a>,
-                        San Francisco, CA USA, May 13-17, 2019.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://ieeexplore.ieee.org/document/8737500">SADeepSense: Self-Attention Deep Learning Framework for Heterogeneous On-Device Sensors in Internet of Things Applications</a></em>
-                        <a href="pdf/yao2019infocom.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Yiran Zhao, Huajie Shao, Dongxin Liu, Shengzhong Liu, Yifan Hao, Ailing Piao, <strong>Shaohan Hu</strong>, Lu Su, Tarek Abdelzaher<br/>
-                        <a href="https://infocom2019.ieee-infocom.org">The 38rd IEEE International Conference on Computer Communications (INFOCOM 2019)</a>,
-                        Paris, France, April 29-May 2, 2019.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2018</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3264954">SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework</a></em>
-                        <a href="pdf/yao2018imwut.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Yiran Zhao, Huajie Shao, Chao Zhang, Aston Zhang, <strong>Shaohan Hu</strong>, Dongxin Liu, Shengzhong Liu, Lu Su, Tarek F. Abdelzaher<br/>
-                        <a href="https://imwut.acm.org/">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</a>,
-                        Volume 2 Issue 3, Article No. 144, September, 2018<br/>Presented at UbiComp, Singapore, October 9-11, 2018.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3194959">Automatically Solving NP-Complete Problems on a Quantum Computer</a></em>
-                        <a href="pdf/hu2018icse.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Peng Liu, Chun-Fu Richard Chen, Marco Pistoia<br/>
-                        <a href="https://www.icse2018.org/track/icse-2018-Posters">The 40th International Conference on Software Engineering (ICSE 2018) Posters</a>,
-                        Gothenburg, Sweden, May 27-June 3, 2018.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3212729">QualityDeepSense: Quality-Aware Deep Learning Framework for Internet of Things Applications with Sensor-Temporal Attention</a></em>
-                        <a href="pdf/yao2018emdl.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Yiran Zhao, <strong>Shaohan Hu</strong>, Tarek F. Abdelzaher<br/>
-                        <a href="https://www.sigmobile.org/mobisys/2018/workshops/deepmobile18/index.html">The 2nd International Workshop on Embedded and Mobile Deep Learning (EMDL 2018)</a>,
-                        Munich, Germany, June 15, 2018.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://ieeexplore.ieee.org/document/8364644">Deep Learning for the Internet of Things</a></em>
-                        <a href="pdf/yao2018computer.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Yiran Zhao, Aston Zhang, <strong>Shaohan Hu</strong>, Huajie Shao, Chao Zhang, Lu Su, Tarek Abdelzaher<br/>
-                        <a href="https://publications.computer.org/computer-magazine/">IEEE Computer</a>,
-                        Volume 51 Number 05, May, 2018.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7940106/">Towards Quality Aware Information Integration in Distributed Sensing Systems</a></em>
-                        <a href="pdf/jiang2018tpds.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Wenjun Jiang, Chenglin Miao, Lu Su, Qi Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Jing Gao, Hengchang Liu, Tarek F. Abdelzaher, Jiawei Han, Xue Liu, Yan Gao, Lance Kaplan<br/>
-                        <a href="https://www.computer.org/web/tpds">IEEE Transactions on Parallel and Distributed Systems (IEEE TPDS)</a>,
-                        Volume 29, Number 1, January, 2018.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://www.mdpi.com/2224-2708/7/1/5/htm">Athena: Towards Decision-Centric Anticipatory Sensor Information Delivery</a></em>
-                        <a href="pdf/lee2018jsan.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Jongdeog Lee, Kelvin Marcus, Tarek Abdelzaher, Md Tanvir A. Amin, Amotz Bar-Noy, William Dron, Ramesh Govindan, Reginald Hobbs, <strong>Shaohan Hu</strong>, Jung-Eun Kim, Lui Sha, Shuochao Yao, and Yiran Zhao<br/>
-                        <a href="http://www.mdpi.com/journal/jsan/">Journal of Sensor and Actuator Networks (JSAN)</a>,
-                        Volume 7 Number 1, Article Number 5, January, 2018.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2017</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="https://dl.acm.org/citation.cfm?id=3132027">VibeBin: A Vibration-Based Waste Bin Level Detection System</a></em>
-                        <a href="pdf/zhao2017imwut.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yiran Zhao, Shuochao Yao, Shen Li, <strong>Shaohan Hu</strong>, Huajie Shao, Tarek Abdelzaher<br/>
-                        <a href="https://imwut.acm.org/">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</a>,
-                        Volume 1 Issue 3, Article No. 122, September, 2017<br/>Presented at UbiComp, Maui, HI USA, September 13-15, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=3064006">On Exploiting Structured Human Interactions to Enhance Sensing Accuracy in Cyber-physical Systems</a></em>
-                        <a href="pdf/wang2017tcps.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Hongwei Wang, Yunlong Gao, <strong>Shaohan Hu</strong>, Shiguang Wang, Renato Mancuso, Minje Kim, Poliang Wu, Lu Su, Lui Sha, Tarek Abdelzaher<br/>
-                        <a href="http://tcps.acm.org/">ACM Transactions on Cyber-Physical Systems (IEEE TCPS)</a>,
-                        Volume 1, Number 3, July, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7980121">Decision-driven Execution: A Distributed Resource Management Paradigm for the Age of IoT</a></em>
-                        <a href="pdf/abdelzaher2017icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Tarek Abdelzaher, Tanvir Al Amin, Amotz Bar-Noy, William Dron, Ramesh Govindan, Reginald Hobbs, <strong>Shaohan Hu</strong>, Jung-Eun Kim, Jongdeog Lee, Kelvin Marcus, Shuochao Yao and Yiran Zhao<br/>
-                        <a href="http://icdcs2017.gatech.edu/">The 37th International Conference on Distributed Computing Systems (ICDCS 2017)</a>,
-                        Atlanta, GA USA. June 5-8, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7979959">Stark: Optimizing In-Memory Computing For Dynamic Dataset Collections</a></em>
-                        <a href="pdf/li2017icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, Md Tanvir Al Amin, Raghu Ganti, Mudhakar Srivatsa, <strong>Shaohan Hu</strong>, Yiran Zhao and Tarek Abdelzaher<br/>
-                        <a href="http://icdcs2017.gatech.edu/">The 37th International Conference on Distributed Computing Systems (ICDCS 2017)</a>,
-                        Atlanta, GA USA. June 5-8, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://arxiv.org/abs/1705.03955">VehSense: Slippery Road Detection Using Smartphones</a></em>
-                        <a href="pdf/hou2017vtc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yunfei Hou, Abhishek Gupta, Tong Guan, <strong>Shaohan Hu</strong>, Lu Su, Chunming Qiao<br/>
-                        <a href="http://ieeevtc.org/vtc2017spring">The IEEE 85th Vehicular Technology Conference (VTC 2017)</a>,
-                        Sydney, Australia, June 4-7, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7539667">Efficient 3G/4G Budget Utilization in Mobile Sensing Applications</a></em>
-                        <a href="pdf/xu2017tmc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Chao Xu, <strong>Shaohan Hu</strong>, Zheng Wei, Tarek F. Abdelzaher, Pan Hui, Zhiheng Xie, Hengchang Liu, John Stankovic<br/>
-                        <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>,
-                        Volume 16, Number 6, June, 2017.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=3055009">GreenDrive: A Smartphone-based Intelligent Speed Adaptation System With Real-time Traffic Signal Prediction</a></em>
-                        <a href="pdf/zhao2017iccps.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yiran Zhao, Shen Li, <strong>Shaohan Hu</strong>, Lu Su, Shuochao Yao, Huajie Shao and Tarek Abdelzaher<br/>
-                        <a href="http://iccps2017.cse.wustl.edu">The 8th International Conference on Cyber-Physical Systems (ICCPS 2017)</a>,
-                        Pittsburgh, PA USA, April 18-21, 2017.
-                        (<strong>Best paper award</strong>)
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=3052577">DeepSense: A Unified Deep Learning Framework for Time-Series Mobile Sensing Data Processing</a></em>
-                        <a href="pdf/yao2017www.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, <strong>Shaohan Hu</strong>, Yiran Zhao, Aston Zhang, Tarek Abdelzaher<br/>
-                        <a href="http://www.www2017.com.au">The 26th International International World Wide Web Conference (WWW 2017)</a>,
-                        Perth, Australia, April 3-7, 2017.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2016</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7337442">Participatory Sensing Meets Opportunistic Sharing: Automatic Phone-to-Phone Communication in Vehicles</a></em>
-                        <a href="pdf/hu2016tmc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Xiaoshan Sun, <strong>Shaohan Hu</strong>, Lu Su, Tarek F. Abdelzaher, Pan Hui, Wei Zheng, Hengchang Liu, John Stankovic<br/>
-                        <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>,
-                        Volume 15, Number 10, October, 2016.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2947625">An Experimental Evaluation of Datacenter Workloads On Low-Power Embedded Micro Servers</a></em>
-                        <a href="pdf/zhao2016vldb.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yiran Zhao, Shen Li, <strong>Shaohan Hu</strong>, Hongwei Wang, Shuochao Yao, Huajie Shao, Tarek Abdelzaher<br/>
-                        <a href="http://vldb2016.persistent.com/">The 42nd International Conference on Very Large Data Bases (VLDB 2016)</a>,
-                        New Delhi, India, September 5-9, 2016.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://acs.ist.psu.edu/iccm2016/proceedings/lebiere2016iccm.pdf">Cognitive Models of Prediction as Decision Aids</a></em>
-                        <a href="pdf/lebiere2016iccm.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Christian Lebiere, Don Morrison, Tarek Abdelzaher, <strong>Shaohan Hu</strong>, Cleotilde Gonzalez, Norbou Buchler, Vladislav D. Veksler<br/>
-                        <a href="http://acs.ist.psu.edu/iccm2016/">The 14th International Conference on Cognitive Modeling (ICCM 2016)</a>,
-                        College Park, PA USA, August 4-6, 2016.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7536545">On Source Dependency Models for Reliable Social Sensing: Algorithms and Fundamental Error Bound</a></em>
-                        <a href="pdf/yao2016icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, <strong>Shaohan Hu</strong>, Shen Li, Yiran Zhao, Lu Su, Lance Kaplan, Aylin Yener, Tarek F. Abdelzaher<br/>
-                        <a href="http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/">The 36th IEEE International Conference on Distributed Computing Systems (ICDCS 2016)</a>,
-                        Nara, Japan, June 27-30, 2016.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7460719">Recursive Ground Truth Estimator for Social Data Streams</a></em>
-                        <a href="pdf/yao2016ipsn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shuochao Yao, Md Tanvir Amin, Lu Su, <strong>Shaohan Hu</strong>, Shen Li, Shiguang Wang, Yiran Zhao, Tarek Abdelzaher, Lance Kaplan, Charu Aggarwal, Aylin Yener<br/>
-                        <a href="http://ipsn.acm.org/2016/">The 15th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2016)</a>,
-                        Vienna, Austria, April 11-14, 2016.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7084108">Experiences with GreenGPS -- Fuel-Efficient Navigation using Participatory Sensing</a></em>
-                        <a href="pdf/saremi2016tmc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Fatemeh Saremi, Omid Fatemieh, Hossein Ahmadi, Hongyan Wang, Tarek Abdelzaher, Raghu Ganti, Hengchang Liu, <strong>Shaohan Hu</strong>, Shen Li, and Lu Su<br/>
-                        <a href="http://www.computer.org/web/tmc">IEEE Transactions on Mobile Computing (IEEE TMC)</a>,
-                        Volume 15, Number 3, March, 2016.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2015</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7383576">Data Acquisition for Real-time Decision-making under Freshness Constraints</a></em>
-                        <a href="pdf/hu2015rtss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Shuochao Yao, Haiming Jin, Yiran Zhao, Yitao Hu, Xiaochen Liu, Nooreddin Naghibolhosseini, Shen Li, Akash Kapoor, William Dron, Lu Su, Amotz Bar-Noy, Pedro Szekely, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
-                        <a href="http://2015.rtss.org/">The 36th IEEE Real-Time Systems Symposium (RTSS 2015)</a>,
-                        San Antonio, TX USA, December 1-4, 2015.
-                        [<a href="slides/rtss2015-freshness.pdf">slides</a>]
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://link.springer.com/article/10.1007/s11241-015-9238-8">Reliable Social Sensing with Physical Constraints: Analytic Bounds and Performance Evaluation</a></em>
-                        <a href="pdf/wang2015jrts.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
-                        <a href="http://link.springer.com/journal/11241">Journal of Real-Time Systems (JRTS)</a>,
-                        Volume 51, Number 6, November, 2015.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2804287">Experiences with eNav: A Low-power Vehicular Navigation System</a></em>
-                        <a href="pdf/hu2015ubicomp.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
-                        <a href="http://ubicomp.org/ubicomp2015/">The ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2015)</a>,
-                        Osaka, Japan, September 7-11, 2015.
-                        [<a href="slides/ubicomp2015-enav.pdf">slides</a>]
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://www.usenix.org/system/files/conference/atc15/atc15-paper-li-shen.pdf">Pyro: A Spatial-Temporal Big-Data Storage System for Dynamic Workload Hotspots</a></em>
-                        <a href="pdf/li2015atc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, <strong>Shaohan Hu</strong>, Raghu Ganti, Mudhakar Srivatsa, Tarek Abdelzaher<br/>
-                        <a href="https://www.usenix.org/conference/atc15">USENIX Annual Technical Conference (USENIX ATC 2015)</a>,
-                        Santa Clara, CA USA, July 8-10, 2015.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2770876">SmartRoad: Smartphone-based Crowd Sensing for Traffic Regulator Detection and Identification</a></em>
-                        <a href="pdf/hu2015tosn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek F. Abdelzaher<br/>
-                        <a href="http://tosn.acm.org/">ACM Transactions on Sensor Networks (ACM TOSN)</a>,
-                        Volume 11, Number 4, July, 2015.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7165037">On Exploiting Logical Dependencies for Minimizing Additive Cost Metrics in Resource-Limited Crowdsensing</a></em>
-                        <a href="pdf/hu2015dcoss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Shen Li, Shuochao Yao, Lu Su, Ramesh Govindan, Reginald Hobbs, Tarek F. Abdelzaher<br/>
-                        <a href="http://www.dcoss.org/">The 11th IEEE International Conference on Distributed Computing in Sensor Systems (DCOSS 2015)</a>,
-                        Fortaleza, Brazil, June 10-12, 2015.
-                        [<a href="slides/dcoss2015-mincost.pdf">slides</a>]
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2737114">Scalable Social Sensing of Interdependent Phenomena</a></em>
-                        <a href="pdf/wang2015ipsn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shiguang Wang, Lu Su, Shen Li, <strong>Shaohan Hu</strong>, Tanvir Amin, Hongwei Wang, Shuochao Yao, Lance Kaplan, Tarek Abdelzaher<br/>
-                        <a href="http://ipsn.acm.org/2015/">The 14th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2015)</a>,
-                        Seattle, WA USA, April 13-17, 2015.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7108416">The Packing Server for Real-time Scheduling of MapReduce Workflows</a></em>
-                        <a href="pdf/li2015rtas.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, <strong>Shaohan Hu</strong>, Tarek Abdelzaher<br/>
-                        <a href="http://2015.rtas.org/">The 21st IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS 2015)</a>,
-                        Seattle, WA USA, April 13-16, 2015.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2735960.2735965">Exploiting Structured Human Interactions to Enhance Estimation Accuracy in Cyber-physical Systems</a></em>
-                        <a href="pdf/gao2015iccps.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Yunlong Gao, <strong>Shaohan Hu</strong>, Renato Mancuso, Hongwei Wang, Minje Kim, PoLiang Wu, Lu Su, Lui Sha, Tarek Abdelzaher<br/>
-                        <a href="http://iccps.acm.org/2015/">The 6th International Conference on Cyber-Physical Systems (ICCPS 2015)</a>,
-                        Seattle, WA USA, April 14-16, 2015.
-                        [<a href="slides/iccps2015-workflow.pdf">slides</a>]
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2014</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/7010369">Generalized Decision Aggregation in Distributed Sensing Systems</a></em>
-                        <a href="pdf/su2014rtss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Lu Su, Qi Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Jing Gao, Hengchang Liu, Tarek Abdelzaher, Jiawei Han, Xue Liu, Yan Gao, Lance Kaplan<br/>
-                        <a href="http://2014.rtss.org/">The 35th IEEE Real-Time Systems Symposium (RTSS 2014)</a>,
-                        Rome, Italy, December 2-5, 2014.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6888886">WOHA: Deadline-Aware Map-Reduce Workflow Scheduling Framework over Hadoop Cluster</a></em>
-                        <a href="pdf/li2014icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Lu Su, Tarek Abdelzaher, Indranil Gupta, Richard Pace<br/>
-                        <a href="http://lsd.ls.fi.upm.es/icdcs2014">The 34th International Conference on Distributed Computing Systems (ICDCS 2014)</a>,
-                        Madrid, Spain, June 30-July 3, 2014.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="https://www.usenix.org/system/files/conference/icac14/icac14-paper-li_shen.pdf">WattValet: Heterogenous Energy Storage Management in Data Centers for Improved Power Capping</a></em>
-                        <a href="pdf/li2014icac.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Siyu Gu, Chenji Pan, Tarek F. Abdelzaher<br/>
-                        <a href="https://www.usenix.org/conference/icac14">The 11th International Conference on Autonomic Computing (ICAC 2014)</a>,
-                        Philadelphia, PA USA, June 18-20, 2014.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6846153">Data Extrapolation in Social Sensing for Disaster Response</a></em>
-                        <a href="pdf/gu2014dcoss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Siyu Gu, Chenji Pan, Hengchang Liu, Shen Li, <strong>Shaohan Hu</strong>, Lu Su, Shiguang Wang, Dong Wang, Md Tanvir A Amin, Ramesh Govindan, Charu Aggarwal, Raghu Ganti, Mudhakar Srivatsa, Amotz Bar-Noy, Peter Terlecky, Tarek Abdelzaher<br/>
-                        <a href="http://www.dcoss.org/dcoss14/">The 10th IEEE International Conference on Distributed Computing in Sensor Systems (DCOSS 2014)</a>,
-                        Marina Del Rey, CA USA, May 26-28, 2014.
-
-                    </li>
-<!--                             <li class="list-group-item">
-                        <em><a href="https://www.ideals.illinois.edu/handle/2142/49113">Reliable Social Sensing with Physical Dependencies: Analytic Bounds and Performance Evaluation</a></em><br/>
-                        Dong Wang, Tarek F. Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
-                        <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>,
-                        May 15, 2014.
-                    </li> -->
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6848113">Towards Automatic Phone-to-Phone Communication for Vehicular Networking Applications</a></em>
-                        <a href="pdf/hu2014infocom.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher, Pan Hui, Wei Zheng, Zhiheng Xie, John Stankovic<br/>
-                        <a href="http://infocom2014.ieee-infocom.org">The 33rd IEEE International Conference on Computer Communications (INFOCOM 2014)</a>,
-                        Toronto, Canada, April 27-May 2, 2014.
-                        [<a href="slides/infocom2014-phone2phone.pdf">slides</a>]
-                    </li>
-<!--                             <li class="list-group-item">
-                        <em><a href="https://www.ideals.illinois.edu/handle/2142/48917">eNav: Smartphone-based Energy Efficient Location Sensing for Low-Power Vehicular Navigation</a></em><br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
-                        <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>,
-                        April 25, 2014.
-                    </li> -->
-                    <li class="list-group-item">
-                        <em><a href="http://dl.acm.org/citation.cfm?id=2602374">Poster Abstract: eNav -- a Smartphone-based Energy Efficient Vehicular Navigation System</a></em>
-                        <a href="pdf/hu2014ipsn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Shen Li, Shiguang Wang, Chenji Pan, Siyu Gu, Md Tanvir Al Amin, Hengchang Liu, Suman Nath, Romit Roy Choudhury, Tarek F. Abdelzaher<br/>
-                        <a href="http://ipsn.acm.org/2014/">The 13th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2014)</a>,
-                        Berlin, Germany, April 15-17, 2014.
-                        (<strong>Best poster award</strong>)
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://link.springer.com/article/10.1007/s00779-013-0655-1">Community Similarity Networks</a></em>
-                        <a href="pdf/lane2014puc.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Nicholas D. Lane, Ye Xu, Hong Lu, <strong>Shaohan Hu</strong>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
-                        <a href="http://www.springer.com/computer/hci/journal/779">ACM/Springer Journal of Personal and Ubiquitous Computing (PUC)</a>,
-                        Special Issue on Cross-Community Mining, February, 2014.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2013</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6728876">Exploitation of Physical Constraints for Reliable Social Sensing</a></em>
-                        <a href="pdf/wang2013rtss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Dong Wang, Tarek Abdelzaher, Lance Kaplan, Raghu Ganti, <strong>Shaohan Hu</strong>, Hengchang Liu<br/>
-                        <a href="http://2013.ieee-rtss.org/">The 34th IEEE Real-Time Systems Symposium (RTSS 2013)</a>,
-                        Vancouver, Canada, December 4-6, 2013.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://portal.acm.org/citation.cfm?id=2517431">Demo Abstract: Extrapolation from Participatory Sensing Data</a></em>
-                        <a href="pdf/liu2013sensys.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Hengchang Liu, Siyu Gu, Chenji Pan, Wei Zheng, Shen Li, <strong>Shaohan Hu</strong>, Shiguang Wang, Dong Wang, Tanvir Amin, Lu Su, Zhiheng Xie, Ramesh Govindan, Charu Aggarwal, Amotz Barnoy, Tarek Abdelzaher<br/>
-                        <a href="http://sensys.acm.org/2013/">The 11th ACM Conference on Embedded Networked Sensor Systems (SenSys 2013)</a>,
-                        Rome, Italy, November 11-15, 2013.
-
-                    </li>
-<!--                             <li class="list-group-item">
-                        <em><a href="https://www.ideals.illinois.edu/handle/2142/45699">SmartRoad: A Mobile Phone Based Crowd-Sourced Road Sensing System</a></em><br/>
-                        <strong>Shaohan Hu</strong>, Hengchang Liu, Lu Su, Hongyan Wang, Tarek Abdelzaher<br/>
-                        <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>,
-                        August 30, 2013.
-                    </li> -->
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6614152">MINERVA: Information-Centric Programming for Social Sensing</a></em>
-                        <a href="pdf/wang2013icccn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shiguang Wang, <strong>Shaohan Hu</strong>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
-                        <a href="http://www.icccn.org/icccn13/">The 22nd International Conference on Computer Communications and Networks (ICCCN 2013)</a>,
-                        Nassau, Bahamas July 30-August 2, 2013.
-
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6681577">Proteus: Power Proportional Memory Cache Cluster in Data Centers</a></em>
-                        <a href="pdf/li2013icdcs.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Shen Li, Shiguang Wang, Fan Yang, <strong>Shaohan Hu</strong>, Fatemeh Saremi, Tarek Abdelzaher<br/>
-                        <a href="http://www.temple.edu/cis/icdcs2013/">The 33rd International Conference on Distributed Computing Systems (ICDCS 2013)</a>,
-                        Philadelphia, PA USA, July 8-11, 2013.
-
-                    </li>
-<!--                             <li class="list-group-item">
-                        <em><a href="https://www.ideals.illinois.edu/handle/2142/43856">SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System</a></em><br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
-                        <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>,
-                        April 18, 2013.
-                    </li> -->
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6566935">Efficient 3G Budget Utilization in Mobile Participatory Sensing Applications</a></em>
-                        <a href="pdf/liu2013infocom.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Hengchang Liu, <strong>Shaohan Hu</strong>, Wei Zheng, Zhiheng Xie, Shiguang Wang, Pan Hui, and Tarek F. Abdelzaher<br/>
-                        <a href="http://infocom2013.ieee-infocom.org/">The 32nd IEEE International Conference on Computer Communications (INFOCOM 2013)</a>,
-                        Turin, Italy, April 14-19, 2013.
-                        [<a href="slides/infocom2013-3Gbudget.pdf">slides</a>]
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://portal.acm.org/citation.cfm?id=2461433">Poster Abstract: SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System</a></em>
-                        <a href="pdf/hu2013ipsn.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        <strong>Shaohan Hu</strong>, Lu Su, Hengchang Liu, Hongyan Wang, Tarek Abdelzaher<br/>
-                        <a href="http://ipsn.acm.org/2013/">The 12th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN 2013)</a>,
-                        Philadelphia, PA USA, April 8-11, 2013.
-
-                    </li>
-<!--                             <li class="list-group-item">
-                        <em><a href="https://www.ideals.illinois.edu/handle/2142/42511">MINERVA: Information-Centric Programming for Social Sensing</a></em><br/>
-                        Shiguang Wang, <strong>Shaohan Hu</strong>, Shen Li, Hengchang Liu, Md Yusuf Sarwar Uddin, and Tarek Abdelzaher<br/>
-                        <a href="http://www.ideals.illinois.edu">UIUC Technical Report</a>,
-                        January 15, 2013
-                    </li> -->
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2012</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://ieeexplore.ieee.org/document/6424815">Quality of Information based Data Selection and Transmission in Wireless Sensor Networks</a></em>
-                        <a href="pdf/su2012rtss.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Lu Su, <strong>Shaohan Hu</strong>, Shen Li, Feng Liang, Jing Gao, Tarek F. Abdelzaher, and Jiawei Han<br/>
-                        <a href="http://sites.ieee.org/rtss2012/">The 33rd IEEE Real-Time Systems Symposium (RTSS 2012)</a>,
-                        San Juan, Puerto Rico, December 4-7, 2012.
-
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2011</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://portal.acm.org/citation.cfm?id=2030160">Enabling Large-scale Human Activity Inference on Smartphones using Community Similarity Networks (CSN)</a></em>
-                        <a href="pdf/lane2011ubicomp.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Nicholas D. Lane, Ye Xu, Hong Lu, <strong>Shaohan Hu</strong>, Tanzeem Choudhury, Andrew T. Campbell, and Feng Zhao<br/>
-                        <a href="http://www.ubicomp.org/ubicomp2011/">The 13th International Conference on Ubiquitous Computing (UbiComp 2011)</a>,
-                        Beijing, China, September 17-21, 2011.
-                        (<strong>Best paper nominee</strong>)
-                    </li>
-                </ul>
-            </div>
-            <div class="panel panel-default" data-anim="true">
-                <!-- Default panel contents -->
-                <div class="panel-heading">
-                    <h4>2010</h4>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <em><a href="http://portal.acm.org/citation.cfm?id=1851326">NeuroPhone: Brain-Mobile Phone Interface using a Wireless EEG Headset</a></em>
-                        <a href="pdf/campbell2010mobiheld.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Andrew T. Campbell, Tanzeem Choudhury, <strong>Shaohan Hu</strong>, Hong Lu, Matthew K. Mukerjee, Mashfiqui Rabbi, and Rajeev D. S. Raizada<br/>
-                        <a href="http://conferences.sigcomm.org/sigcomm/2010/mhcfp.php">The 2nd ACM SIGCOMM Workshop on Networking, Systems, and Applications on Mobile Handhelds (MobiHeld 2010)</a>,
-                        New Delhi, India, August 30, 2010.
-                        [<a href="http://www.youtube.com/watch?v=tc82Z_yfEwc">demo</a>]
-                    </li>
-                    <li class="list-group-item">
-                        <em><a href="http://www.springerlink.com/content/j41w758434321108/">Resource-bounded Information Extraction: Acquiring Missing Feature Values On Demand</a></em>
-                        <a href="pdf/kanani2010pakdd.pdf"><i class="far fa-file-pdf" aria-hidden="true"></i></a>
-                        <br/>
-                        Pallika Kanani, Andrew McCallum, and <strong>Shaohan Hu</strong><br/>
-                        <a href="http://www.iiit.ac.in/conferences/pakdd2010">The 14th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2010)</a>,
-                        Hyderabad, India. June 21-24, 2010.
-                        (<strong>Best student paper runner-up award</strong>)
-                    </li>
-                </ul>
-            </div>
+        <div id="publications" class="container pt-3">
+            <p class="fs-3 fw-light">Publications</p>
+            <div id="publications-content" class="pb-3"></div>
         </div>
-
 
         <div id="before-patents" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/dc.jpg">
             <a href="#patents"><h1><i class="fa fa-angle-down"></i></h1></a>
         </div>
-        <div id="patents" class="container" data-anim="true">
-            <h2>Patents</h2>
+        <div id="patents" class="container pt-3">
+            <p class="fs-3 fw-light">Patents</p>
+            <div id="patents-content" class="row align-items-start pb-3"></div>
+        </div>
 
-            <div id="patents-granted" class="contrainer col" data-anim="true">
-                <div class="panel">
-                    <strong class="list-group-item list-group-item-info">
-                        Granted
-                    </strong>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US10832173">
-                        <span class="badge">US10832173</span>
-                        Cognitive Software Development
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US10831495">
-                        <span class="badge">US10831495</span>
-                        Parallelization of Numeric Optimizers
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US10803395">
-                        <span class="badge">US10803395</span>
-                        Quantum Computations of Classical Specifications
-                    </a>
-                    <a class="list-group-item" href="https://www.freepatentsonline.com/10637480.html">
-                        <span class="badge">US10637480</span>
-                        Multi-control Quantum State Inversion Gate
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US10713055">
-                        <span class="badge">US10713055</span>
-                        Parallelization of Numeric Optimizers
-                    </a>
+        <div id="copyright-pane" class="jumbotron transparent-bg" data-parallax="scroll"
+            data-image-src="img/fortaleza.jpg">
+            <a href="#copyright">
+                <h1><i class="fa fa-angle-down"></i></h1>
+            </a>
+
+            <div id="copyright" class="container-fluid justify-content-evenly">
+                <div class="d-flex justify-content-center">
+                    <hr class="custom col-4">
+                    </hr>
                 </div>
-            </div>
 
-            <div id="patents-pending" class="contrainer col" data-anim="true">
-                <div class="panel">
-                    <strong class="list-group-item list-group-item-info">
-                        Pending
-                    </strong>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20210049498">
-                        <span class="badge">US20210049498</span>
-                        Quantum Reinforcement Learning Agent
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20200342293">
-                        <span class="badge">US20200342293</span>
-                        Quantum Computational Method and Device
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20200042882">
-                        <span class="badge">US20200042882</span>
-                        Monte Carlo Markov Chain based Quantum Program Optimization
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20190220782">
-                        <span class="badge">US20190220782</span>
-                        Simplified Quantum Programming
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20200202247">
-                        <span class="badge">US20200202247</span>
-                        Adaptive Quantum Circuit Construction for Multiple-Controlled-Not Gates
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20200183938">
-                        <span class="badge">US20200183938</span>
-                        Automatic Quantum Searching of Object Database
-                    </a>
-                    <a class="list-group-item" href="https://patents.google.com/patent/US20200097859">
-                        <span class="badge">US20200097859</span>
-                        Quantum Algorithm Concatenation
-                    </a>
+                <div class="text-white-50 fw-lighter">Copyright &copy;
+                    <script language="javascript" type="text/javascript">
+                        var today = new Date()
+                        var year = today.getYear()
+                        if (year < 1900) {
+                            year = year + 1900;
+                        }
+                        document.write(year)
+                    </script> Shaohan Hu. All rights reserved.
                 </div>
             </div>
         </div>
-<!--         <div id="before-press" class="jumbotron transparent-bg" data-parallax="scroll" data-image-src="img/turino.jpg">
-            <a href="#press"><h1><i class="fa fa-angle-down"></i></h1></a>
-        </div>
 
-        <div id="press" class="container" data-anim="true">
-            <h2>Press</h2>
-            <div class="outer-press-container">
-                <div class="news-container col col-lg-3 col-md-4 col-sm-6 col-xs-12" data-anim="true">
-                    <div class="news">
-                        <div class="img-figure">
-                            <div class="cat">IL News Bureau</div>
-                            <img src="https://news.illinois.edu/files/6367/233073/71536.jpg" class="img-responsive news-img">
-                        </div>
-
-                        <div class="title">
-                            <h1>New mobile app expands the outreach of SAWBO videos</h1>
-                        </div>
-                        <p class="description">
-                            Whether the need is to educate people in West Africa about preventing Ebola or to train farmers in Latin America...
-                        </p>
-
-                        <p class="more">
-                            <a href="https://news.illinois.edu/view/6367/233073">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </p>
-                     </div>
-                </div>
-                <div class="news-container col col-lg-3 col-md-4 col-sm-6 col-xs-12" data-anim="true">
-                    <div class="news">
-                        <div class="img-figure">
-                            <div class="cat">CBS News</div>
-                            <img src="https://cbsnews1.cbsistatic.com/hub/i/2011/10/09/b28dbd6b-3a2e-11e3-a4cb-047d7b15b92e/bionics09.jpg" class="img-responsive news-img">
-                        </div>
-
-                        <div class="title">
-                            <h1>The Next Step in Bionics</h1>
-                        </div>
-                        <p class="description">
-                            Step by step, bionic engineers are transforming lives in ways that barely could have been imagined until recently...
-                        </p>
-
-                        <p class="more">
-                            <a href="http://www.cbsnews.com/stories/2011/10/09/sunday/main20117796.shtml">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </p>
-                     </div>
-                </div>
-                <div class="news-container col col-lg-3 col-md-4 col-sm-6 col-xs-12" data-anim="true">
-                    <div class="news">
-                        <div class="img-figure">
-                            <div class="cat">The New York Times Magazine</div>
-                            <img src="https://static01.nyt.com/images/2011/09/18/magazine/18mindreading/18mindreading-popup.jpg" class="img-responsive news-img">
-                        </div>
-
-                        <div class="title">
-                            <h1>The Cyborg in Us All</h1>
-                        </div>
-                        <p class="description">
-                            “Fingers!” Gerwin Schalk sputtered, waving his hands around in the air. “Fingers are made to pick up a hammer.”...
-                        </p>
-
-                        <p class="more">
-                            <a href="http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </p>
-                     </div>
-                </div>
-                <div class="news-container col col-lg-3 col-md-4 col-sm-6 col-xs-12" data-anim="true">
-                    <div class="news">
-                        <div class="img-figure">
-                            <div class="cat">Technology Review</div>
-                            <img src="https://d267cvn3rvuq91.cloudfront.net/_/img/stacked-logo.svg" class="img-responsive news-img">
-                        </div>
-
-                        <div class="title">
-                            <h1>Mobile Phone Mind Control</h1>
-                        </div>
-                        <p class="description">
-                            ...In contrast to voice activation or eye tracking, the team says brain-control could allow for easy and silent phone use...
-                        </p>
-
-                        <p class="more">
-                            <a href="http://www.technologyreview.com/blog/editors/24993">read more</a><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </p>
-                     </div>
-                </div>
-            </div>
-        </div> -->
-
-        <div id="copyright-pane" class="transparent-bg" data-parallax="scroll" data-image-src="img/fortaleza.jpg">
-            <div class="container">
-                <a href="#copyright"><h1><i id="go-to-bottom" class="fa fa-angle-double-down"></i></h1></a>
-            </div>
-            <footer id="copyright" class="col col-xs-12 text-center">
-                <hr class="custom"></hr>
-                <p>
-                    <h4><small>Copyright &copy;
-                        <script language="javascript" type="text/javascript">
-                            var today = new Date()
-                            var year = today.getYear()
-                            if (year < 1900) {
-                                year = year + 1900;
-                            }
-                            document.write(year)
-                        </script> Shaohan Hu. All rights reserved.
-                    </small></h4>
-                </p>
-            </footer>
-        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.2/js/bootstrap.bundle.min.js"
+            integrity="sha512-lAJppLlFlj2g7mb8jrbx34cdZcB24LLIK0N4U0rZtRPoY4oq9uiRXBbigPzGmzN5EXiDn0yMLIBjf0+E/alhXg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
-    integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="js/load-db.js"></script>
+        <script src="js/scripts.js"></script>
 
         <script src="js/parallax.min.js"></script>
-        <script src="js/animate-in.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/easing.js"></script>
-        <script type="text/javascript" src="js/smoothzoom.min.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- <script src="js/animate-in.js"></script> -->
+        <script src="js/easing.js"></script>
+        <script src="js/smoothzoom.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

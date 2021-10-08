@@ -1,8 +1,9 @@
 body {
     position: relative;
-    padding-top: 50px;
+    padding-top: 11px;
+    font-size: 11pt;
     font-family:
-                /*"HelveticaNeue-Ultralight",*/
+                /* "HelveticaNeue-Ultralight", */
                 "HelveticaNeue-Light",
                 "Helvetica Neue",
                 Helvetica,
@@ -13,7 +14,7 @@ body {
 
 nav a {
     font-family:
-/*                "HelveticaNeue-Ultralight",*/
+               /* "HelveticaNeue-Ultralight", */
                 "HelveticaNeue-Light",
                 "Helvetica Neue",
                 Helvetica,
@@ -22,32 +23,14 @@ nav a {
                 sans-serif;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    background-color: rgba(0,0,0,0.9);
-    color: white;
+#main-nav {
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(11px);
 }
 
-*[data-anim="true"] {
-  opacity: 0;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-  -webkit-transform: translate3d(0, 90px, 0);
-  -moz-transform: translate3d(0, 90px, 0);
-  transform: translate3d(0, 90px, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-}
-*[data-anim="true"] * {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-}
-.anim-in[data-anim="true"] {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+.navbar-nav > li > a:hover {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
 }
 
 /* this width is fixed s.t. its toggle won't move other nav bar links */
@@ -61,6 +44,7 @@ nav a {
 
 a {
     color: darkslategray;
+    text-decoration: none;
 }
 
 a:visited {
@@ -93,36 +77,6 @@ a {
     -moz-transition: all .8s ease;
     -o-transition: all .8s ease;
     transition: all .8s ease;
-}
-
-.boxshadow {
-    box-shadow: 0em 0em 2em 0.5em rgba(0,0,0,0.3);
-}
-
-.boxshadow-inv {
-    box-shadow: 0em 0em 2em 0.5em rgba(0,0,0,0.3) inset;
-}
-
-.light-shadow {
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-.light-shadow:before, .light-shadow:after {
-    content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:100px / 10px;
 }
 
 #return-to-top {
@@ -175,7 +129,8 @@ ul.dropdown-menu {
 #about-pane {
     padding: 22px;
     border-radius: 22px;
-    background-color: rgba(0,0,0,0.66);
+    background-color: rgba(255, 255, 255, .1);
+     backdrop-filter: blur(11px);
 }
 
 .transparent-bg {
@@ -183,17 +138,9 @@ ul.dropdown-menu {
     min-height: 100vh;
 }
 
-#id-picture {
+/* #id-picture {
     display: none;
-}
-
-#misc-btns {
-    margin-top: 11px;
-}
-
-#misc-btns a {
-    width: 42px;
-}
+} */
 
 #picture {
     padding: 0px;
@@ -215,10 +162,10 @@ ul.dropdown-menu {
 }
 
 #mini-bio > p {
-    color: rgba(255,255,255,0.77);
+    color: rgba(255,255,255,1);
     font-family:
-/*                "HelveticaNeue-Ultralight",*/
-/*                "HelveticaNeue-Light",*/
+               "HelveticaNeue-Ultralight",
+               "HelveticaNeue-Light",
                 "Helvetica Neue",
                 Helvetica,
                 Arial,
@@ -229,12 +176,12 @@ ul.dropdown-menu {
 
 #mini-bio a {
     color: lightblue;
-    opacity: 0.77;
+    /* opacity: 0.77; */
 }
 
 #mini-bio a:visited {
     color: aqua;
-    opacity: 0.77;
+    /* opacity: 0.77; */
 }
 
 /* mouse over link */
@@ -251,195 +198,27 @@ ul.dropdown-menu {
     opacity: 0.66;
 }
 
-#about, #work, #education, #services, #publications, #press {
-    position: relative;
-    padding-bottom: 50px;
-}
 
-#before-services, #before-pub, #before-patents, #before-press, #copyright-pane {
+#before-services, #before-pub, #before-publications, #before-patents, #before-press, #copyright-pane {
     text-align: center;
     position: relative;
 }
 
-#before-services a, #before-pub a, #before-patents a, #before-press a, #copyright-pane a {
+#before-services a, #before-pub a, #before-publications, #before-patents a, #before-press a, #copyright-pane a {
     position: relative;
     color: rgba(256,256,256,0.5);
     text-shadow: #000 0.0em 0.8em 2em;
 }
 
 /* mouse over link */
-#before-services a:hover, #before-pub a:hover, #before-patents a:hover, #before-press a:hover, #copyright-pane a:hover {
+#before-services a:hover, #before-pub a:hover, #before-publications, #before-patents a:hover, #before-press a:hover, #copyright-pane a:hover {
     top: 1px;
     color: rgba(256,256,256,0.9);
     text-shadow: #000 0.0em 0.3em 1.5em;
 }
 
-/* for press news */
-
-.outer-press-container {
-    padding: 66px;
-}
-
-#press {
-    text-align: center;
-}
-
-.news-container {
-    padding-bottom: 66px;
-}
-
-.news {
-    background: #fff;
-	position: relative;
-	overflow: hidden;
-	z-index:1;
- 	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-
-	border: 1px solid #eaeaea;
-}
-
-.news .img-figure {
-	position: relative;
-    max-height: 168px;
-    min-width: 100%;
-}
-
-.news .img-figure img {
-	position: relative;
-    overflow: hidden;
-    -webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.news:hover .img-figure img {
-	-webkit-transform: scale(1.10);
-	-moz-transform: scale(1.10);
-	-ms-transform: scale(1.10);
-	-o-transform: scale(1.10);
-	transform: scale(1.10);
-}
-
-.news .title {
-	/*padding: 29px 30px;*/
-	padding: 45px 30px;
-	position: absolute;
-	left: 0;
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-.news .title h1 {
-	margin: 0;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 19px;
-/*	color: #3D6AA2;*/
-	text-align: center;
-}
-
-.news:hover .title  {
-	margin-top: -90px;
-	background: #fff;
-}
-
-.news  p.description {
-	position: relative;
-	font-weight: normal;
-	line-height: 22px;
-	opacity: 0;
-
-	text-align: center;
-
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: -50px;
-
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-.news:hover p.description  {
-	opacity: 1;
-}
-
-p.more {
-	text-align: center;
-}
-
-.more a {
-    position: relative;
-    font-size: 13px;
-    margin-top: 30px;
-    display: block;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    display: inline-block;
-    color: #28998b;
-}
-
-.more a:after {
-    content: '';
-    width: 18px;
-    height: 1px;
-
-    position: absolute;
-    left: 55px;
-    top: 9px;
-
-    background: #28998b;
-
-    vertical-align: middle;
-    margin-left: 10px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-
-.news:hover a:after {
-    width: 30px;
-}
-
-.cat {
-	background: #a0bc9f;
-	color: #fff;
-	text-transform: uppercase;
-	position: absolute;
-	left: 0;
-	top: 20px;
-	z-index: 1;
-	padding: 3px 15px;
-}
-
-#go-to-bottom{
-    font-size: 160%;
-}
-
-/* end press news */
 hr.custom {
-    width: 88%;
+    width: 60%;
     border: 0;
     height: 1px;
     background: white;
@@ -448,5 +227,17 @@ hr.custom {
 
 #copyright {
     position: absolute;
-    bottom: 0;
+    /* left: 50%; */
+    bottom: 16px;
+    /* transform: translate(-50%, -50%); */
+    margin: 0 auto;
 }
+
+.nav-pills > li > a.active {
+    background-color: rgba(0, 0, 0, .6) !important;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: gray;
+}
+

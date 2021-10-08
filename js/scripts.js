@@ -1,7 +1,3 @@
-$('[data-toggle="tooltip"]').tooltip({
-	'placement': 'top'
-});
-
 $(window).load(function () {
 	$('img').smoothZoom({
 	});
@@ -26,19 +22,31 @@ $("img").one("load", function (evt) {
 });
 
 
-// ===== Scroll to Top ====
-$(window).scroll(function () {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+//Get the button
+let mybutton = document.getElementById("return-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
     } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        mybutton.style.display = "none";
     }
-});
-$('#return-to-top').click(function () {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 $('#links-toggle').on('shown.bs.dropdown', function () {
     $(this).find('a').find('span').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
@@ -46,3 +54,8 @@ $('#links-toggle').on('shown.bs.dropdown', function () {
 $('#links-toggle').on('hidden.bs.dropdown', function () {
     $(this).find('a').find('span').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
 });
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
