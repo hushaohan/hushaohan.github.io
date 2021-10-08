@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Executive Director",
+        "employer": "JPMorgan Chase - Future Lab for Applied Research and Engineering",
+        "url": "https://www.jpmorgan.com/insights/technology/flare",
+        "location": "New York, NY",
+        "date": "January 2021 - Present"
+    },
+    {
+        "title": "Research Staff Member",
+        "employer": "IBM Research",
+        "url": "http://research.ibm.com/labs/watson/index.shtml",
+        "location": "Yorktown Heights, NY",
+        "date": "September 2016 - December 2020"
+    },
+    {
+        "title": "Research Assistant",
+        "employer": "University of Illinois at Urbana-Champaign",
+        "url": "http://www.illinois.edu",
+        "location": "Urbana, IL",
+        "date": "January 2012 - December 2016"
+    },
+    {
+        "title": "Graduate Intern Technical",
+        "employer": "Intel Corporation",
+        "url": "http://www.intel.com",
+        "location": "Santa Clara, CA",
+        "date": "May 2014 - September 2014"
+    },
+    {
+        "title": "Teaching Assistant",
+        "employer": "University of Illinois at Urbana-Champaign",
+        "url": "http://www.illinois.edu",
+        "location": "Urbana, IL",
+        "date": "August 2011 - December 2011"
+    },
+    {
+        "title": "Teaching Assistant",
+        "employer": "Dartmouth College",
+        "url": "http://www.dartmouth.edu",
+        "location": "Hanover, NH",
+        "date": "September 2008 - September 2010"
+    },
+    {
+        "title": "Teaching Assistant",
+        "employer": "University of Massachusetts at Amherst",
+        "url": "http://www.umass.edu",
+        "location": "Amherst, MA",
+        "date": "January 2008 - May 2008"
+    }
+]

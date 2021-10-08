@@ -1,0 +1,134 @@
+[
+    {
+        "url": "https://asplos-conference.org/2021",
+        "acronym": "ASPLOS",
+        "years": [
+            2021
+        ],
+        "name": "Architectural Support for Programming Languages and Operating Systems"
+    },
+    {
+        "url": "https://sigmobile.org/mobicom/2019/",
+        "acronym": "MobiCom",
+        "years": [
+            2018,
+            2019
+        ],
+        "name": "ACM International Conference on Mobile Computing and Networking"
+    },
+    {
+        "url": "http://www.wi-opt.org",
+        "acronym": "WiOpt",
+        "years": [
+            2018
+        ],
+        "name": "International Symposium on Modeling and Optimization in Mobile, Ad Hoc and Wireless Networks"
+    },
+    {
+        "url": "http://sensys.acm.org",
+        "acronym": "SenSys",
+        "years": [
+            2015,
+            2016,
+            2017
+        ],
+        "name": "ACM International Conference on Embedded Networked Sensor Systems"
+    },
+    {
+        "url": "http://ipsn.acm.org/2017/",
+        "acronym": "IPSN",
+        "years": [
+            2017
+        ],
+        "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks"
+    },
+    {
+        "url": "http://cdc2016.ieeecss.org/",
+        "acronym": "CDC",
+        "years": [
+            2016
+        ],
+        "name": "International Conference on Decision and Control"
+    },
+    {
+        "url": "http://www.sigmobile.org/mobihoc/2016/",
+        "acronym": "MobiHoc",
+        "years": [
+            2016
+        ],
+        "name": "International Symposium on Mobile Ad Hoc Networking and Computing"
+    },
+    {
+        "url": "http://infocom2016.ieee-infocom.org/",
+        "acronym": "INFOCOM",
+        "years": [
+            2015,
+            2016
+        ],
+        "name": "IEEE International Conference on Computer Communications"
+    },
+    {
+        "url": "http://icdcs-2015.cse.ohio-state.edu/",
+        "acronym": "ICDCS",
+        "years": [
+            2015
+        ],
+        "name": "IEEE International Conference on Distributed Computing Systems"
+    },
+    {
+        "url": "http://icc2015.ieee-icc.org/",
+        "acronym": "ICC",
+        "years": [
+            2015
+        ],
+        "name": "IEEE International Conference on Communications"
+    },
+    {
+        "url": "http://www.iccve.org/2014/",
+        "acronym": "ICCVE",
+        "years": [
+            2014
+        ],
+        "name": "International Conference on Connected Vehicles & Expo"
+    },
+    {
+        "url": "http://www.milcom.org/2014/",
+        "acronym": "MILCOM",
+        "years": [
+            2014
+        ],
+        "name": "Military Communications Conference"
+    },
+    {
+        "url": "http://secon2014.ieee-secon.org",
+        "acronym": "SECON",
+        "years": [
+            2014
+        ],
+        "name": "IEEE International Conference on Sensing, Communication, and Networking"
+    },
+    {
+        "url": "http://icdm2013.rutgers.edu",
+        "acronym": "ICDM",
+        "years": [
+            2013
+        ],
+        "name": "IEEE International Conference on Data Mining"
+    },
+    {
+        "url": "http://www.mnnit.ac.in/iccct2013",
+        "acronym": "ICCCT",
+        "years": [
+            2013
+        ],
+        "name": "International Conference on Computing and Convergence Technology"
+    },
+    {
+        "url": "http://www.ubicomp.org/ubicomp2012",
+        "acronym": "UbiComp",
+        "years": [
+            2012
+        ],
+        "name": "ACM International Conference on Ubiquitous Computing"
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "degree": "PhD",
+        "majors": [
+            {
+                "url": "http://www.cs.illinois.edu",
+                "name": "Computer Science"
+            }
+        ],
+        "institute": {
+            "url": "http://www.illinois.edu",
+            "name": "University of Illinois at Urbana-Champaign"
+        },
+        "date": "May 2017"
+    },
+    {
+        "degree": "MS",
+        "majors": [
+            {
+                "url": "http://www.cs.dartmouth.edu",
+                "name": "Computer Science"
+            }
+        ],
+        "institute": {
+            "url": "http://www.dartmouth.edu",
+            "name": "Dartmouth College"
+        },
+        "date": "June 2011"
+    },
+    {
+        "degree": "BS",
+        "majors": [
+            {
+                "url": "http://www.cs.umass.edu",
+                "name": "Computer Science"
+            },
+            {
+                "url": "http://www.math.umass.edu",
+                "name": "Mathematics and Statistics"
+            }
+        ],
+        "institute": {
+            "url": "http://www.umass.edu",
+            "name": "University of Massachusetts at Amherst"
+        },
+        "date": "May 2008"
+    }
+]

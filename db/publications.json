@@ -1,0 +1,1496 @@
+[
+    {
+        "url": "https://arxiv.org/abs/2109.04298",
+        "title": "Quantum Machine Learning for Finance",
+        "pdf": "https://arxiv.org/pdf/2109.04298",
+        "authors": [
+            "Marco Pistoia",
+            "Syed Farhan Ahmad",
+            "Akshay Ajagekar",
+            "Alexander Buts",
+            "Shouvanik Chakrabarti",
+            "Dylan Herman",
+            "Shaohan Hu",
+            "Andrew Jena",
+            "Pierre Minssen",
+            "Pradeep Niroula",
+            "Arthur Rattew",
+            "Yue Sun",
+            "Romina Yalovetzky"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/list/quant-ph/recent",
+            "name": "arXiv - Quantum Physics",
+            "month": 9,
+            "year": 2021
+        }
+    },
+    {
+        "url": "https://dl.acm.org/doi/abs/10.1145/3460200",
+        "title": "Driver Behavior-aware Parking Availability Crowdsensing System Using Truth Discovery",
+        "pdf": "pdf/zhu2021tosn.pdf",
+        "authors": [
+            "Yi Zhu",
+            "Abhishek Gupta",
+            "Shaohan Hu",
+            "Weida Zhong",
+            "Lu Su",
+            "Chunming Qiao"
+        ],
+        "journal": {
+            "url": "https://dl.acm.org/journal/tosn",
+            "name": "ACM Transactions on Sensor Networks",
+            "acronym": "TOSN",
+            "volume": 17,
+            "number": 4,
+            "month": 7,
+            "year": 2021
+        }
+    },
+    {
+        "url": "https://arxiv.org/abs/2105.02291",
+        "title": "Clifford Circuit Optimization with Templates and Symbolic Pauli Gates",
+        "pdf": "https://arxiv.org/pdf/2105.02291",
+        "authors": [
+            "Sergey Bravyi",
+            "Ruslan Shaydulin",
+            "Shaohan Hu",
+            "Dmitri Maslov"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/list/quant-ph/recent",
+            "name": "arXiv - Quantum Physics",
+            "month": 5,
+            "year": 2021
+        }
+    },
+    {
+        "url": "https://ieeexplore.ieee.org/abstract/document/9159094",
+        "title": "Parallelization of Classical Numerical Optimization in Quantum Variational Algorithms",
+        "pdf": "pdf/pistoia2020icst.pdf",
+        "authors": [
+            "Marco Pistoia",
+            "Peng Liu",
+            "Richard Chen",
+            "Shaohan Hu",
+            "Stephen Wood"
+        ],
+        "conference": {
+            "url": "https://icst2020.info/",
+            "name": "IEEE International Conference on Software Testing, Validation and Verification",
+            "acronym": "ICST",
+            "location": "Porto, Portugal",
+            "date": "August 24-28",
+            "month": 8,
+            "year": 2020
+        }
+    },
+    {
+        "url": "https://arxiv.org/abs/2006.00064",
+        "title": "A Cloud Native Platform for Stateful Streaming",
+        "pdf": "https://arxiv.org/pdf/2006.00064",
+        "authors": [
+            "Scott Schneider",
+            "Xavier Guerin",
+            "Shaohan Hu",
+            "Kun-Lung Wu"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/list/cs.DC/recent",
+            "name": "arXiv - Distributed, Parallel, and Cluster Computing",
+            "month": 5,
+            "year": 2020
+        }
+    },
+    {
+        "url": "https://ieeexplore.ieee.org/document/9111051",
+        "title": "Road Grade Estimation Using Crowd-sourced Smartphone Data",
+        "pdf": "pdf/gupta2020ipsn.pdf",
+        "authors": [
+            "Abhishek Gupta",
+            "Shaohan Hu",
+            "Weida Zhong",
+            "Adel Sadek",
+            "Lu Su",
+            "Chunming Qiao"
+        ],
+        "conference": {
+            "url": "http://ipsn.acm.org/2020/",
+            "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+            "acronym": "IPSN",
+            "location": "Sydney, Australia",
+            "date": "April 21-24",
+            "month": 4,
+            "year": 2020
+        }
+    },
+    {
+        "url": "https://arxiv.org/abs/1910.09694",
+        "title": "A Domain-agnostic, Noise-resistant, Hardware-efficient Evolutionary Variational Quantum Eigensolver",
+        "pdf": "https://arxiv.org/pdf/1910.09694",
+        "authors": [
+            "Arthur G. Rattew",
+            "Shaohan Hu",
+            "Marco Pistoia",
+            "Richard Chen",
+            "Steve Wood"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/archive/quant-ph",
+            "name": "arXiv - Quantum Physics",
+            "month": 10,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://ieeexplore.ieee.org/document/8884843",
+        "title": "Eugene: Towards Deep Intelligence as a Service",
+        "pdf": "pdf/abdelzaher2019icdcs.pdf",
+        "authors": [
+            "Tarek Abdelzaher",
+            "Shuochao Yao",
+            "Yifan Hao",
+            "Yiran Zhao",
+            "Ailing Piao",
+            "Huajie Shao",
+            "Dongxin Liu",
+            "Shengzhong Liu",
+            "Shaohan Hu",
+            "Dulanga Weerakoon",
+            "Kasthuri Jayarajah",
+            "Archan Misra"
+        ],
+        "conference": {
+            "url": "https://theory.utdallas.edu/ICDCS2019/",
+            "name": "IEEE International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Dallas, Texas USA",
+            "date": "July 7-10",
+            "month": 7,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://doi.ieeecomputersociety.org/10.1109/MC.2019.2909709",
+        "title": "Reduction-based Problem Mapping for Quantum Computing",
+        "pdf": "pdf/hu2019computer.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Peng Liu",
+            "Chun-Fu Richard Chen",
+            "Marco Pistoia",
+            "Jay Gambetta"
+        ],
+        "journal": {
+            "url": "https://www.computer.org/csdl/magazines/co",
+            "name": "IEEE Computer",
+            "volume": 52,
+            "number": 6,
+            "month": 6,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://doi.ieeecomputersociety.org/10.1109/MC.2019.2909711",
+        "title": "Stochastic Optimization of Quantum Programs",
+        "pdf": "pdf/liu2019computer.pdf",
+        "authors": [
+            "Peng Liu",
+            "Shaohan Hu",
+            "Marco Pistoia",
+            "Chun-Fu Richard Chen",
+            "Jay Gambetta"
+        ],
+        "journal": {
+            "url": "https://www.computer.org/csdl/magazines/co",
+            "name": "IEEE Computer",
+            "volume": 52,
+            "number": 6,
+            "month": 6,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3316781.3322464",
+        "title": "Efficient Circuits for Quantum Search over 2D Square Lattice Architecture",
+        "pdf": "pdf/hu2019dac.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Dmitri Maslov",
+            "Marco Pistoia",
+            "Jay Gambetta"
+        ],
+        "conference": {
+            "url": "https://dac.com/late-breaking-results",
+            "name": "Design Automation Conference - Latest Breaking Results",
+            "acronym": "DAC LBR",
+            "location": "Las Vegas, Nevada USA",
+            "date": "June 2-6",
+            "month": 6,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3313426",
+        "title": "STFNets: Learning Sensing Signals from the Time-Frequency Perspective with Short-Time Fourier Neural Networks",
+        "pdf": "pdf/yao2019www.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Ailing Piao",
+            "Wenjun Jiang",
+            "Yiran Zhao",
+            "Huajie Shao",
+            "Shengzhong Liu",
+            "Dongxin Liu",
+            "Jinyang Li",
+            "Tianshi Wang",
+            "Shaohan Hu",
+            "Lu Su",
+            "Jiawei Han",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "https://www2019.thewebconf.org",
+            "name": "The Web Conference",
+            "acronym": "WWW",
+            "location": "San Francisco, CA USA",
+            "date": "May 13-17",
+            "month": 5,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://ieeexplore.ieee.org/document/8737500",
+        "title": "SADeepSense: Self-Attention Deep Learning Framework for Heterogeneous On-Device Sensors in Internet of Things Applications",
+        "pdf": "pdf/yao2019infocom.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Yiran Zhao",
+            "Huajie Shao",
+            "Dongxin Liu",
+            "Shengzhong Liu",
+            "Yifan Hao",
+            "Ailing Piao",
+            "Shaohan Hu",
+            "Lu Su",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "https://infocom2019.ieee-infocom.org",
+            "name": "IEEE International Conference on Computer Communications",
+            "acronym": "INFOCOM",
+            "location": "Paris, France",
+            "date": "April 29-May 2",
+            "month": 4,
+            "year": 2019
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3264954",
+        "title": "SenseGAN: Enabling Deep Learning for Internet of Things with a Semi-Supervised Framework",
+        "pdf": "pdf/yao2018imwut.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Yiran Zhao",
+            "Huajie Shao",
+            "Chao Zhang",
+            "Aston Zhang",
+            "Shaohan Hu",
+            "Dongxin Liu",
+            "Shengzhong Liu",
+            "Lu Su",
+            "Tarek F. Abdelzaher"
+        ],
+        "journal": {
+            "url": "https://imwut.acm.org/",
+            "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+            "acronym": "IMWUT",
+            "volume": 2,
+            "number": 3,
+            "month": 9,
+            "year": 2018
+        },
+        "conference": {
+            "acronym": "UbiComp",
+            "location": "Singapore",
+            "date": "October 9-11",
+            "month": 10,
+            "year": 2018
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3194959",
+        "title": "Automatically Solving NP-Complete Problems on a Quantum Computer",
+        "pdf": "pdf/hu2018icse.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Peng Liu",
+            "Chun-Fu Richard Chen",
+            "Marco Pistoia"
+        ],
+        "conference": {
+            "url": "https://www.icse2018.org/track/icse-2018-Posters",
+            "name": "International Conference on Software Engineering",
+            "acronym": "ICSE Posters",
+            "location": "Gothenburg, Sweden",
+            "date": "May 27-June 3",
+            "month": 5,
+            "year": 2018
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3212729",
+        "title": "QualityDeepSense: Quality-Aware Deep Learning Framework for Internet of Things Applications with Sensor-Temporal Attention",
+        "pdf": "pdf/yao2018emdl.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Yiran Zhao",
+            "Shaohan Hu",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "https://www.sigmobile.org/mobisys/2018/workshops/deepmobile18/index.html",
+            "name": "International Workshop on Embedded and Mobile Deep Learning",
+            "acronym": "EMDL",
+            "location": "Munich, Germany",
+            "date": "June 15",
+            "month": 6,
+            "year": 2018
+        }
+    },
+    {
+        "url": "https://ieeexplore.ieee.org/document/8364644",
+        "title": "Deep Learning for the Internet of Things",
+        "pdf": "pdf/yao2018computer.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Yiran Zhao",
+            "Aston Zhang",
+            "Shaohan Hu",
+            "Huajie Shao",
+            "Chao Zhang",
+            "Lu Su",
+            "Tarek Abdelzaher"
+        ],
+        "journal": {
+            "url": "https://publications.computer.org/computer-magazine/",
+            "name": "IEEE Computer",
+            "volume": 51,
+            "number": 5,
+            "month": 5,
+            "year": 2018
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7940106/",
+        "title": "Towards Quality Aware Information Integration in Distributed Sensing Systems",
+        "pdf": "pdf/jiang2018tpds.pdf",
+        "authors": [
+            "Wenjun Jiang",
+            "Chenglin Miao",
+            "Lu Su",
+            "Qi Li",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Jing Gao",
+            "Hengchang Liu",
+            "Tarek F. Abdelzaher",
+            "Jiawei Han",
+            "Xue Liu",
+            "Yan Gao",
+            "Lance Kaplan"
+        ],
+        "journal": {
+            "url": "https://www.computer.org/web/tpds",
+            "name": "IEEE Transactions on Parallel and Distributed Systems",
+            "acronym": "TPDS",
+            "volume": 29,
+            "number": 1,
+            "month": 1,
+            "year": 2018
+        }
+    },
+    {
+        "url": "http://www.mdpi.com/2224-2708/7/1/5/htm",
+        "title": "Athena: Towards Decision-Centric Anticipatory Sensor Information Delivery",
+        "pdf": "pdf/lee2018jsan.pdf",
+        "authors": [
+            "Jongdeog Lee",
+            "Kelvin Marcus",
+            "Tarek Abdelzaher",
+            "Md Tanvir A. Amin",
+            "Amotz Bar-Noy",
+            "William Dron",
+            "Ramesh Govindan",
+            "Reginald Hobbs",
+            "Shaohan Hu",
+            "Jung-Eun Kim",
+            "Lui Sha",
+            "Shuochao Yao",
+            "Yiran Zhao"
+        ],
+        "journal": {
+            "url": "http://www.mdpi.com/journal/jsan/",
+            "name": "Journal of Sensor and Actuator Networks",
+            "acronym": "JSAN",
+            "volume": 7,
+            "number": 1,
+            "pages": 5,
+            "month": 1,
+            "year": 2018
+        }
+    },
+    {
+        "url": "https://dl.acm.org/citation.cfm?id=3132027",
+        "title": "VibeBin: A Vibration-Based Waste Bin Level Detection System",
+        "pdf": "pdf/zhao2017imwut.pdf",
+        "authors": [
+            "Yiran Zhao",
+            "Shuochao Yao",
+            "Shen Li",
+            "Shaohan Hu",
+            "Huajie Shao",
+            "Tarek Abdelzaher"
+        ],
+        "journal": {
+            "url": "https://imwut.acm.org/",
+            "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+            "acronym": "IMWUT",
+            "volume": 1,
+            "number": 3,
+            "month": 9,
+            "year": 2017
+        },
+        "conference": {
+            "acronym": "UbiComp",
+            "location": "Maui, HI USA",
+            "date": "September 13-15",
+            "month": 9,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=3064006",
+        "title": "On Exploiting Structured Human Interactions to Enhance Sensing Accuracy in Cyber-physical Systems",
+        "pdf": "pdf/wang2017tcps.pdf",
+        "authors": [
+            "Hongwei Wang",
+            "Yunlong Gao",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Renato Mancuso",
+            "Minje Kim",
+            "Poliang Wu",
+            "Lu Su",
+            "Lui Sha",
+            "Tarek Abdelzaher"
+        ],
+        "journal": {
+            "url": "http://tcps.acm.org/",
+            "name": "ACM Transactions on Cyber-Physical Systems",
+            "acronym": "TCPS",
+            "volume": 1,
+            "number": 3,
+            "month": 7,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7980121",
+        "title": "Decision-driven Execution: A Distributed Resource Management Paradigm for the Age of IoT",
+        "pdf": "pdf/abdelzaher2017icdcs.pdf",
+        "authors": [
+            "Tarek Abdelzaher",
+            "Tanvir Al Amin",
+            "Amotz Bar-Noy",
+            "William Dron",
+            "Ramesh Govindan",
+            "Reginald Hobbs",
+            "Shaohan Hu",
+            "Jung-Eun Kim",
+            "Jongdeog Lee",
+            "Kelvin Marcus",
+            "Shuochao Yao Yiran Zhao"
+        ],
+        "conference": {
+            "url": "http://icdcs2017.gatech.edu/",
+            "name": "International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Atlanta, GA USA",
+            "date": "June 5-8",
+            "month": 6,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7979959",
+        "title": "Stark: Optimizing In-Memory Computing For Dynamic Dataset Collections",
+        "pdf": "pdf/li2017icdcs.pdf",
+        "authors": [
+            "Shen Li",
+            "Md Tanvir Al Amin",
+            "Raghu Ganti",
+            "Mudhakar Srivatsa",
+            "Shaohan Hu",
+            "Yiran Zhao Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://icdcs2017.gatech.edu/",
+            "name": "International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Atlanta, GA USA",
+            "date": "June 5-8",
+            "month": 6,
+            "year": 2017
+        }
+    },
+    {
+        "url": "https://arxiv.org/abs/1705.03955",
+        "title": "VehSense: Slippery Road Detection Using Smartphones",
+        "pdf": "pdf/hou2017vtc.pdf",
+        "authors": [
+            "Yunfei Hou",
+            "Abhishek Gupta",
+            "Tong Guan",
+            "Shaohan Hu",
+            "Lu Su",
+            "Chunming Qiao"
+        ],
+        "conference": {
+            "url": "http://ieeevtc.org/vtc2017spring",
+            "name": "IEEE Vehicular Technology Conference",
+            "acronym": "VTC",
+            "location": "Sydney, Australia",
+            "date": "June 4-7",
+            "month": 6,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7539667",
+        "title": "Efficient 3G/4G Budget Utilization in Mobile Sensing Applications",
+        "pdf": "pdf/xu2017tmc.pdf",
+        "authors": [
+            "Chao Xu",
+            "Shaohan Hu",
+            "Zheng Wei",
+            "Tarek F. Abdelzaher",
+            "Pan Hui",
+            "Zhiheng Xie",
+            "Hengchang Liu",
+            "John Stankovic"
+        ],
+        "journal": {
+            "url": "http://www.computer.org/web/tmc",
+            "name": "IEEE Transactions on Mobile Computing",
+            "acronym": "TMC",
+            "volume": 16,
+            "number": 6,
+            "month": 6,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=3055009",
+        "title": "GreenDrive: A Smartphone-based Intelligent Speed Adaptation System With Real-time Traffic Signal Prediction",
+        "pdf": "pdf/zhao2017iccps.pdf",
+        "authors": [
+            "Yiran Zhao",
+            "Shen Li",
+            "Shaohan Hu",
+            "Lu Su",
+            "Shuochao Yao",
+            "Huajie Shao Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://iccps2017.cse.wustl.edu",
+            "name": "International Conference on Cyber-Physical Systems",
+            "acronym": "ICCPS",
+            "location": "Pittsburgh, PA USA",
+            "date": "April 18-21",
+            "month": 4,
+            "year": 2017
+        },
+        "award": "Best paper award"
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=3052577",
+        "title": "DeepSense: A Unified Deep Learning Framework for Time-Series Mobile Sensing Data Processing",
+        "pdf": "pdf/yao2017www.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Shaohan Hu",
+            "Yiran Zhao",
+            "Aston Zhang",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www.www2017.com.au",
+            "name": "International International World Wide Web Conference",
+            "acronym": "WWW",
+            "location": "Perth, Australia",
+            "date": "April 3-7",
+            "month": 4,
+            "year": 2017
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7337442",
+        "title": "Participatory Sensing Meets Opportunistic Sharing: Automatic Phone-to-Phone Communication in Vehicles",
+        "pdf": "pdf/hu2016tmc.pdf",
+        "authors": [
+            "Xiaoshan Sun",
+            "Shaohan Hu",
+            "Lu Su",
+            "Tarek F. Abdelzaher",
+            "Pan Hui",
+            "Wei Zheng",
+            "Hengchang Liu",
+            "John Stankovic"
+        ],
+        "journal": {
+            "url": "http://www.computer.org/web/tmc",
+            "name": "IEEE Transactions on Mobile Computing",
+            "acronym": "IEEE TMC",
+            "volume": 15,
+            "number": 10,
+            "month": 10,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2947625",
+        "title": "An Experimental Evaluation of Datacenter Workloads On Low-Power Embedded Micro Servers",
+        "pdf": "pdf/zhao2016vldb.pdf",
+        "authors": [
+            "Yiran Zhao",
+            "Shen Li",
+            "Shaohan Hu",
+            "Hongwei Wang",
+            "Shuochao Yao",
+            "Huajie Shao",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://vldb2016.persistent.com/",
+            "name": "International Conference on Very Large Data Bases",
+            "acronym": "VLDB",
+            "location": "New Delhi, India",
+            "date": "September 5-9",
+            "month": 9,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://acs.ist.psu.edu/iccm2016/proceedings/lebiere2016iccm.pdf",
+        "title": "Cognitive Models of Prediction as Decision Aids",
+        "pdf": "pdf/lebiere2016iccm.pdf",
+        "authors": [
+            "Christian Lebiere",
+            "Don Morrison",
+            "Tarek Abdelzaher",
+            "Shaohan Hu",
+            "Cleotilde Gonzalez",
+            "Norbou Buchler",
+            "Vladislav D. Veksler"
+        ],
+        "conference": {
+            "url": "http://acs.ist.psu.edu/iccm2016/",
+            "name": "International Conference on Cognitive Modeling",
+            "acronym": "ICCM",
+            "location": "College Park, PA USA",
+            "date": "August 4-6",
+            "month": 8,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7536545",
+        "title": "On Source Dependency Models for Reliable Social Sensing: Algorithms and Fundamental Error Bound",
+        "pdf": "pdf/yao2016icdcs.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Shaohan Hu",
+            "Shen Li",
+            "Yiran Zhao",
+            "Lu Su",
+            "Lance Kaplan",
+            "Aylin Yener",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/",
+            "name": "IEEE International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Nara, Japan",
+            "date": "June 27-30",
+            "month": 6,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7460719",
+        "title": "Recursive Ground Truth Estimator for Social Data Streams",
+        "pdf": "pdf/yao2016ipsn.pdf",
+        "authors": [
+            "Shuochao Yao",
+            "Md Tanvir Amin",
+            "Lu Su",
+            "Shaohan Hu",
+            "Shen Li",
+            "Shiguang Wang",
+            "Yiran Zhao",
+            "Tarek Abdelzaher",
+            "Lance Kaplan",
+            "Charu Aggarwal",
+            "Aylin Yener"
+        ],
+        "conference": {
+            "url": "http://ipsn.acm.org/2016/",
+            "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+            "acronym": "IPSN",
+            "location": "Vienna, Austria",
+            "date": "April 11-14",
+            "month": 4,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7084108",
+        "title": "Experiences with GreenGPS -- Fuel-Efficient Navigation using Participatory Sensing",
+        "pdf": "pdf/saremi2016tmc.pdf",
+        "authors": [
+            "Fatemeh Saremi",
+            "Omid Fatemieh",
+            "Hossein Ahmadi",
+            "Hongyan Wang",
+            "Tarek Abdelzaher",
+            "Raghu Ganti",
+            "Hengchang Liu",
+            "Shaohan Hu",
+            "Shen Li",
+            "Lu Su"
+        ],
+        "journal": {
+            "url": "http://www.computer.org/web/tmc",
+            "name": "IEEE Transactions on Mobile Computing",
+            "acronym": "TMC",
+            "volume": 15,
+            "number": 3,
+            "month": 3,
+            "year": 2016
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7383576",
+        "title": "Data Acquisition for Real-time Decision-making under Freshness Constraints",
+        "pdf": "pdf/hu2015rtss.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Shuochao Yao",
+            "Haiming Jin",
+            "Yiran Zhao",
+            "Yitao Hu",
+            "Xiaochen Liu",
+            "Nooreddin Naghibolhosseini",
+            "Shen Li",
+            "Akash Kapoor",
+            "William Dron",
+            "Lu Su",
+            "Amotz Bar-Noy",
+            "Pedro Szekely",
+            "Ramesh Govindan",
+            "Reginald Hobbs",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://2015.rtss.org/",
+            "name": "IEEE Real-Time Systems Symposium",
+            "acronym": "RTSS",
+            "location": "San Antonio, TX USA",
+            "date": "December 1-4",
+            "month": 12,
+            "year": 2015
+        },
+        "slides": "slides/rtss2015-freshness.pdf"
+    },
+    {
+        "url": "https://link.springer.com/article/10.1007/s11241-015-9238-8",
+        "title": "Reliable Social Sensing with Physical Constraints: Analytic Bounds and Performance Evaluation",
+        "pdf": "pdf/wang2015jrts.pdf",
+        "authors": [
+            "Dong Wang",
+            "Tarek Abdelzaher",
+            "Lance Kaplan",
+            "Raghu Ganti",
+            "Shaohan Hu",
+            "Hengchang Liu"
+        ],
+        "journal": {
+            "url": "http://link.springer.com/journal/11241",
+            "name": "Journal of Real-Time Systems",
+            "acronym": "JRTS",
+            "volume": 51,
+            "number": 6,
+            "month": 11,
+            "year": 2015
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2804287",
+        "title": "Experiences with eNav: A Low-power Vehicular Navigation System",
+        "pdf": "pdf/hu2015ubicomp.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Shen Li",
+            "Shiguang Wang",
+            "Chenji Pan",
+            "Siyu Gu",
+            "Md Tanvir Amin",
+            "Hengchang Liu",
+            "Suman Nath",
+            "Romit Roy Choudhury",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://ubicomp.org/ubicomp2015/",
+            "name": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
+            "acronym": "UbiComp",
+            "location": "Osaka, Japan",
+            "date": "September 7-11",
+            "month": 9,
+            "year": 2015
+        },
+        "slides": "slides/ubicomp2015-enav.pdf"
+    },
+    {
+        "url": "https://www.usenix.org/system/files/conference/atc15/atc15-paper-li-shen.pdf",
+        "title": "Pyro: A Spatial-Temporal Big-Data Storage System for Dynamic Workload Hotspots",
+        "pdf": "pdf/li2015atc.pdf",
+        "authors": [
+            "Shen Li",
+            "Shaohan Hu",
+            "Raghu Ganti",
+            "Mudhakar Srivatsa",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "https://www.usenix.org/conference/atc15",
+            "name": "USENIX Annual Technical Conference",
+            "acronym": "USENIX ATC",
+            "location": "Santa Clara, CA USA",
+            "date": "July 8-10",
+            "month": 7,
+            "year": 2015
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2770876",
+        "title": "SmartRoad: Smartphone-based Crowd Sensing for Traffic Regulator Detection and Identification",
+        "pdf": "pdf/hu2015tosn.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Hengchang Liu",
+            "Hongyan Wang",
+            "Tarek F. Abdelzaher"
+        ],
+        "journal": {
+            "url": "http://tosn.acm.org/",
+            "name": "ACM Transactions on Sensor Networks",
+            "acronym": "TOSN",
+            "volume": 11,
+            "number": 4,
+            "month": 7,
+            "year": 2015
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7165037",
+        "title": "On Exploiting Logical Dependencies for Minimizing Additive Cost Metrics in Resource-Limited Crowdsensing",
+        "pdf": "pdf/hu2015dcoss.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Shen Li",
+            "Shuochao Yao",
+            "Lu Su",
+            "Ramesh Govindan",
+            "Reginald Hobbs",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www.dcoss.org/",
+            "name": "IEEE International Conference on Distributed Computing in Sensor Systems",
+            "acronym": "DCOSS",
+            "location": "Fortaleza, Brazil",
+            "date": "June 10-12",
+            "month": 6,
+            "year": 2015
+        },
+        "slides": "slides/dcoss2015-mincost.pdf"
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2737114",
+        "title": "Scalable Social Sensing of Interdependent Phenomena",
+        "pdf": "pdf/wang2015ipsn.pdf",
+        "authors": [
+            "Shiguang Wang",
+            "Lu Su",
+            "Shen Li",
+            "Shaohan Hu",
+            "Tanvir Amin",
+            "Hongwei Wang",
+            "Shuochao Yao",
+            "Lance Kaplan",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://ipsn.acm.org/2015/",
+            "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+            "acronym": "IPSN",
+            "location": "Seattle, WA USA",
+            "date": "April 13-17",
+            "month": 4,
+            "year": 2015
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7108416",
+        "title": "The Packing Server for Real-time Scheduling of MapReduce Workflows",
+        "pdf": "pdf/li2015rtas.pdf",
+        "authors": [
+            "Shen Li",
+            "Shaohan Hu",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://2015.rtas.org/",
+            "name": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+            "acronym": "RTAS",
+            "location": "Seattle, WA USA",
+            "date": "April 13-16",
+            "month": 4,
+            "year": 2015
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2735960.2735965",
+        "title": "Exploiting Structured Human Interactions to Enhance Estimation Accuracy in Cyber-physical Systems",
+        "pdf": "pdf/gao2015iccps.pdf",
+        "authors": [
+            "Yunlong Gao",
+            "Shaohan Hu",
+            "Renato Mancuso",
+            "Hongwei Wang",
+            "Minje Kim",
+            "PoLiang Wu",
+            "Lu Su",
+            "Lui Sha",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://iccps.acm.org/2015/",
+            "name": "International Conference on Cyber-Physical Systems",
+            "acronym": "ICCPS",
+            "location": "Seattle, WA USA",
+            "date": "April 14-16",
+            "month": 4,
+            "year": 2015
+        },
+        "slides": "slides/iccps2015-workflow.pdf"
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/7010369",
+        "title": "Generalized Decision Aggregation in Distributed Sensing Systems",
+        "pdf": "pdf/su2014rtss.pdf",
+        "authors": [
+            "Lu Su",
+            "Qi Li",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Jing Gao",
+            "Hengchang Liu",
+            "Tarek Abdelzaher",
+            "Jiawei Han",
+            "Xue Liu",
+            "Yan Gao",
+            "Lance Kaplan"
+        ],
+        "conference": {
+            "url": "http://2014.rtss.org/",
+            "name": "IEEE Real-Time Systems Symposium",
+            "acronym": "RTSS",
+            "location": "Rome, Italy",
+            "date": "December 2-5",
+            "month": 12,
+            "year": 2014
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6888886",
+        "title": "WOHA: Deadline-Aware Map-Reduce Workflow Scheduling Framework over Hadoop Cluster",
+        "pdf": "pdf/li2014icdcs.pdf",
+        "authors": [
+            "Shen Li",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Lu Su",
+            "Tarek Abdelzaher",
+            "Indranil Gupta",
+            "Richard Pace"
+        ],
+        "conference": {
+            "url": "http://lsd.ls.fi.upm.es/icdcs2014",
+            "name": "International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Madrid, Spain",
+            "date": "June 30-July 3",
+            "month": 6,
+            "year": 2014
+        }
+    },
+    {
+        "url": "https://www.usenix.org/system/files/conference/icac14/icac14-paper-li_shen.pdf",
+        "title": "WattValet: Heterogenous Energy Storage Management in Data Centers for Improved Power Capping",
+        "pdf": "pdf/li2014icac.pdf",
+        "authors": [
+            "Shen Li",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Siyu Gu",
+            "Chenji Pan",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "https://www.usenix.org/conference/icac14",
+            "name": "International Conference on Autonomic Computing",
+            "acronym": "ICAC",
+            "location": "Philadelphia, PA USA",
+            "date": "June 18-20",
+            "month": 6,
+            "year": 2014
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6846153",
+        "title": "Data Extrapolation in Social Sensing for Disaster Response",
+        "pdf": "pdf/gu2014dcoss.pdf",
+        "authors": [
+            "Siyu Gu",
+            "Chenji Pan",
+            "Hengchang Liu",
+            "Shen Li",
+            "Shaohan Hu",
+            "Lu Su",
+            "Shiguang Wang",
+            "Dong Wang",
+            "Md Tanvir A Amin",
+            "Ramesh Govindan",
+            "Charu Aggarwal",
+            "Raghu Ganti",
+            "Mudhakar Srivatsa",
+            "Amotz Bar-Noy",
+            "Peter Terlecky",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www.dcoss.org/dcoss14/",
+            "name": "IEEE International Conference on Distributed Computing in Sensor Systems",
+            "acronym": "DCOSS",
+            "location": "Marina Del Rey, CA USA",
+            "date": "May 26-28",
+            "month": 5,
+            "year": 2014
+        }
+    },
+    {
+        "url": "https://www.ideals.illinois.edu/handle/2142/49113",
+        "title": "Reliable Social Sensing with Physical Dependencies: Analytic Bounds and Performance Evaluation",
+        "authors": [
+            "Dong Wang",
+            "Tarek F. Abdelzaher",
+            "Lance Kaplan",
+            "Raghu Ganti",
+            "Shaohan Hu",
+            "Hengchang Liu"
+        ],
+        "preprint": {
+            "url": "http://www.ideals.illinois.edu",
+            "name": "UIUC Technical Report",
+            "date": "May 15",
+            "month": 5,
+            "year": 2014
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6848113",
+        "title": "Towards Automatic Phone-to-Phone Communication for Vehicular Networking Applications",
+        "pdf": "pdf/hu2014infocom.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Hengchang Liu",
+            "Lu Su",
+            "Hongyan Wang",
+            "Tarek Abdelzaher",
+            "Pan Hui",
+            "Wei Zheng",
+            "Zhiheng Xie",
+            "John Stankovic"
+        ],
+        "conference": {
+            "url": "http://infocom2014.ieee-infocom.org",
+            "name": "IEEE International Conference on Computer Communications",
+            "acronym": "INFOCOM",
+            "location": "Toronto, Canada",
+            "date": "April 27-May 2",
+            "month": 4,
+            "year": 2014
+        },
+        "slides": "slides/infocom2014-phone2phone.pdf"
+    },
+    {
+        "url": "https://www.ideals.illinois.edu/handle/2142/48917",
+        "title": "eNav: Smartphone-based Energy Efficient Location Sensing for Low-Power Vehicular Navigation",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Shen Li",
+            "Shiguang Wang",
+            "Chenji Pan",
+            "Siyu Gu",
+            "Md Tanvir Amin",
+            "Hengchang Liu",
+            "Suman Nath",
+            "Romit Roy Choudhury",
+            "Tarek F. Abdelzaher"
+        ],
+        "preprint": {
+            "url": "http://www.ideals.illinois.edu",
+            "name": "UIUC Technical Report",
+            "date": "April 25",
+            "month": 4,
+            "year": 2014
+        }
+    },
+    {
+        "url": "http://dl.acm.org/citation.cfm?id=2602374",
+        "title": "Poster Abstract: eNav -- a Smartphone-based Energy Efficient Vehicular Navigation System",
+        "pdf": "pdf/hu2014ipsn.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Shen Li",
+            "Shiguang Wang",
+            "Chenji Pan",
+            "Siyu Gu",
+            "Md Tanvir Al Amin",
+            "Hengchang Liu",
+            "Suman Nath",
+            "Romit Roy Choudhury",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://ipsn.acm.org/2014/",
+            "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+            "acronym": "IPSN",
+            "location": "Berlin, Germany",
+            "date": "April 15-17",
+            "month": 4,
+            "year": 2014
+        },
+        "award": "Best poster award"
+    },
+    {
+        "url": "http://link.springer.com/article/10.1007/s00779-013-0655-1",
+        "title": "Community Similarity Networks",
+        "pdf": "pdf/lane2014puc.pdf",
+        "authors": [
+            "Nicholas D. Lane",
+            "Ye Xu",
+            "Hong Lu",
+            "Shaohan Hu",
+            "Tanzeem Choudhury",
+            "Andrew T. Campbell",
+            "Feng Zhao"
+        ],
+        "journal": {
+            "url": "http://www.springer.com/computer/hci/journal/779",
+            "name": "ACM/Springer Journal of Personal and Ubiquitous Computing",
+            "acronym": "PUC",
+            "volume": 18,
+            "number": 2,
+            "month": 2,
+            "year": 2014
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6728876",
+        "title": "Exploitation of Physical Constraints for Reliable Social Sensing",
+        "pdf": "pdf/wang2013rtss.pdf",
+        "authors": [
+            "Dong Wang",
+            "Tarek Abdelzaher",
+            "Lance Kaplan",
+            "Raghu Ganti",
+            "Shaohan Hu",
+            "Hengchang Liu"
+        ],
+        "conference": {
+            "url": "http://2013.ieee-rtss.org/",
+            "name": "IEEE Real-Time Systems Symposium",
+            "acronym": "RTSS",
+            "location": "Vancouver, Canada",
+            "date": "December 4-6",
+            "month": 12,
+            "year": 2013
+        }
+    },
+    {
+        "url": "http://portal.acm.org/citation.cfm?id=2517431",
+        "title": "Demo Abstract: Extrapolation from Participatory Sensing Data",
+        "pdf": "pdf/liu2013sensys.pdf",
+        "authors": [
+            "Hengchang Liu",
+            "Siyu Gu",
+            "Chenji Pan",
+            "Wei Zheng",
+            "Shen Li",
+            "Shaohan Hu",
+            "Shiguang Wang",
+            "Dong Wang",
+            "Tanvir Amin",
+            "Lu Su",
+            "Zhiheng Xie",
+            "Ramesh Govindan",
+            "Charu Aggarwal",
+            "Amotz Barnoy",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://sensys.acm.org/2013/",
+            "name": "ACM Conference on Embedded Networked Sensor Systems",
+            "acronym": "SenSys",
+            "location": "Rome, Italy",
+            "date": "November 11-15",
+            "month": 11,
+            "year": 2013
+        }
+    },
+    {
+        "url": "https://www.ideals.illinois.edu/handle/2142/45699",
+        "title": "SmartRoad: A Mobile Phone Based Crowd-Sourced Road Sensing System",
+        "authors": [
+            "Shaohan Hu",
+            "Hengchang Liu",
+            "Lu Su",
+            "Hongyan Wang",
+            "Tarek Abdelzaher"
+        ],
+        "preprint": {
+            "url": "http://www.ideals.illinois.edu",
+            "name": "UIUC Technical Report",
+            "date": "August 30",
+            "month": 8,
+            "year": 2013
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6614152",
+        "title": "MINERVA: Information-Centric Programming for Social Sensing",
+        "pdf": "pdf/wang2013icccn.pdf",
+        "authors": [
+            "Shiguang Wang",
+            "Shaohan Hu",
+            "Shen Li",
+            "Hengchang Liu",
+            "Md Yusuf Sarwar Uddin",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www.icccn.org/icccn13/",
+            "name": "International Conference on Computer Communications and Networks",
+            "acronym": "ICCCN",
+            "location": "Nassau, Bahamas",
+            "date": "July 30-August 2",
+            "month": 7,
+            "year": 2013
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6681577",
+        "title": "Proteus: Power Proportional Memory Cache Cluster in Data Centers",
+        "pdf": "pdf/li2013icdcs.pdf",
+        "authors": [
+            "Shen Li",
+            "Shiguang Wang",
+            "Fan Yang",
+            "Shaohan Hu",
+            "Fatemeh Saremi",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://www.temple.edu/cis/icdcs2013/",
+            "name": "International Conference on Distributed Computing Systems",
+            "acronym": "ICDCS",
+            "location": "Philadelphia, PA USA",
+            "date": "July 8-11",
+            "month": 7,
+            "year": 2013
+        }
+    },
+    {
+        "url": "https://www.ideals.illinois.edu/handle/2142/43856",
+        "title": "SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Hengchang Liu",
+            "Hongyan Wang",
+            "Tarek Abdelzaher"
+        ],
+        "preprint": {
+            "url": "http://www.ideals.illinois.edu",
+            "name": "UIUC Technical Report",
+            "date": "April 18",
+            "month": 4,
+            "year": 2013
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6566935",
+        "title": "Efficient 3G Budget Utilization in Mobile Participatory Sensing Applications",
+        "pdf": "pdf/liu2013infocom.pdf",
+        "authors": [
+            "Hengchang Liu",
+            "Shaohan Hu",
+            "Wei Zheng",
+            "Zhiheng Xie",
+            "Shiguang Wang",
+            "Pan Hui",
+            "Tarek F. Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://infocom2013.ieee-infocom.org/",
+            "name": "IEEE International Conference on Computer Communications",
+            "acronym": "INFOCOM",
+            "location": "Turin, Italy",
+            "date": "April 14-19",
+            "month": 4,
+            "year": 2013
+        },
+        "slides": "slides/infocom2013-3Gbudget.pdf"
+    },
+    {
+        "url": "http://portal.acm.org/citation.cfm?id=2461433",
+        "title": "Poster Abstract: SmartRoad: A Crowd-Sourced Traffic Regulator Detection and Identification System",
+        "pdf": "pdf/hu2013ipsn.pdf",
+        "authors": [
+            "Shaohan Hu",
+            "Lu Su",
+            "Hengchang Liu",
+            "Hongyan Wang",
+            "Tarek Abdelzaher"
+        ],
+        "conference": {
+            "url": "http://ipsn.acm.org/2013/",
+            "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks",
+            "acronym": "IPSN",
+            "location": "Philadelphia, PA USA",
+            "date": "April 8-11",
+            "month": 4,
+            "year": 2013
+        }
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/document/6424815",
+        "title": "Quality of Information based Data Selection and Transmission in Wireless Sensor Networks",
+        "pdf": "pdf/su2012rtss.pdf",
+        "authors": [
+            "Lu Su",
+            "Shaohan Hu",
+            "Shen Li",
+            "Feng Liang",
+            "Jing Gao",
+            "Tarek F. Abdelzaher",
+            "Jiawei Han"
+        ],
+        "conference": {
+            "url": "http://sites.ieee.org/rtss2012/",
+            "name": "IEEE Real-Time Systems Symposium",
+            "acronym": "RTSS",
+            "location": "San Juan, Puerto Rico",
+            "date": "December 4-7",
+            "month": 12,
+            "year": 2012
+        }
+    },
+    {
+        "url": "http://portal.acm.org/citation.cfm?id=2030160",
+        "title": "Enabling Large-scale Human Activity Inference on Smartphones using Community Similarity Networks (CSN)",
+        "pdf": "pdf/lane2011ubicomp.pdf",
+        "authors": [
+            "Nicholas D. Lane",
+            "Ye Xu",
+            "Hong Lu",
+            "Shaohan Hu",
+            "Tanzeem Choudhury",
+            "Andrew T. Campbell",
+            "Feng Zhao"
+        ],
+        "conference": {
+            "url": "http://www.ubicomp.org/ubicomp2011/",
+            "name": "International Conference on Ubiquitous Computing",
+            "acronym": "UbiComp",
+            "location": "Beijing, China",
+            "date": "September 17-21",
+            "month": 9,
+            "year": 2011
+        },
+        "award": "Best paper nominee"
+    },
+    {
+        "url": "http://portal.acm.org/citation.cfm?id=1851326",
+        "title": "NeuroPhone: Brain-Mobile Phone Interface using a Wireless EEG Headset",
+        "pdf": "pdf/campbell2010mobiheld.pdf",
+        "authors": [
+            "Andrew T. Campbell",
+            "Tanzeem Choudhury",
+            "Shaohan Hu",
+            "Hong Lu",
+            "Matthew K. Mukerjee",
+            "Mashfiqui Rabbi",
+            "Rajeev D. S. Raizada"
+        ],
+        "conference": {
+            "url": "http://conferences.sigcomm.org/sigcomm/2010/mhcfp.php",
+            "name": "ACM SIGCOMM Workshop on Networking, Systems, and Applications on Mobile Handhelds",
+            "acronym": "MobiHeld",
+            "location": "New Delhi, India",
+            "date": "August 30",
+            "month": 8,
+            "year": 2010
+        },
+        "demo": "http://www.youtube.com/watch?v=tc82Z_yfEwc"
+    },
+    {
+        "url": "http://www.springerlink.com/content/j41w758434321108/",
+        "title": "Resource-bounded Information Extraction: Acquiring Missing Feature Values On Demand",
+        "pdf": "pdf/kanani2010pakdd.pdf",
+        "authors": [
+            "Pallika Kanani",
+            "Andrew McCallum",
+            "Shaohan Hu"
+        ],
+        "conference": {
+            "url": "http://www.iiit.ac.in/conferences/pakdd2010",
+            "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+            "acronym": "PAKDD",
+            "location": "Hyderabad, India",
+            "date": "June 21-24",
+            "month": 6,
+            "year": 2010
+        },
+        "award": "Best student paper runner-up award"
+    }
+]

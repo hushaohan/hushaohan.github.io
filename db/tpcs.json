@@ -1,0 +1,112 @@
+[
+    {
+        "url": "https://aichallengeiot.github.io/",
+        "years": [
+            2021
+        ],
+        "name": "International Workshop on Challenges in Artificial Intelligence and Machine Learning for Internet of Things",
+        "acronym": "AIChallengeIoT"
+    },
+    {
+        "url": "https://q-se.github.io/qse2021",
+        "years": [
+            2021
+        ],
+        "name": "International Workshop on Quantum Software Engineering",
+        "acronym": "Q-SE"
+    },
+    {
+        "url": "https://www2019.thewebconf.org",
+        "years": [
+            2018,
+            2019
+        ],
+        "name": "The Web Conference",
+        "acronym": "WWW"
+    },
+    {
+        "url": "http://www.icccn.org/",
+        "years": [
+            2019
+        ],
+        "name": "International Conference on Computer Communications and Networks",
+        "acronym": "ICCCN"
+    },
+    {
+        "url": "http://conferences.computer.org/iotDI/2019/",
+        "years": [
+            2019
+        ],
+        "name": "International Conference on Internet of Things Design and Implementation - Posters, Demos",
+        "acronym": "IoTDI"
+    },
+    {
+        "url": "http://www.iaria.org/conferences2019/EMERGING19.html",
+        "years": [
+            2017,
+            2018,
+            2019
+        ],
+        "name": "International Conference on Emerging Networks and Systems Intelligence",
+        "acronym": "EMERGING"
+    },
+    {
+        "url": "http://www.iaria.org/conferences2019/CYBER19.html",
+        "years": [
+            2017,
+            2018,
+            2019
+        ],
+        "name": "International Conference on Cyber-Technologies and Cyber-Systems",
+        "acronym": "CYBER"
+    },
+    {
+        "url": "http://www.iaria.org/conferences2019/SENSORCOMM19.html",
+        "years": [
+            2017,
+            2018,
+            2019
+        ],
+        "name": "International Conference on Sensor Technologies and Applications",
+        "acronym": "SENSORCOMM"
+    },
+    {
+        "url": "http://www.iaria.org/conferences2019/UBICOMM19.html",
+        "years": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019
+        ],
+        "name": "International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies",
+        "acronym": "UBICOMM"
+    },
+    {
+        "url": "https://www.cse.buffalo.edu/~lusu/SocialSens2018/",
+        "years": [
+            2018
+        ],
+        "name": "International Workshop on Social Sensing",
+        "acronym": "SocialSens"
+    },
+    {
+        "url": "http://infocom2018.ieee-infocom.org/content/workshop-misenet-mission-oriented-wireless-sensor-networking",
+        "years": [
+            2018
+        ],
+        "name": "IEEE International Workshop on Mission-Oriented Wireless Sensor and Cyber-Physical System Networking",
+        "acronym": "MiSeNet"
+    },
+    {
+        "url": "http://ipsn.acm.org/2016/posters.html",
+        "years": [
+            2016
+        ],
+        "name": "ACM/IEEE International Conference on Information Processing in Sensor Networks - Posters",
+        "acronym": "IPSN"
+    }
+]

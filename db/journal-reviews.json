@@ -1,0 +1,215 @@
+[
+    {
+        "url": "https://tqe.ieee.org/",
+        "years": [
+            2021
+        ],
+        "name": "IEEE Transactions on Quantum Engineering",
+        "acronym": "TQE"
+    },
+    {
+        "url": "https://www.journals.elsevier.com/knowledge-based-systems",
+        "years": [
+            2017,
+            2018,
+            2021
+        ],
+        "name": "Elsevier Knowledge-Based Systems Journal",
+        "acronym": "Knowledge-Based Systems"
+    },
+    {
+        "url": "https://www.computer.org/portal/web/tmc",
+        "years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2020
+        ],
+        "name": "IEEE Transactions on Mobile Computing",
+        "acronym": "TMC"
+    },
+    {
+        "url": "https://www.computer.org/web/tc",
+        "years": [
+            2017,
+            2019,
+            2020
+        ],
+        "name": "IEEE Transactions on Computers",
+        "acronym": "TC"
+    },
+    {
+        "url": "https://www.journals.elsevier.com/softwarex",
+        "years": [
+            2020
+        ],
+        "name": "Elsevier SoftwareX Journal",
+        "acronym": "SoftwareX"
+    },
+    {
+        "url": "https://www.computer.org/csdl/journal/td",
+        "years": [
+            2019
+        ],
+        "name": "IEEE Transactions on Parallel and Distributed Systems",
+        "acronym": "TPDS"
+    },
+    {
+        "url": "https://www.springer.com/computer/swe/journal/11227",
+        "years": [
+            2019
+        ],
+        "name": "The Journal of Supercomputing",
+        "acronym": "SUPE"
+    },
+    {
+        "url": "https://imwut.acm.org",
+        "years": [
+            2017,
+            2018
+        ],
+        "name": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+        "acronym": "IMWUT"
+    },
+    {
+        "url": "http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90",
+        "years": [
+            2014,
+            2018
+        ],
+        "name": "IEEE/ACM Transactions on Networking",
+        "acronym": "TON"
+    },
+    {
+        "url": "http://www.mdpi.com/journal/sensors",
+        "years": [
+            2016,
+            2017,
+            2018
+        ],
+        "name": "MDPI Sensors Journal",
+        "acronym": "Sensors"
+    },
+    {
+        "url": "http://www.mdpi.com/journal/applsci",
+        "years": [
+            2018
+        ],
+        "name": "MDPI Applied Sciences Journal",
+        "acronym": "Applied Sciences"
+    },
+    {
+        "url": "http://www.mdpi.com/journal/algorithms",
+        "years": [
+            2018
+        ],
+        "name": "MDPI Algorithms Journal",
+        "acronym": "Algorithms"
+    },
+    {
+        "url": "https://www.computer.org/web/tsc",
+        "years": [
+            2017
+        ],
+        "name": "IEEE Transactions on Services Computing",
+        "acronym": "TSC"
+    },
+    {
+        "url": "http://benthamscience.com/journals/current-signal-transduction-therapy/",
+        "years": [
+            2017
+        ],
+        "name": "Current Signal Transduction Therapy",
+        "acronym": "CSTT"
+    },
+    {
+        "url": "http://ees.elsevier.com/comnet/",
+        "years": [
+            2017
+        ],
+        "name": "Computer Networks",
+        "acronym": "COMNET"
+    },
+    {
+        "url": "https://www.journals.elsevier.com/ain-shams-engineering-journal/",
+        "years": [
+            2017
+        ],
+        "name": "Ain Shams Engineering Journal",
+        "acronym": "ASEJ"
+    },
+    {
+        "url": "http://www.mdpi.com/journal/computers",
+        "years": [
+            2017
+        ],
+        "name": "MDPI Computers Journal",
+        "acronym": "Computers"
+    },
+    {
+        "url": "http://tosn.acm.org/",
+        "years": [
+            2016
+        ],
+        "name": "ACM Transactions on Sensor Networks",
+        "acronym": "TOSN"
+    },
+    {
+        "url": "http://tcps.acm.org/",
+        "years": [
+            2016
+        ],
+        "name": "ACM Transactions on Cyber-Physical Systems",
+        "acronym": "TCPS"
+    },
+    {
+        "url": "http://www.springer.com/computer/journal/11714",
+        "years": [
+            2016
+        ],
+        "name": "Frontiers of Information Technology & Electronic Engineering",
+        "acronym": "FITEE"
+    },
+    {
+        "url": "https://www.hindawi.com/journals/misy/",
+        "years": [
+            2016
+        ],
+        "name": "Mobile Information Systems",
+        "acronym": "MISY"
+    },
+    {
+        "url": "http://www.comsoc.org/twc",
+        "years": [
+            2015
+        ],
+        "name": "IEEE Transactions on Wireless Communications",
+        "acronym": "TWC"
+    },
+    {
+        "url": "http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics",
+        "years": [
+            2014
+        ],
+        "name": "IEEE Transactions on Industrial Informatics",
+        "acronym": "TII"
+    },
+    {
+        "url": "http://www.oldcitypublishing.com/AHSWN/AHSWN.html",
+        "years": [
+            2013
+        ],
+        "name": "Ad Hoc & Sensor Wireless Networks",
+        "acronym": "AHSWN"
+    },
+    {
+        "url": "http://www.mdpi.com/journal/ijgi",
+        "years": [
+            2012
+        ],
+        "name": "International Journal of Geo-Information",
+        "acronym": "IJGI"
+    }
+]
