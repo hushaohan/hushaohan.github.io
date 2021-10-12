@@ -164,6 +164,7 @@ function renderEducation(es) {
             </th>
             <td>${e.majors.map(m => `<a href="${m.url}">${m.name}</a>`).join(', ')}</td>
             <td><a href="${e.institute.url}">${e.institute.name}</a></td>
+            <td>${e.location}</td>
             <td>${e.date}</td>
         </tr>
     `).join('\n')

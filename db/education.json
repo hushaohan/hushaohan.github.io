@@ -11,6 +11,7 @@
             "url": "http://www.illinois.edu",
             "name": "University of Illinois at Urbana-Champaign"
         },
+        "location": "IL, USA",
         "date": "May 2017"
     },
     {
@@ -25,6 +26,7 @@
             "url": "http://www.dartmouth.edu",
             "name": "Dartmouth College"
         },
+        "location": "NH, USA",
         "date": "June 2011"
     },
     {
@@ -43,6 +45,7 @@
             "url": "http://www.umass.edu",
             "name": "University of Massachusetts at Amherst"
         },
+        "location": "MA, USA",
         "date": "May 2008"
     }
 ]
