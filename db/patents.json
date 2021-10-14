@@ -3,72 +3,84 @@
         "url": "https://patents.google.com/patent/US10832173",
         "number": "US10832173",
         "title": "Cognitive Software Development",
-        "status": "Granted"
+        "status": "Granted",
+        "year": 2020
     },
     {
         "url": "https://patents.google.com/patent/US10831495",
         "number": "US10831495",
         "title": "Parallelization of Numeric Optimizers",
-        "status": "Granted"
+        "status": "Granted",
+        "year": 2020
     },
     {
         "url": "https://patents.google.com/patent/US10803395",
         "number": "US10803395",
         "title": "Quantum Computations of Classical Specifications",
-        "status": "Granted"
+        "status": "Granted",
+        "year": 2020
     },
     {
         "url": "https://www.freepatentsonline.com/10637480.html",
         "number": "US10637480",
         "title": "Multi-control Quantum State Inversion Gate",
-        "status": "Granted"
+        "status": "Granted",
+        "year": 2020
     },
     {
         "url": "https://patents.google.com/patent/US10713055",
         "number": "US10713055",
         "title": "Parallelization of Numeric Optimizers",
-        "status": "Granted"
+        "status": "Granted",
+        "year": 2020
     },
     {
         "url": "https://patents.google.com/patent/US20210049498",
         "number": "US20210049498",
         "title": "Quantum Reinforcement Learning Agent",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2019
     },
     {
         "url": "https://patents.google.com/patent/US20200342293",
         "number": "US20200342293",
         "title": "Quantum Computational Method and Device",
-        "status": "Pending"
-    },
-    {
-        "url": "https://patents.google.com/patent/US20200042882",
-        "number": "US20200042882",
-        "title": "Monte Carlo Markov Chain based Quantum Program Optimization",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2019
     },
     {
         "url": "https://patents.google.com/patent/US20190220782",
         "number": "US20190220782",
         "title": "Simplified Quantum Programming",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2019
+    },
+    {
+        "url": "https://patents.google.com/patent/US20200042882",
+        "number": "US20200042882",
+        "title": "Monte Carlo Markov Chain based Quantum Program Optimization",
+        "status": "Pending",
+        "year": 2018
     },
     {
         "url": "https://patents.google.com/patent/US20200202247",
         "number": "US20200202247",
         "title": "Adaptive Quantum Circuit Construction for Multiple-Controlled-Not Gates",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2018
     },
     {
         "url": "https://patents.google.com/patent/US20200183938",
         "number": "US20200183938",
         "title": "Automatic Quantum Searching of Object Database",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2018
     },
     {
         "url": "https://patents.google.com/patent/US20200097859",
         "number": "US20200097859",
         "title": "Quantum Algorithm Concatenation",
-        "status": "Pending"
+        "status": "Pending",
+        "year": 2018
     }
 ]
