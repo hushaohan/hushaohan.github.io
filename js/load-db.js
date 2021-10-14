@@ -49,9 +49,10 @@ function renderPatent(p) {
     return `
         <a href="${p.url}" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-                ${p.title}
-                <small class="badge text-dark fw-lighter">${p.number}</small>
+                <h7 class="mb-1 tpc-short fw-bold">${p.title}</h7>
+                <small class="badge text-dark fw-lighter">${p.year}</small>
             </div>
+            <small class="fs-7 fw-lighter">${p.number}</small>
         </a>
     `
 }
