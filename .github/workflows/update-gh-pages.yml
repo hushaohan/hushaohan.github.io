@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       cv_pdf_exists: ${{ steps.cv_pdf_exists.outputs.files_exists }}
-      cv_changed: ${{ steps.cv_has_changes.outputs.cv }}
+      cv_changed: ${{ steps.filter.outputs.cv }}
+      db_changed: ${{ steps.filter.outputs.db }}
+      action_changed: ${{ steps.filter.outputs.action }}
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -26,18 +28,24 @@ jobs:
         uses: andstor/file-existence-action@v1
         with:
           files: "./cv.pdf"
-      - name: Check cv directory for changes
+      - name: Check cv-related directories for changes
         uses: dorny/paths-filter@v2
-        id: cv_has_changes
+        id: filter
         with:
           filters: |
             cv:
               - 'cv/**'
+            db:
+              - 'db/**'
+            action:
+              - '.github/**'
   build_cv:
     needs: update_pages
     if: |
       needs.update_pages.outputs.cv_pdf_exists == 'false' ||
-      needs.update_pages.outputs.cv_changed == 'true'
+      needs.update_pages.outputs.cv_changed == 'true' ||
+      needs.update_pages.outputs.db_changed == 'true' ||
+      needs.update_pages.outputs.action_changed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
