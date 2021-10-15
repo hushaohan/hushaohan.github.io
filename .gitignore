@@ -10,3 +10,5 @@
 *.out
 *.fdb_latexmk
 *.fls
+cv/*.pdf
+*.vscode
