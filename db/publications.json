@@ -21,6 +21,7 @@
         "preprint": {
             "url": "https://arxiv.org/list/quant-ph/recent",
             "name": "arXiv - Quantum Physics",
+            "acronym": "arXiv",
             "month": 9,
             "year": 2021
         }
@@ -60,6 +61,7 @@
         "preprint": {
             "url": "https://arxiv.org/list/quant-ph/recent",
             "name": "arXiv - Quantum Physics",
+            "acronym": "arXiv",
             "month": 5,
             "year": 2021
         }
@@ -98,6 +100,7 @@
         "preprint": {
             "url": "https://arxiv.org/list/cs.DC/recent",
             "name": "arXiv - Distributed, Parallel, and Cluster Computing",
+            "acronym": "arXiv",
             "month": 5,
             "year": 2020
         }
@@ -138,6 +141,7 @@
         "preprint": {
             "url": "https://arxiv.org/archive/quant-ph",
             "name": "arXiv - Quantum Physics",
+            "acronym": "arXiv",
             "month": 10,
             "year": 2019
         }
@@ -184,6 +188,7 @@
         "journal": {
             "url": "https://www.computer.org/csdl/magazines/co",
             "name": "IEEE Computer",
+            "acronym": "Computer",
             "volume": 52,
             "number": 6,
             "month": 6,
@@ -204,6 +209,7 @@
         "journal": {
             "url": "https://www.computer.org/csdl/magazines/co",
             "name": "IEEE Computer",
+            "acronym": "Computer",
             "volume": 52,
             "number": 6,
             "month": 6,
@@ -223,7 +229,7 @@
         "conference": {
             "url": "https://dac.com/late-breaking-results",
             "name": "Design Automation Conference - Latest Breaking Results",
-            "acronym": "DAC LBR",
+            "acronym": "DAC",
             "location": "Las Vegas, Nevada USA",
             "date": "June 2-6",
             "month": 6,
@@ -375,6 +381,7 @@
         "journal": {
             "url": "https://publications.computer.org/computer-magazine/",
             "name": "IEEE Computer",
+            "acronym": "Computer",
             "volume": 51,
             "number": 5,
             "month": 5,
@@ -1118,6 +1125,7 @@
         "preprint": {
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
+            "acronym": "UIUC-TR",
             "date": "May 15",
             "month": 5,
             "year": 2014
@@ -1168,6 +1176,7 @@
         "preprint": {
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
+            "acronym": "UIUC-TR",
             "date": "April 25",
             "month": 4,
             "year": 2014
@@ -1290,6 +1299,7 @@
         "preprint": {
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
+            "acronym": "UIUC-TR",
             "date": "August 30",
             "month": 8,
             "year": 2013
@@ -1352,6 +1362,7 @@
         "preprint": {
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
+            "acronym": "UIUC-TR",
             "date": "April 18",
             "month": 4,
             "year": 2013
