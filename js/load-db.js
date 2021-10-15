@@ -89,6 +89,7 @@ function additionalConferenceInfo(p) {
             Presented at <a href="p.conference.url">${p.conference.acronym} ${p.conference.year}</a>
         `
     }
+    return ''
 }
 
 function publicationVenue(p) {
@@ -118,7 +119,7 @@ function renderPublication(p) {
             ${p.demo ? `<a href="${p.demo}"><i class="bi bi-youtube"></i></a>` : ''}
             <br/>
             ${p.authors.map(a => a == 'Shaohan Hu' ? "<strong>Shaohan Hu</strong>" : a).join(', ')}<br/>
-            ${publicationVenue(p)}<br/>
+            ${publicationVenue(p)}${additionalConferenceInfo(p)}<br/>
             ${p.award ? p.award : ''}
         </li>
     `
