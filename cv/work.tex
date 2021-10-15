@@ -1,29 +1,22 @@
 %!TEX root = cv.tex
 
 \section{\sc Work}
-{\href{https://www.jpmorgan.com/insights/technology/flare}{\bf JPMorgan Chase - FLARE}}, New York, NY \hfill January 2021--Present\\
-Executive Director
-\vspace{-0.16cm}
 
-{\href{http://research.ibm.com/labs/watson/index.shtml}{\bf IBM Research}}, Yorktown Heights, NY \hfill September 2016--December 2020\\
-Research Staff Member
-\vspace{-0.16cm}
+\begin{luacode*}
 
-{\href{http://www.illinois.edu/}{{\bf University of Illinois at Urbana-Champaign}}}, Urbana, IL \hfill January 2012--December 2016\\
-Research Assistant
-\vspace{-0.16cm}
+function render_works(ws)
+    local ws_strs = {}
+    for _, w in ipairs(ws)
+    do
+        table.insert(ws_strs, string.format(
+            "\\href{%s}{\\bf %s}, %s \\hfill %s\\\\%s",
+            w.url, w.employer, w.location, w.date, w.title
+        ))
+    end
+    return ws_strs
+end
 
-{\href{http://www.intel.com/}{{\bf Intel Corporation}}} - New Devices Group, Santa Clara, CA \hfill May 2014--September 2014\\
-Graduate Intern Technical
-\vspace{-0.16cm}
+local utils = require 'utils'
+tex.sprint(table.concat(render_works(utils.load_db("../db/work.json")), "\\\\\\\\"))
 
-{\href{http://www.illinois.edu/}{{\bf University of Illinois at Urbana-Champaign}}}, Urbana, IL \hfill August 2011--December 2011\\
-Teaching Assistant
-\vspace{-0.16cm}
-
-{\href{http://www.dartmouth.edu/}{{\bf Dartmouth College}}}, Hanover, NH \hfill September 2008--September 2010\\
-Teaching Assistant
-\vspace{-0.16cm}
-
-{\href{http://www.umass.edu/}{{\bf University of Massachusetts at Amherst}}}, Amherst, MA \hfill January 2008--May 2008\\
-Teaching Assistant
+\end{luacode*}

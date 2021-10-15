@@ -1,38 +1,25 @@
 %!TEX root = cv.tex
 \section{\sc Patents}
 
-{\sc US10832173} \hfill {\sc granted}, 2020\\
-\emph{Cognitive Software Development}
+\begin{luacode*}
 
-{\sc US10831495} \hfill {\sc granted}, 2020\\
-\emph{Parallelization of Numeric Optimizers}
+function render_patents(patents)
+    local patents_strs = {}
+    for _, patent in ipairs(patents)
+    do
+        table.insert(patents_strs, string.format(
+            "\\begin{spacing}{.1}{\\href{%s}{\\emph{%s}\\dotfill{\\sc %s}, %d \\\\\\\\ \\scriptsize\\textsf{\\textcolor{gray}{~~%s}}}}\\\\\\end{spacing}",
+            patent.url,
+            patent.title,
+            patent.status,
+            patent.year,
+            patent.number
+        ))
+    end
+    return patents_strs
+end
 
-{\sc US10803395} \hfill {\sc granted}, 2020\\
-\emph{Quantum Computations of Classical Specifications}
+local utils = require 'utils'
+tex.sprint(table.concat(render_patents(utils.load_db("../db/patents.json"))))
 
-{\sc US10637480} \hfill {\sc granted}, 2020\\
-\emph{Multi-control Quantum State Inversion Gate}
-
-{\sc US10713055} \hfill {\sc granted}, 2020\\
-\emph{Parallelization of Numeric Optimizers}
-
-{\sc US20210049498} \hfill {\sc filed}, 2019\\
-\emph{Quantum Reinforcement Learning Agent}
-
-{\sc US20200342293} \hfill {\sc filed}, 2019\\
-\emph{Quantum Computational Method and Device}
-
-{\sc US20200042882} \hfill {\sc filed}, 2018\\
-\emph{Monte Carlo Markov Chain based Quantum Program Optimization}
-
-{\sc US20190220782} \hfill {\sc filed}, 2019\\
-\emph{Simplified Quantum Programming}
-
-{\sc US20200202247} \hfill {\sc filed}, 2018\\
-\emph{Adaptive Quantum Circuit Construction for Multiple-Controlled-Not Gates}
-
-{\sc US20200183938} \hfill {\sc filed}, 2018\\
-\emph{Automatic Quantum Searching of Object Database}
-
-{\sc US20200097859} \hfill {\sc filed}, 2018\\
-\emph{Quantum Algorithm Concatenation}
+\end{luacode*}

@@ -1,2 +1,3 @@
 @default_files = ( 'cv' );
 $pdf_mode = 1;
+$pdflatex='lualatex'

@@ -2,42 +2,32 @@
 
 \section{\sc Education}
 
-\textbf{PhD},
-{\href{http://www.cs.illinois.edu/}{Computer Science}} \hfill May 2017 \\
-{\href{http://www.illinois.edu/}{University of Illinois at Urbana-Champaign}}, IL USA \\
-% Advisor: {\href{http://web.engr.illinois.edu/~zaher/}{Tarek F. Abdelzaher}}
-\vspace{-0.6cm}
+\begin{luacode*}
 
-\textbf{MS},
-{\href{http://www.cs.dartmouth.edu/}{Computer Science}} \hfill June 2011 \\
-{\href{http://www.dartmouth.edu/}{Dartmouth College}}, NH USA \\
-% Advisor: {\href{http://www.cs.dartmouth.edu/~campbell}{Andrew T. Campbell}}
-\vspace{-0.6cm}
+function render_majors(ms)
+    local ms_strs = {}
+    for _, m in ipairs(ms)
+    do
+        table.insert(ms_strs, string.format("{\\href{%s}{%s}}", m.url, m.name))
+    end
+    return ms_strs
+end
 
-\textbf{BS},
-% \emph{magna cum laude},
-{\href{http://www.cs.umass.edu/}{Computer Science}}, {\href{http://www.math.umass.edu/}{Mathematics and Statistics}}
- \hfill May 2008 \\
-{\href{http://www.umass.edu/}{University of Massachusetts at Amherst}}, MA USA
+function render_educations(es)
+    local es_strs = {}
+    for _, e in ipairs(es)
+    do
+        local e_strs = {}
+        table.insert(e_strs, string.format("\\textbf{%s}, ", e.degree))
+        table.insert(e_strs, table.concat(render_majors(e.majors), ', '))
+        table.insert(e_strs, string.format("\\hfill %s\\\\", e.date))
+        table.insert(e_strs, string.format("{\\href{%s}{%s}}, %s", e.institute.url, e.institute.name, e.location))
+        table.insert(es_strs, table.concat(e_strs))
+    end
+    return es_strs
+end
 
+local utils = require 'utils'
+tex.sprint(table.concat(render_educations(utils.load_db("../db/education.json")), "\\\\\\\\"))
 
-
-% \section{\sc Education}
-% {\href{http://www.illinois.edu/}{{\bf University of Illinois at Urbana-Champaign}}}, IL USA
-% \begin{itemize}
-% \item Ph.D., in {\href{http://www.cs.illinois.edu/}{Computer Science}} \hfill in progress \\
-% Advisor: {\href{http://www.cs.uiuc.edu/~zaher/}{Tarek F. Abdelzaher}}
-% \end{itemize}
-%
-% {\href{http://www.dartmouth.edu/}{\bf Dartmouth College}}, NH USA
-% \begin{itemize}
-% \item M.S., in {\href{http://www.cs.dartmouth.edu/}{Computer Science}} \hfill June 2011 \\
-% Advisor: {\href{http://www.cs.dartmouth.edu/~campbell}{Andrew T. Campbell}}
-% \end{itemize}
-%
-% {\href{http://www.umass.edu/}{\bf University of Massachusetts at Amherst}}, MA USA
-% \begin{itemize}
-% \item B.S., magna cum laude, in {\href{http://www.cs.umass.edu/}{Computer Science}} \hfill May 2008\vspace{-1.6mm}
-% \item B.S., magna cum laude, in {\href{http://www.math.umass.edu/}{Mathematics and Statistics}}
-%  \hfill May 2008
-% \end{itemize}
+\end{luacode*}
