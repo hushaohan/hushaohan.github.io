@@ -49,6 +49,7 @@ jobs:
         with:
           working_directory: cv/
           root_file: cv.tex
+          latexmk_use_lualatex: true
       - name: Check cv.pdf
         run: |
           file cv/cv.pdf | grep -q ' PDF '
@@ -57,7 +58,7 @@ jobs:
           commit_msg='deploy cv.pdf'
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
-          git add cv/cv.pdf
+          git add -f cv/cv.pdf
           git mv -f cv/cv.pdf ./
           if [[ "$(git log -1 --pretty=%B | grep $commit_msg | wc -l)" -eq 1 ]]
             then git commit --amend --no-edit; git push -f;
