@@ -1,3 +1,1 @@
-# hushaohan.github.io
-
-My [site](https://hushaohan.github.io) with [cv](https://hushaohan.github.io/cv.pdf).
+# [hushaohan.github.io](https://hushaohan.github.io)
