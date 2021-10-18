@@ -10,6 +10,18 @@ function load_db(db_file)
     return json.decode(json_str)
 end
 
+function map(tbl, f)
+    local f_tbl = {}
+    for k, v in pairs(tbl) do
+        f_tbl[k] = f(v)
+    end
+    return f_tbl
+end
+
+function ternary(cond, T, F)
+    if cond then return T else return F end
+end
+
 function find_ranges(ints)
     table.sort(ints)
     local gaps = {}
@@ -34,7 +46,9 @@ function find_ranges(ints)
     return ranges
 end
 
-function utils.load_db(val) return (load_db(val)) end
-function utils.find_ranges(val) return (find_ranges(val)) end
+function utils.load_db(db_file) return (load_db(db_file)) end
+function utils.find_ranges(ints) return (find_ranges(ints)) end
+function utils.map(tbl, f) return (map(tbl, f)) end
+function utils.ternary (cond, T, F) return (ternary (cond, T, F)) end
 
 return utils
