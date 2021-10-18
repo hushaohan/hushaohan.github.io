@@ -10,7 +10,7 @@ jobs:
       cv_pdf_exists: ${{ steps.cv_pdf_exists.outputs.files_exists }}
       cv_changed: ${{ steps.filter.outputs.cv }}
       db_changed: ${{ steps.filter.outputs.db }}
-      action_changed: ${{ steps.filter.outputs.action }}
+      workflow_changed: ${{ steps.filter.outputs.workflow }}
     steps:
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
               - 'cv/**'
             db:
               - 'db/**'
-            action:
+            workflow:
               - '.github/**'
   build_cv:
     needs: update_pages
@@ -45,7 +45,7 @@ jobs:
       needs.update_pages.outputs.cv_pdf_exists == 'false' ||
       needs.update_pages.outputs.cv_changed == 'true' ||
       needs.update_pages.outputs.db_changed == 'true' ||
-      needs.update_pages.outputs.action_changed == 'true'
+      needs.update_pages.outputs.workflow_changed == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages branch
