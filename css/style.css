@@ -199,19 +199,19 @@ ul.dropdown-menu {
 }
 
 
-#before-services, #before-pub, #before-publications, #before-patents, #before-press, #copyright-pane {
+#before-activities, #before-pub, #before-publications, #before-patents, #before-press, #copyright-pane {
     text-align: center;
     position: relative;
 }
 
-#before-services a, #before-pub a, #before-publications, #before-patents a, #before-press a, #copyright-pane a {
+#before-activities a, #before-pub a, #before-publications, #before-patents a, #before-press a, #copyright-pane a {
     position: relative;
     color: rgba(256,256,256,0.5);
     text-shadow: #000 0.0em 0.8em 2em;
 }
 
 /* mouse over link */
-#before-services a:hover, #before-pub a:hover, #before-publications, #before-patents a:hover, #before-press a:hover, #copyright-pane a:hover {
+#before-activities a:hover, #before-pub a:hover, #before-publications, #before-patents a:hover, #before-press a:hover, #copyright-pane a:hover {
     top: 1px;
     color: rgba(256,256,256,0.9);
     text-shadow: #000 0.0em 0.3em 1.5em;

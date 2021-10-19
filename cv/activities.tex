@@ -1,0 +1,32 @@
+%!TEX root = cv.tex
+
+\section{\sc Professional Activities}
+
+\begin{luacode*}
+
+local utils = require 'utils'
+
+function render_activities(activities)
+    return utils.map(
+        activities,
+        function(activity) return string.format(
+            "\\begin{spacing}{.1}{\\href{%s}{\\textsc{%s}\\dotfill %s \\\\\\\\ \\scriptsize\\textsf{\\textcolor{gray}{~~%s}}}}\\\\\\end{spacing}",
+            activity.url,
+            activity.acronym,
+            table.concat(utils.find_ranges(activity.years), ', '),
+            string.gsub(activity.name, "&", "\\&")
+        )
+        end
+    )
+end
+
+tex.sprint([[{\bf Technical Program Committee}\vspace{-.22cm}]])
+tex.sprint(table.concat(render_activities(utils.load_db("../db/tpcs.json"))))
+
+tex.sprint([[{\bf Conference Reviewer}\vspace{-.22cm}]])
+tex.sprint(table.concat(render_activities(utils.load_db("../db/conf-reviews.json"))))
+
+tex.sprint([[{\bf Journal Reviewer}\vspace{-.22cm}]])
+tex.sprint(table.concat(render_activities(utils.load_db("../db/journal-reviews.json"))))
+
+\end{luacode*}

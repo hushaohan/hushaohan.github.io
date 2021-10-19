@@ -4,19 +4,16 @@
 
 \begin{luacode*}
 
-function render_majors(ms)
-    local ms_strs = {}
-    for _, m in ipairs(ms)
-    do
-        table.insert(ms_strs, string.format("{\\href{%s}{%s}}", m.url, m.name))
-    end
-    return ms_strs
-end
-
 local utils = require 'utils'
+
 tex.sprint(table.concat(utils.map(
     utils.load_db("../db/education.json"),
-    function (e) return string.format("\\textbf{%s}, ", e.degree) .. table.concat(render_majors(e.majors), ', ') .. string.format("\\hfill %s\\\\", e.date) .. string.format("{\\href{%s}{%s}}, %s", e.institute.url, e.institute.name, e.location) end
+    function (e)
+        return string.format("\\textbf{%s}, ", e.degree) ..
+            table.concat(utils.map(e.majors, function(m) return string.format("{\\href{%s}{%s}}", m.url, m.name) end), ', ') ..
+            string.format("\\hfill %s\\\\", e.date) ..
+            string.format("{\\href{%s}{%s}}, %s", e.institute.url, e.institute.name, e.location)
+    end
 ), "\\\\\\\\"))
 
 \end{luacode*}

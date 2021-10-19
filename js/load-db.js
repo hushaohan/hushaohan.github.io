@@ -22,25 +22,25 @@ function formatYears(years) {
 }
 
 
-function renderService(s) {
+function renderActivity(activity) {
     return `
-        <a href="${s.url}" class="list-group-item list-group-item-action">
+        <a href="${activity.url}" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
-                <h7 class="mb-1 tpc-short fw-bold">${s.acronym}</h7>
-                <small class="badge text-dark fw-lighter">${formatYears(s.years)}</small>
+                <h7 class="mb-1 tpc-short fw-bold">${activity.acronym}</h7>
+                <small class="badge text-dark fw-lighter">${formatYears(activity.years)}</small>
             </div>
-            <small class="fs-7 fw-lighter">${s.name}</small>
+            <small class="fs-7 fw-lighter">${activity.name}</small>
         </a>
     `
 }
 
-const services = ['tpcs', 'conf-reviews', 'journal-reviews'];
-services.forEach(service => {
-    fetch(`db/${service}.json`)
+const activities = ['tpcs', 'conf-reviews', 'journal-reviews'];
+activities.forEach(activity => {
+    fetch(`db/${activity}.json`)
         .then(response => response.json())
         .then(data => {
-            document.getElementById(`${service}-content`).innerHTML = `
-                ${data.map(renderService).join('\n')}
+            document.getElementById(`${activity}-content`).innerHTML = `
+                ${data.map(renderActivity).join('\n')}
             `;
         })
 })
@@ -142,7 +142,7 @@ fetch(`db/publications.json`)
         document.getElementById(`publications-content`).innerHTML = `${renderPublications(data)}`;
     })
 
-function renderWork(ws) {
+function renderEmployment(ws) {
     return ws.map(w => `
         <tr>
             <th scope="row">${w.title}</th>
@@ -153,10 +153,10 @@ function renderWork(ws) {
     `).join('\n')
 }
 
-fetch(`db/work.json`)
+fetch(`db/employment.json`)
     .then(response => response.json())
     .then(data => {
-        document.getElementById(`work-content`).innerHTML = `${renderWork(data)}`;
+        document.getElementById(`employment-content`).innerHTML = `${renderEmployment(data)}`;
     })
 
 function renderEducation(es) {

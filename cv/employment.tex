@@ -1,12 +1,12 @@
 %!TEX root = cv.tex
 
-\section{\sc Work}
+\section{\sc Employment}
 
 \begin{luacode*}
 
 local utils = require 'utils'
 tex.sprint(table.concat(utils.map(
-    utils.load_db("../db/work.json"),
+    utils.load_db("../db/employment.json"),
     function(w) return string.format(
         "\\href{%s}{\\bf %s}, %s \\hfill %s\\\\%s",
         w.url, w.employer, w.location, w.date, w.title
