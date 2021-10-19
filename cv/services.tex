@@ -7,18 +7,17 @@
 local utils = require 'utils'
 
 function render_services(services)
-    local services_strs = {}
-    for _, service in ipairs(services)
-    do
-        table.insert(services_strs, string.format(
+    return utils.map(
+        services,
+        function(service) return string.format(
             "\\begin{spacing}{.1}{\\href{%s}{\\textsc{%s}\\dotfill %s \\\\\\\\ \\scriptsize\\textsf{\\textcolor{gray}{~~%s}}}}\\\\\\end{spacing}",
             service.url,
             service.acronym,
             table.concat(utils.find_ranges(service.years), ', '),
             string.gsub(service.name, "&", "\\&")
-        ))
-    end
-    return services_strs
+        )
+        end
+    )
 end
 
 tex.sprint([[{\bf Technical Program Committee}\vspace{-.22cm}]])

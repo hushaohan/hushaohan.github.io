@@ -35,36 +35,31 @@ function render_venue(venue)
     return table.concat(venue_items, ', ')
 end
 
-function render_publications(publications)
-    local publications_strs = {}
-    for _, publication in ipairs(publications)
-    do
-        local venue = get_venue(publication)
-        local publication_str = string.format("{\\sc %s %d} & %s, \\href{%s}{\\emph{%s}}, %s",
-            venue.acronym,
-            venue.year,
-            table.concat(utils.map(publication.authors, function(a) return utils.ternary(a == "Shaohan Hu", "\\textbf{Shaohan Hu}", a) end), ', '),
-            publication.url,
-            publication.title,
-            render_venue(venue)
-        )
-        if publication.award ~= nil then
-            publication_str = publication_str .. string.format(". (\\textbf{%s})", publication.award)
-        end
-        if publication.journal ~= nil and publication.conference ~= nil then
-            publication_str = publication_str .. string.format(
-                ". (Presented at \\href{%s}{\\textsf{\\sc %s} %d})",
-                publication.conference.url,
-                publication.conference.acronym,
-                publication.conference.year
-            )
-        end
-        table.insert(publications_strs, publication_str)
+function render_publication(publication)
+    local venue = get_venue(publication)
+    local publication_str = string.format("{\\sc %s %d} & %s, \\href{%s}{\\emph{%s}}, %s",
+        venue.acronym,
+        venue.year,
+        table.concat(utils.map(publication.authors, function(a) return utils.ternary(a == "Shaohan Hu", "\\textbf{Shaohan Hu}", a) end), ', '),
+        publication.url,
+        publication.title,
+        render_venue(venue)
+    )
+    if publication.award ~= nil then
+        publication_str = publication_str .. string.format(". (\\textbf{%s})", publication.award)
     end
-    return publications_strs
+    if publication.journal ~= nil and publication.conference ~= nil then
+        publication_str = publication_str .. string.format(
+            ". (Presented at \\href{%s}{\\textsf{\\sc %s} %d})",
+            publication.conference.url,
+            publication.conference.acronym,
+            publication.conference.year
+        )
+    end
+    return publication_str
 end
 
-tex.sprint(table.concat(render_publications(utils.load_db("../db/publications.json")), "\\\\\\\\"))
+tex.sprint(table.concat(utils.map(utils.load_db("../db/publications.json"), render_publication), "\\\\\\\\"))
 
 tex.sprint([[\end{longtabu}]])
 \end{luacode*}

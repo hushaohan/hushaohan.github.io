@@ -13,21 +13,10 @@ function render_majors(ms)
     return ms_strs
 end
 
-function render_educations(es)
-    local es_strs = {}
-    for _, e in ipairs(es)
-    do
-        local e_strs = {}
-        table.insert(e_strs, string.format("\\textbf{%s}, ", e.degree))
-        table.insert(e_strs, table.concat(render_majors(e.majors), ', '))
-        table.insert(e_strs, string.format("\\hfill %s\\\\", e.date))
-        table.insert(e_strs, string.format("{\\href{%s}{%s}}, %s", e.institute.url, e.institute.name, e.location))
-        table.insert(es_strs, table.concat(e_strs))
-    end
-    return es_strs
-end
-
 local utils = require 'utils'
-tex.sprint(table.concat(render_educations(utils.load_db("../db/education.json")), "\\\\\\\\"))
+tex.sprint(table.concat(utils.map(
+    utils.load_db("../db/education.json"),
+    function (e) return string.format("\\textbf{%s}, ", e.degree) .. table.concat(render_majors(e.majors), ', ') .. string.format("\\hfill %s\\\\", e.date) .. string.format("{\\href{%s}{%s}}, %s", e.institute.url, e.institute.name, e.location) end
+), "\\\\\\\\"))
 
 \end{luacode*}
