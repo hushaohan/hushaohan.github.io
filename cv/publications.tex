@@ -2,7 +2,7 @@
 \section{\sc Publications}
 
 \begin{luacode*}
-tex.sprint([[\begin{longtabu}{p{.55\sectionwidth} p{.77\resumewidth}}]])
+tex.sprint([[\begin{longtabu}{p{.095\resumewidth} p{.79\resumewidth}}]])
 
 local utils = require 'utils'
 
@@ -19,7 +19,15 @@ end
 function render_venue(venue)
     local months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
     local venue_items = {}
-    table.insert(venue_items, string.format("\\href{%s}{\\textsf{%s (%s)}}", venue.url, venue.name, venue.acronym))
+    table.insert(
+        venue_items,
+        string.format(
+            "\\href{%s}{\\textsf{%s%s}}",
+            venue.url,
+            venue.name,
+            utils.ternary(venue.trivial_acronym == true, "", " (" .. venue.acronym .. ")")
+        )
+    )
     if venue.volume ~= nil then
         table.insert(venue_items, string.format("Volume %d, Number %d", venue.volume, venue.number))
     end
@@ -37,7 +45,7 @@ end
 
 function render_publication(publication)
     local venue = get_venue(publication)
-    local publication_str = string.format("{\\sc %s %d} & %s, \\href{%s}{\\emph{%s}}, %s",
+    local publication_str = string.format("\\textbf{\\textsc{\\scriptsize %s %d}} & %s, \\href{%s}{\\emph{%s}}, %s",
         venue.acronym,
         venue.year,
         table.concat(utils.map(publication.authors, function(a) return utils.ternary(a == "Shaohan Hu", "\\textbf{Shaohan Hu}", a) end), ', '),

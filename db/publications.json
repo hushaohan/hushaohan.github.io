@@ -22,6 +22,7 @@
             "url": "https://arxiv.org/list/quant-ph/recent",
             "name": "arXiv - Quantum Physics",
             "acronym": "arXiv",
+            "trivial_acronym": true,
             "month": 9,
             "year": 2021
         }
@@ -62,6 +63,7 @@
             "url": "https://arxiv.org/list/quant-ph/recent",
             "name": "arXiv - Quantum Physics",
             "acronym": "arXiv",
+            "trivial_acronym": true,
             "month": 5,
             "year": 2021
         }
@@ -101,6 +103,7 @@
             "url": "https://arxiv.org/list/cs.DC/recent",
             "name": "arXiv - Distributed, Parallel, and Cluster Computing",
             "acronym": "arXiv",
+            "trivial_acronym": true,
             "month": 5,
             "year": 2020
         }
@@ -142,6 +145,7 @@
             "url": "https://arxiv.org/archive/quant-ph",
             "name": "arXiv - Quantum Physics",
             "acronym": "arXiv",
+            "trivial_acronym": true,
             "month": 10,
             "year": 2019
         }
@@ -189,6 +193,7 @@
             "url": "https://www.computer.org/csdl/magazines/co",
             "name": "IEEE Computer",
             "acronym": "Computer",
+            "trivial_acronym": true,
             "volume": 52,
             "number": 6,
             "month": 6,
@@ -210,6 +215,7 @@
             "url": "https://www.computer.org/csdl/magazines/co",
             "name": "IEEE Computer",
             "acronym": "Computer",
+            "trivial_acronym": true,
             "volume": 52,
             "number": 6,
             "month": 6,
@@ -337,7 +343,7 @@
         "conference": {
             "url": "https://www.icse2018.org/track/icse-2018-Posters",
             "name": "International Conference on Software Engineering",
-            "acronym": "ICSE Posters",
+            "acronym": "ICSE",
             "location": "Gothenburg, Sweden",
             "date": "May 27-June 3",
             "month": 5,
@@ -382,6 +388,7 @@
             "url": "https://publications.computer.org/computer-magazine/",
             "name": "IEEE Computer",
             "acronym": "Computer",
+            "trivial_acronym": true,
             "volume": 51,
             "number": 5,
             "month": 5,
@@ -658,7 +665,7 @@
         "journal": {
             "url": "http://www.computer.org/web/tmc",
             "name": "IEEE Transactions on Mobile Computing",
-            "acronym": "IEEE TMC",
+            "acronym": "TMC",
             "volume": 15,
             "number": 10,
             "month": 10,
@@ -885,7 +892,7 @@
         "conference": {
             "url": "https://www.usenix.org/conference/atc15",
             "name": "USENIX Annual Technical Conference",
-            "acronym": "USENIX ATC",
+            "acronym": "ATC",
             "location": "Santa Clara, CA USA",
             "date": "July 8-10",
             "month": 7,
@@ -1126,6 +1133,7 @@
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
             "acronym": "UIUC-TR",
+            "trivial_acronym": true,
             "date": "May 15",
             "month": 5,
             "year": 2014
@@ -1177,6 +1185,7 @@
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
             "acronym": "UIUC-TR",
+            "trivial_acronym": true,
             "date": "April 25",
             "month": 4,
             "year": 2014
@@ -1300,6 +1309,7 @@
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
             "acronym": "UIUC-TR",
+            "trivial_acronym": true,
             "date": "August 30",
             "month": 8,
             "year": 2013
@@ -1363,6 +1373,7 @@
             "url": "http://www.ideals.illinois.edu",
             "name": "UIUC Technical Report",
             "acronym": "UIUC-TR",
+            "trivial_acronym": true,
             "date": "April 18",
             "month": 4,
             "year": 2013

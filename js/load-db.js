@@ -94,7 +94,7 @@ function additionalConferenceInfo(p) {
 
 function publicationVenue(p) {
     var v = p.journal || p.conference || p.preprint
-    var venueItems = [`<a href="${v.url}">${v.name}${v.acronym ? ` (${v.acronym})` : ''}</a>`];
+    var venueItems = [`<a href="${v.url}">${v.name}${v.acronym && !v.trivial_acronym ? ` (${v.acronym})` : ''}</a>`];
     if (v.volume) {
         venueItems.push(`Volume ${v.volume}, Number ${v.number}`)
     }
