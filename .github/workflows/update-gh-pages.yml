@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
+          git reset --hard `git merge-base master gh-pages`
           git pull origin master --rebase
           git push -f
       - name: Check if gh-pages root has a cv.pdf
