@@ -1,5 +1,25 @@
 [
     {
+        "url": "https://quantum-journal.org/papers/q-2021-11-16-580/",
+        "title": "Clifford Circuit Optimization with Templates and Symbolic Pauli Gates",
+        "pdf": "https://quantum-journal.org/papers/q-2021-11-16-580/pdf/",
+        "authors": [
+            "Sergey Bravyi",
+            "Ruslan Shaydulin",
+            "Shaohan Hu",
+            "Dmitri Maslov"
+        ],
+        "journal": {
+            "url": "https://quantum-journal.org/",
+            "name": "Quantum -- The Open Journal for Quantum Science",
+            "acronym": "Quantum",
+            "volume": 5,
+            "number": 580,
+            "month": 11,
+            "year": 2021
+        }
+    },
+    {
         "url": "https://arxiv.org/abs/2109.04298",
         "title": "Quantum Machine Learning for Finance",
         "pdf": "https://arxiv.org/pdf/2109.04298",
@@ -46,25 +66,6 @@
             "volume": 17,
             "number": 4,
             "month": 7,
-            "year": 2021
-        }
-    },
-    {
-        "url": "https://arxiv.org/abs/2105.02291",
-        "title": "Clifford Circuit Optimization with Templates and Symbolic Pauli Gates",
-        "pdf": "https://arxiv.org/pdf/2105.02291",
-        "authors": [
-            "Sergey Bravyi",
-            "Ruslan Shaydulin",
-            "Shaohan Hu",
-            "Dmitri Maslov"
-        ],
-        "preprint": {
-            "url": "https://arxiv.org/list/quant-ph/recent",
-            "name": "arXiv - Quantum Physics",
-            "acronym": "arXiv",
-            "trivial_acronym": true,
-            "month": 5,
             "year": 2021
         }
     },
