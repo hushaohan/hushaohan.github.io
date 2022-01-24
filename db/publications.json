@@ -20,9 +20,9 @@
         }
     },
     {
-        "url": "https://arxiv.org/abs/2109.04298",
+        "url": "https://ieeexplore.ieee.org/document/9643469",
         "title": "Quantum Machine Learning for Finance",
-        "pdf": "https://arxiv.org/pdf/2109.04298",
+        "pdf": "pdf/pistoia2021iccad.pdf",
         "authors": [
             "Marco Pistoia",
             "Syed Farhan Ahmad",
@@ -38,12 +38,13 @@
             "Yue Sun",
             "Romina Yalovetzky"
         ],
-        "preprint": {
-            "url": "https://arxiv.org/list/quant-ph/recent",
-            "name": "arXiv - Quantum Physics",
-            "acronym": "arXiv",
-            "trivial_acronym": true,
-            "month": 9,
+        "conference": {
+            "url": "https://iccad.com/",
+            "name": "IEEE/ACM International Conference On Computer Aided Design",
+            "acronym": "ICCAD",
+            "location": "Munich, Germany",
+            "date": "December 23",
+            "month": 12,
             "year": 2021
         }
     },
