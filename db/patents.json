@@ -1,5 +1,26 @@
 [
     {
+        "url": "https://patents.google.com/patent/US20200183938",
+        "number": "US20200183938",
+        "title": "Automatic Quantum Searching of Object Database",
+        "status": "Granted",
+        "year": 2022
+    },
+    {
+        "url": "https://patents.google.com/patent/US20190220782",
+        "number": "US20190220782",
+        "title": "Simplified Quantum Programming",
+        "status": "Granted",
+        "year": 2022
+    },
+    {
+        "url": "https://patents.google.com/patent/US20200097859",
+        "number": "US20200097859",
+        "title": "Quantum Algorithm Concatenation",
+        "status": "Granted",
+        "year": 2021
+    },
+    {
         "url": "https://patents.google.com/patent/US10832173",
         "number": "US10832173",
         "title": "Cognitive Software Development",
@@ -49,13 +70,6 @@
         "year": 2019
     },
     {
-        "url": "https://patents.google.com/patent/US20190220782",
-        "number": "US20190220782",
-        "title": "Simplified Quantum Programming",
-        "status": "Pending",
-        "year": 2019
-    },
-    {
         "url": "https://patents.google.com/patent/US20200042882",
         "number": "US20200042882",
         "title": "Monte Carlo Markov Chain based Quantum Program Optimization",
@@ -66,20 +80,6 @@
         "url": "https://patents.google.com/patent/US20200202247",
         "number": "US20200202247",
         "title": "Adaptive Quantum Circuit Construction for Multiple-Controlled-Not Gates",
-        "status": "Pending",
-        "year": 2018
-    },
-    {
-        "url": "https://patents.google.com/patent/US20200183938",
-        "number": "US20200183938",
-        "title": "Automatic Quantum Searching of Object Database",
-        "status": "Pending",
-        "year": 2018
-    },
-    {
-        "url": "https://patents.google.com/patent/US20200097859",
-        "number": "US20200097859",
-        "title": "Quantum Algorithm Concatenation",
         "status": "Pending",
         "year": 2018
     }
