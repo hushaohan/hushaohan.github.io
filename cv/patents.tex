@@ -10,7 +10,7 @@ tex.sprint(table.concat(utils.map(
     function(patent) return string.format(
         "\\begin{spacing}{.1}{\\href{%s}{\\emph{%s}\\dotfill{\\sc %s}, %d \\\\\\\\ \\scriptsize\\textsf{\\textcolor{gray}{~~%s}}}}\\\\\\end{spacing}",
         patent.url,
-        patent.title,
+        utils.wrap_str(patent.title, ' ', 64),
         patent.status,
         patent.year,
         patent.number

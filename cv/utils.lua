@@ -46,9 +46,27 @@ function find_ranges(ints)
     return ranges
 end
 
+function wrap_str(str, sep, wrap_len)
+    if sep == nil then sep = ' ' end
+    if wrap_len == nil then wrap_len = 60 end
+    local t = {};
+    local curlen = 0
+    for word in string.gmatch(str, "%a+") do
+        if curlen + string.len(word) <= wrap_len then
+            curlen = curlen + string.len(word)
+        else
+            curlen = 0
+            table.insert(t, '\\\\')
+        end
+        table.insert(t, word)
+    end
+    return table.concat(t, sep)
+end
+
 function utils.load_db(db_file) return (load_db(db_file)) end
 function utils.find_ranges(ints) return (find_ranges(ints)) end
 function utils.map(tbl, f) return (map(tbl, f)) end
 function utils.ternary (cond, T, F) return (ternary (cond, T, F)) end
+function utils.wrap_str(str, sep, wrap_len) return (wrap_str(str, sep, wrap_len)) end
 
 return utils
