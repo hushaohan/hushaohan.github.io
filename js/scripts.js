@@ -3,16 +3,16 @@ $(window).load(function () {
 	});
 });
 
-$("a[href^='#']").on('click', function (e) {
-	target = this.hash;
-	e.preventDefault();
-	var hash = this.hash;
-	$('html, body').animate({
-		scrollTop: $(this.hash).offset().top
-	}, 300, function () {
-		window.location.hash = target;
-	});
-});
+// $("a[href^='#']").on('click', function (e) {
+// 	target = this.hash;
+// 	e.preventDefault();
+// 	var hash = this.hash;
+// 	$('html, body').animate({
+// 		scrollTop: $(this.hash).offset().top
+// 	}, 300, function () {
+// 		window.location.hash = target;
+// 	});
+// });
 
 $("img").one("load", function (evt) {
     $(this).fadeIn(611);
