@@ -21,8 +21,7 @@ jobs:
         run: |
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
-          git reset --hard `git merge-base master gh-pages`
-          git pull origin master --rebase
+          git reset --hard origin/master
           git push -f
       - name: Check if gh-pages root has a cv.pdf
         id: cv_pdf_exists
@@ -64,12 +63,10 @@ jobs:
           file cv/cv.pdf | grep -q ' PDF '
       - name: Update cv.pdf
         run: |
-          commit_msg='deploy cv.pdf'
           git config --global user.email "hushaohan@gmail.com"
           git config --global user.name "Shaohan Hu"
           git add -f cv/cv.pdf
           git mv -f cv/cv.pdf ./
-          if [[ $(git log -1 --pretty=%B | grep "$commit_msg" | wc -l) -eq 1 ]]
-            then git commit --amend --no-edit; git push -f;
-            else git commit -m "$commit_msg"; git push;
-          fi
+          git commit -m "deploy cv.pdf"
+          git push
+
