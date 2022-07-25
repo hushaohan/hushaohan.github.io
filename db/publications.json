@@ -1,5 +1,28 @@
 [
     {
+        "url": "",
+        "title": "Utility Preserving Biometric Information Anonymization",
+        "pdf": "",
+        "authors": [
+            "Bill Moriarty",
+            "Chun-Fu Chen",
+            "Shaohan Hu",
+            "Sean Moran",
+            "Marco Pistoia",
+            "Vincenzo Piuri",
+            "Pierangela Samarati"
+        ],
+        "conference": {
+            "url": "https://esorics2022.compute.dtu.dk/",
+            "name": "European Symposium on Research in Computer Security",
+            "acronym": "ESORICS",
+            "location": "Copenhagen, Denmark",
+            "date": "September 26-30",
+            "month": 9,
+            "year": 2022
+        }
+    },
+    {
         "url": "https://arxiv.org/abs/2206.06290",
         "title": "Constrained Quantum Optimization for Extractive Summarization on a Trapped-ion Quantum Computer",
         "pdf": "https://arxiv.org/pdf/2206.06290",
