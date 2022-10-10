@@ -1,24 +1,25 @@
 [
     {
-        "url": "https://doi.org/10.1007/978-3-031-17146-8_2",
-        "title": "Utility Preserving Biometric Information Anonymization",
-        "pdf": "",
+        "url": "https://arxiv.org/abs/2209.15024",
+        "title": "Portfolio Optimization via Quantum Zeno Dynamics on a Quantum Processor",
+        "pdf": "https://arxiv.org/pdf/2209.15024",
         "authors": [
-            "Bill Moriarty",
-            "Chun-Fu Chen",
+            "Dylan Herman",
+            "Ruslan Shaydulin",
+            "Yue Sun",
+            "Shouvanik Chakrabarti",
             "Shaohan Hu",
-            "Sean Moran",
-            "Marco Pistoia",
-            "Vincenzo Piuri",
-            "Pierangela Samarati"
+            "Pierre Minssen",
+            "Arthur Rattew",
+            "Romina Yalovetzky",
+            "Marco Pistoia"
         ],
-        "conference": {
-            "url": "https://esorics2022.compute.dtu.dk/",
-            "name": "European Symposium on Research in Computer Security",
-            "acronym": "ESORICS",
-            "location": "Copenhagen, Denmark",
-            "date": "September 26-30",
-            "month": 9,
+        "preprint": {
+            "url": "https://arxiv.org/archive/quant-ph",
+            "name": "arXiv - Quantum Physics",
+            "acronym": "arXiv",
+            "trivial_acronym": true,
+            "month": 10,
             "year": 2022
         }
     },
@@ -40,7 +41,30 @@
             "name": "arXiv - Quantum Physics",
             "acronym": "arXiv",
             "trivial_acronym": true,
-            "month": 6,
+            "month": 10,
+            "year": 2022
+        }
+    },
+    {
+        "url": "https://doi.org/10.1007/978-3-031-17146-8_2",
+        "title": "Utility Preserving Biometric Information Anonymization",
+        "pdf": "",
+        "authors": [
+            "Bill Moriarty",
+            "Chun-Fu Chen",
+            "Shaohan Hu",
+            "Sean Moran",
+            "Marco Pistoia",
+            "Vincenzo Piuri",
+            "Pierangela Samarati"
+        ],
+        "conference": {
+            "url": "https://esorics2022.compute.dtu.dk/",
+            "name": "European Symposium on Research in Computer Security",
+            "acronym": "ESORICS",
+            "location": "Copenhagen, Denmark",
+            "date": "September 26-30",
+            "month": 9,
             "year": 2022
         }
     },
