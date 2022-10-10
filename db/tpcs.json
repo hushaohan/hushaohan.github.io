@@ -1,5 +1,15 @@
 [
     {
+        "url": "https://www2023.thewebconf.org",
+        "years": [
+            2018,
+            2019,
+            2023
+        ],
+        "name": "The Web Conference",
+        "acronym": "WWW"
+    },
+    {
         "url": "https://conf.researchr.org/home/q-se-2022",
         "years": [
             2021,
@@ -15,15 +25,6 @@
         ],
         "name": "International Workshop on Challenges in Artificial Intelligence and Machine Learning for Internet of Things",
         "acronym": "AIChallengeIoT"
-    },
-    {
-        "url": "https://www2019.thewebconf.org",
-        "years": [
-            2018,
-            2019
-        ],
-        "name": "The Web Conference",
-        "acronym": "WWW"
     },
     {
         "url": "http://www.icccn.org/",
