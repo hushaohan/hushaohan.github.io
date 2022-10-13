@@ -1,5 +1,28 @@
 [
     {
+        "url": "https://www.nature.com/articles/s41598-022-20853-w",
+        "title": "Constrained quantum optimization for extractive summarization on a trapped-ion quantum computer",
+        "pdf": "https://www.nature.com/articles/s41598-022-20853-w.pdf",
+        "authors": [
+            "Pradeep Niroula",
+            "Ruslan Shaydulin",
+            "Romina Yalovetzky",
+            "Pierre Minssen",
+            "Dylan Herman",
+            "Shaohan Hu",
+            "Marco Pistoia"
+        ],
+        "journal": {
+            "url": "https://www.nature.com/srep/",
+            "name": "Nature Scientific Reports",
+            "acronym": "Sci Rep",
+            "volume": 17,
+            "number": 17171,
+            "month": 10,
+            "year": 2022
+        }
+    },
+    {
         "url": "https://arxiv.org/abs/2209.15024",
         "title": "Portfolio Optimization via Quantum Zeno Dynamics on a Quantum Processor",
         "pdf": "https://arxiv.org/pdf/2209.15024",
@@ -12,28 +35,6 @@
             "Pierre Minssen",
             "Arthur Rattew",
             "Romina Yalovetzky",
-            "Marco Pistoia"
-        ],
-        "preprint": {
-            "url": "https://arxiv.org/archive/quant-ph",
-            "name": "arXiv - Quantum Physics",
-            "acronym": "arXiv",
-            "trivial_acronym": true,
-            "month": 10,
-            "year": 2022
-        }
-    },
-    {
-        "url": "https://arxiv.org/abs/2206.06290",
-        "title": "Constrained Quantum Optimization for Extractive Summarization on a Trapped-ion Quantum Computer",
-        "pdf": "https://arxiv.org/pdf/2206.06290",
-        "authors": [
-            "Pradeep Niroula",
-            "Ruslan Shaydulin",
-            "Romina Yalovetzky",
-            "Pierre Minssen",
-            "Dylan Herman",
-            "Shaohan Hu",
             "Marco Pistoia"
         ],
         "preprint": {
