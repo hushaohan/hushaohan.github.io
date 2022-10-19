@@ -1,5 +1,28 @@
 [
     {
+        "url": "https://arxiv.org/abs/2210.09904",
+        "title": "MaSS: Multi-attribute Selective Suppression",
+        "pdf": "https://arxiv.org/pdf/2210.09904",
+        "authors": [
+            "Chun-Fu Chen",
+            "Shaohan Hu",
+            "Zhonghao Shi",
+            "Prateek Gulati",
+            "Bill Moriarty",
+            "Marco Pistoia"
+            "Vincenzo Piuri",
+            "Pierangela Samarati"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/archive/cs",
+            "name": "arXiv - Computer Science - Machine Learning",
+            "acronym": "arXiv",
+            "trivial_acronym": true,
+            "month": 10,
+            "year": 2022
+        }
+    },
+    {
         "url": "https://www.nature.com/articles/s41598-022-20853-w",
         "title": "Constrained Quantum Optimization for Extractive Summarization on a Trapped-ion Quantum Computer",
         "pdf": "https://www.nature.com/articles/s41598-022-20853-w.pdf",
