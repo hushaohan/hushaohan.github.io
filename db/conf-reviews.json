@@ -1,5 +1,13 @@
 [
     {
+        "url": "https://conf.researchr.org/home/icst-2023",
+        "acronym": "ICST",
+        "years": [
+            2023
+        ],
+        "name": "IEEE International Conference on Software Testing, Verification and Validation"
+    },
+    {
         "url": "https://asplos-conference.org/2021",
         "acronym": "ASPLOS",
         "years": [
