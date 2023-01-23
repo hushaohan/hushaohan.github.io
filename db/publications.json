@@ -1,5 +1,24 @@
 [
     {
+        "url": "https://www.mdpi.com/2220-9964/12/1/4",
+        "title": "Recognition of Intersection Traffic Regulations from Crowdsourced Data",
+        "pdf": "https://www.mdpi.com/2220-9964/12/1/4/pdf",
+        "authors": [
+            "Stefania Zourlidou",
+            "Monika Sester",
+            "Shaohan Hu"
+        ],
+        "journal": {
+            "url": "https://www.mdpi.com/journal/ijgi",
+            "name": "ISPRS International Journal of Geo-Information",
+            "acronym": "IJGI",
+            "volume": 12,
+            "number": 4,
+            "month": 1,
+            "year": 2023
+        }
+    },
+    {
         "url": "https://arxiv.org/abs/2210.09904",
         "title": "MaSS: Multi-attribute Selective Suppression",
         "pdf": "https://arxiv.org/pdf/2210.09904",
