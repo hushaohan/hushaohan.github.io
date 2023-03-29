@@ -1,13 +1,5 @@
 [
     {
-        "url": "https://tqe.ieee.org/",
-        "years": [
-            2021
-        ],
-        "name": "IEEE Transactions on Quantum Engineering",
-        "acronym": "TQE"
-    },
-    {
         "url": "https://www.sciencedirect.com/journal/knowledge-based-systems",
         "years": [
             2017,
@@ -17,6 +9,14 @@
         ],
         "name": "Elsevier Knowledge-Based Systems Journal",
         "acronym": "Knowledge-Based Systems"
+    },
+    {
+        "url": "https://tqe.ieee.org/",
+        "years": [
+            2021
+        ],
+        "name": "IEEE Transactions on Quantum Engineering",
+        "acronym": "TQE"
     },
     {
         "url": "https://www.computer.org/portal/web/tmc",
