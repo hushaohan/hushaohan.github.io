@@ -38,7 +38,12 @@ function find_ranges(ints)
         if curr - prev == 1 then
             table.insert(ranges, string.format("%d", ints[prev]))
         else
-            table.insert(ranges, string.format("%d--%d", ints[prev], ints[curr-1]))
+            if ints[curr-1] - ints[prev] == 1 then
+                table.insert(ranges, string.format("%d", ints[prev]))
+                table.insert(ranges, string.format("%d", ints[curr-1]))
+            else
+                table.insert(ranges, string.format("%d--%d", ints[prev], ints[curr-1]))
+            end
         end
         prev = curr
     end
