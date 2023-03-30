@@ -9,12 +9,14 @@ function formatYears(years) {
         if (i == years.length || years[i] - years[i - 1] != 1) {
             if (length == 1) {
                 list.push((years[i - length]).toString());
+            } else if (length == 2) {
+                list.push(years[i - length]);
+                list.push(years[i - 1]);
             } else {
                 list.push(years[i - length] + "~" + years[i - 1]);
             }
             length = 1;
-        }
-        else {
+        } else {
             length++;
         }
     }
