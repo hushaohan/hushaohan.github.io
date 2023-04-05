@@ -1,5 +1,35 @@
 [
     {
+        "url": "https://arxiv.org/abs/2303.16585",
+        "title": "Quantum Deep Hedging",
+        "pdf": "https://arxiv.org/pdf/2303.16585",
+        "authors": [
+            "El Amine Cherrat",
+            "Snehal Raj",
+            "Iordanis Kerenidis",
+            "Abhishek Shekhar",
+            "Ben Wood",
+            "Jon Dee",
+            "Shouvanik Chakrabarti",
+            "Richard Chen",
+            "Dylan Herman",
+            "Shaohan Hu",
+            "Pierre Minssen",
+            "Ruslan Shaydulin",
+            "Yue Sun",
+            "Romina Yalovetzky",
+            "Marco Pistoia"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/archive/quant-ph",
+            "name": "arXiv - Quantum Physics",
+            "acronym": "arXiv",
+            "trivial_acronym": true,
+            "month": 3,
+            "year": 2023
+        }
+    },
+    {
         "url": "https://www.mdpi.com/2220-9964/12/1/4",
         "title": "Recognition of Intersection Traffic Regulations from Crowdsourced Data",
         "pdf": "https://www.mdpi.com/2220-9964/12/1/4/pdf",
