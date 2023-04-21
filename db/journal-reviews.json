@@ -1,5 +1,19 @@
 [
     {
+        "url": "https://www.computer.org/portal/web/tmc",
+        "years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2020,
+            2023
+        ],
+        "name": "IEEE Transactions on Mobile Computing",
+        "acronym": "TMC"
+    },
+    {
         "url": "https://www.sciencedirect.com/journal/knowledge-based-systems",
         "years": [
             2017,
@@ -17,19 +31,6 @@
         ],
         "name": "IEEE Transactions on Quantum Engineering",
         "acronym": "TQE"
-    },
-    {
-        "url": "https://www.computer.org/portal/web/tmc",
-        "years": [
-            2014,
-            2015,
-            2016,
-            2017,
-            2018,
-            2020
-        ],
-        "name": "IEEE Transactions on Mobile Computing",
-        "acronym": "TMC"
     },
     {
         "url": "https://www.computer.org/web/tc",
