@@ -1,5 +1,30 @@
 [
     {
+        "url": "https://www.nature.com/articles/s42005-023-01331-9",
+        "title": "Constrained optimization via quantum Zeno dynamics",
+        "pdf": "https://www.nature.com/articles/s42005-023-01331-9.pdf",
+        "authors": [
+            "Dylan Herman",
+            "Ruslan Shaydulin",
+            "Yue Sun",
+            "Shouvanik Chakrabarti",
+            "Shaohan Hu",
+            "Pierre Minssen",
+            "Arthur Rattew",
+            "Romina Yalovetzky",
+            "Marco Pistoia"
+        ],
+        "journal": {
+            "url": "https://www.nature.com/commsphys/",
+            "name": "Nature - Communications Physics",
+            "acronym": "CommsPhys",
+            "volume": 6,
+            "number": 219,
+            "month": 8,
+            "year": 2023
+        }
+    },
+    {
         "url": "https://arxiv.org/abs/2308.02342",
         "title": "Evidence of Scaling Advantage for the Quantum Approximate Optimization Algorithm on a Classically Intractable Problem",
         "pdf": "https://arxiv.org/pdf/2308.02342",
