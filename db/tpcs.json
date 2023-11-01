@@ -1,5 +1,16 @@
 [
     {
+        "url": "https://conf.researchr.org/home/q-se-2024",
+        "years": [
+            2021,
+            2022,
+            2023,
+            2024
+        ],
+        "name": "International Workshop on Quantum Software Engineering",
+        "acronym": "Q-SE"
+    },
+    {
         "url": "https://www2023.thewebconf.org",
         "years": [
             2018,
@@ -8,16 +19,6 @@
         ],
         "name": "The Web Conference",
         "acronym": "WWW"
-    },
-    {
-        "url": "https://conf.researchr.org/home/q-se-2023",
-        "years": [
-            2021,
-            2022,
-            2023
-        ],
-        "name": "International Workshop on Quantum Software Engineering",
-        "acronym": "Q-SE"
     },
     {
         "url": "https://aichallengeiot.github.io/",
