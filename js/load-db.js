@@ -98,7 +98,13 @@ function publicationVenue(p) {
     var v = p.journal || p.conference || p.preprint
     var venueItems = [`<a href="${v.url}">${v.name}${v.acronym && !v.trivial_acronym ? ` (${v.acronym})` : ''}</a>`];
     if (v.volume) {
-        venueItems.push(`Volume ${v.volume}, Number ${v.number}`)
+        venueItems.push(`Volume ${v.volume}`)
+    }
+    if (v.number) {
+        venueItems.push(`Number ${v.number}`)
+    }
+    if (v.page) {
+        venueItems.push(`Page ${v.page}`)
     }
     if (v.location) {
         venueItems.push(v.location)
