@@ -1,5 +1,24 @@
 [
     {
+        "url": "https://arxiv.org/abs/2402.00728",
+        "title": "Dropout-Based Rashomon Set Exploration for Efficient Predictive Multiplicity Estimation",
+        "pdf": "https://arxiv.org/pdf/2402.00728",
+        "authors": [
+            "Hsiang Hsu",
+            "Guihong Li",
+            "Shaohan Hu",
+            "Chun-Fu (Richard) Chen"
+        ],
+        "preprint": {
+            "url": "https://arxiv.org/archive/cs",
+            "name": "arXiv - Computer Science",
+            "acronym": "arXiv",
+            "trivial_acronym": true,
+            "month": 2,
+            "year": 2024
+        }
+    },
+    {
         "url": "https://quantum-journal.org/papers/q-2023-11-29-1191/",
         "title": "Quantum Deep Hedging",
         "pdf": "https://quantum-journal.org/papers/q-2023-11-29-1191/pdf/",
