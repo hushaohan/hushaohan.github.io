@@ -29,7 +29,13 @@ function render_venue(venue)
         )
     )
     if venue.volume ~= nil then
-        table.insert(venue_items, string.format("Volume %d, Number %d", venue.volume, venue.number))
+        table.insert(venue_items, string.format("Volume %d", venue.volume))
+    end
+    if venue.number ~= nil then
+        table.insert(venue_items, string.format("Number %d", venue.number))
+    end
+    if venue.page ~= nil then
+        table.insert(venue_items, string.format("Page %d", venue.page))
     end
     if venue.location ~= nil then
         table.insert(venue_items, venue.location)
